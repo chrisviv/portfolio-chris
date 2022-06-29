@@ -108,7 +108,7 @@ h1,.moi,.prenom{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background: yellowgreen;
+    background: #4A8442;
 }
 #aPropos >.boxPhoto >.boxLogo{
     display: flex;
@@ -141,11 +141,21 @@ h1,.moi,.prenom{
 #boxPresentation >.presentation{
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-right: 25px;
 }
-#boxPresentation >.presentation > h3,a{
+#boxPresentation >.presentation > h3, a, h4{
+    margin-left: 25px;
+}
+#boxPresentation >.presentation > h3, a{
     font-family: "NovaRound";
     font-size: 40px;
+}
+#boxPresentation >.presentation > h3 > span{
+    color:#ffff;
+    font-size: 50px;
+}
+#boxPresentation >.presentation > h3 > span:hover{
+    color: black;
 }
 #boxPresentation >.presentation > h4{
     font-family: 'Rubik', sans-serif;
@@ -153,9 +163,38 @@ h1,.moi,.prenom{
 }
 #boxPresentation >.presentation > p{
     font-family: "Numans";
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.roundContact{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.roundC{
+    font-size: 37px;
+}
+.roundC:hover{
+    color: black;
 }
 .roundContact > a{
-    /* color: white;  */
-   text-decoration: none;
+    color: white;  
+    text-decoration: none;
+    z-index: 2;
+    margin-top: 60px;
+    margin-right: 4px;
 }
+.roundContact::after{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background:#4A8442;
+    z-index: 1;
+    top: 0px;
+    right: 0;
+}
+
