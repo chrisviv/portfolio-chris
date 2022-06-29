@@ -12,7 +12,6 @@
         font-family: "Raleway-variableFont";
         src: url("../fonts/Raleway-VariableFont_wght.ttf");
         font-display: swap;}
-
 *{
     margin: 0;
     padding: 0;
@@ -26,23 +25,136 @@ header{
     width: 100%;
     min-height: 100vh;
     background:#AEE68A ;
-}
-#mobileNav,#nav{
-    display: none;
-}
-#aPropos{
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+#mobileNav,#nav{
+    display: none;
+}
+/* Partie Header */
 .boxLogo{
-    width: 100%;
-   
+     width: 100%; 
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-left: 125px;
+    /* margin-right: 125px; */
+    margin-top: 25px;
+    /* revoir dépassement width? */
+}
+.fa-solid{
+    font-size: 40px;}
+.fa-leaf{
+    color: #6CC431;
+    transform: rotate(45deg);
+    margin-top : 20px ;
+}
+.fa-arrow-rotate-right{
+    color: #ffff;
 }
 #boxIdentite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 82vh;
+}
+.hello{
+    display: flex;
+    margin-left: 20%;
+}
+h1,.moi,.prenom{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 90px;
+    font-weight: 400;
+    color: #ffff;
+}
+.moi{
+    font-size: 47px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.prenom{
+    font-size: 224px;
+    margin-left: 20%;
+}
+.boxReseau{
     width: 100%;
-
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.reseau{margin-right: 30px;}
+.fa-brands{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* section  A Propos */
+#aPropos{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+#aPropos > .boxPhoto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: yellowgreen;
+}
+#aPropos >.boxPhoto >.boxLogo{
+    display: flex;
+    flex-direction: column;
+}
+#aPropos > .boxPhoto > .boxLogo > h2{
+    font-family: "NovaRound";
+    font-size: 100px;
+}
+.photoChris > img{
+  margin-right: 20px;
+}
+#aPropos >.boxphoto > .boxLogo >.fa-solid{
+    font-size: 40px;}
+#aPropos >.boxphoto > .boxLogo >.fa-leaf{
+    color: #6CC431;
+    transform: rotate(45deg);
+    margin-top : 20px ;
+}
+#aPropos >.boxphoto > .boxLogo >.fa-arrow-rotate-right{
+    color: #ffff;
+}
+#boxPresentation{
+    width:80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#boxPresentation >.presentation{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+#boxPresentation >.presentation > h3,a{
+    font-family: "NovaRound";
+    font-size: 40px;
+}
+#boxPresentation >.presentation > h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 80px;
+}
+#boxPresentation >.presentation > p{
+    font-family: "Numans";
+    font-size: 22px;
+}
+.roundContact > a{
+    /* color: white;  */
+   text-decoration: none;
 }
