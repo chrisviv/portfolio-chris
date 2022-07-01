@@ -96,105 +96,126 @@ h1,.moi,.prenom{
     text-decoration: none;
     margin-left: 20px;
 }
-/* section  A Propos */
+/************section  A Propos *************/
 #aPropos{
     width: 100%;
     min-height: 100vh;
-    display: flex;
-}
-#aPropos > .boxPhoto{
+    display: flex;}
+.boxPhoto{
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: #4A8442;
-}
-#aPropos >.boxPhoto >.boxLogo{
-    display: flex;
-    flex-direction: column;
-}
-#aPropos > .boxPhoto > .boxLogo > h2{
-    font-family: "NovaRound";
-    font-size: 100px;
-}
-.photoChris > img{
-  margin-right: 20px;
-}
-#aPropos >.boxphoto > .boxLogo >.fa-solid{
-    font-size: 40px;}
-#aPropos >.boxphoto > .boxLogo >.fa-leaf{
-    color: #6CC431;
-    transform: rotate(45deg);
-    margin-top : 20px ;
-}
-#aPropos >.boxphoto > .boxLogo >.fa-arrow-rotate-right{
-    color: #ffff;
-}
-#boxPresentation{
-    width:80%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#boxPresentation >.presentation{
+    flex-direction: row;
+    background: #4A8442;}
+/* BoxLogo et A propos */
+.boxPhoto >.boxLogo{
     display: flex;
-    flex-direction: column;
-    margin-right: 25px;
-}
-#boxPresentation >.presentation > h3, a, h4{
-    margin-left: 25px;
-}
-#boxPresentation >.presentation > h3, a{
-    font-family: "NovaRound";
-    font-size: 40px;
-}
-#boxPresentation >.presentation > h3 > span{
-    color:#ffff;
-    font-size: 50px;
-}
-#boxPresentation >.presentation > h3 > span:hover{
-    color: black;
-}
-#boxPresentation >.presentation > h4{
-    font-family: 'Rubik', sans-serif;
-    font-size: 80px;
-}
-#boxPresentation >.presentation > p{
-    font-family: "Numans";
-    font-size: 20px;
-    margin-top: 30px;
-}
-.roundContact{
-    width: 100%;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;} 
+.boxPhoto >.boxLogo > img {margin-top: 0px;margin-left: -20px;}
+.boxPhoto >.boxLogo > h2{
+    font-family: "NovaRound"; 
+    font-size: 95px;
+    color: white;margin-left: 50px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing : -35px;}
+/* photoChris*/
+.boxPhoto >.boxLogo >.photoChris {
     display: flex;
     justify-content: flex-end;
-    align-items: center
-}
-.roundC{
-    font-size: 37px;
-}
-.roundC:hover{
-    color: black;
-}
-.roundContact > a{
+    align-items: center;}
+.photoChris > img{margin-right: -155px;}
+/* Logo Chris */
+.boxphoto > .boxLogo >.fa-solid{font-size: 40px;}
+.boxphoto > .boxLogo >.fa-leaf{
+    color: #6CC431;
+    transform: rotate(45deg);
+    margin-top : 20px ;}
+.boxphoto > .boxLogo >.fa-arrow-rotate-right{color: #ffff;}
+/* boxPrensentation */
+#boxPresentation{
+    width:70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;}
+/* Partie présentation */
+.presentation{
+   width: 100%;  
+   height: 100vh;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   margin-right: 25px;}
+.presentation > h3, h4 {margin-left: 25px;}
+.presentation > h3 {font-family: "NovaRound";font-size: 40px;}
+.presentation > h3> span{color:#ffff;font-size: 50px;}
+.presentation > h3> span:hover{color: black;}
+.presentation > h4{font-family: 'Rubik', sans-serif;font-size: 80px;}
+.resumer{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 80px;}
+.resumer > p {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Numans"; 
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top:20px;}  
+/* #roundContact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+.roundC{font-size: 25px;margin-top: 20px;}
+.roundC:hover{color: black;}
+#roundContact > a{
     color: white;  
     text-decoration: none;
     z-index: 2;
-    margin-top: 60px;
-    margin-right: 4px;
-}
-.roundContact::after{
-    content:"";
+    margin-right: 4px;}
+#roundContact::after{
+    content:"Contact";
     position: absolute;
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    border-radius: 80px / 40px;
+    width: 150px;
+    height: 75px;
     background:#4A8442;
     z-index: 1;
-    top: 0px;
-    right: 0;
+    top: 10px;
+    right: 20px;
+    color: white;  
+    text-decoration: none;
+} */
+/* SECTION COMPETENCES */
+#competences{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#competences.boxCompetences > h2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'NovaRound';
+    font-size: 120px;
+    
+   
 }
 
