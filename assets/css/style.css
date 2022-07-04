@@ -1,233 +1,77 @@
+/******** liste des font-family *********/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* font-family: 'Rubik', sans-serif; */
-@font-face {
-    font-family: "Numans";
-    src: url("../fonts/Numans-Regular.ttf");
-    font-display: swap;}
-@font-face {
-    font-family: "NovaRound";
-    src: url("../fonts/NovaRound-Regular.ttf");
-    font-display: swap;}
-    @font-face {
-        font-family: "Raleway-variableFont";
-        src: url("../fonts/Raleway-VariableFont_wght.ttf");
-        font-display: swap;}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 100%;
-    min-height: 100vh;
-}
-header{
-    width: 100%;
-    min-height: 100vh;
-    background:#AEE68A ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#mobileNav,#nav{
-    display: none;
-}
-/* Partie Header */
-header > .boxLogo{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.boxLogo > img{
-   height: 10vh;
-   margin-top: 30px;
-   margin-left: 30px;
-}
-.fa-solid{
-    font-size: 40px;}
-.fa-leaf{
-    color: #6CC431;
-    transform: rotate(45deg);
-    margin-top : 20px ;
-}
-.fa-arrow-rotate-right{
-    color: #ffff;
-}
-#boxIdentite{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-    height: 75vh;
-}
-.hello{
-    display: flex;
-    margin-left: 15%;
-}
-h1,.moi,.prenom{
-    font-family: 'Rubik', sans-serif; 
-    font-size: 90px;
-    font-weight: 400;
-    color: #ffff;
-}
-.moi{
-    font-size: 47px;
-    margin-top: 45px;
-    margin-left: 20px;
-}
-.prenom{
-    font-size: 224px;
-    margin-left: 15%;
-}
-.boxReseau{
-    width: 100%;
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+@font-face {font-family: "Numans";src: url("../fonts/Numans-Regular.ttf");font-display: swap;}
+@font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
+@font-face {font-family: "Raleway-variableFont";src: url("../fonts/Raleway-VariableFont_wght.ttf");font-display: swap;}
+/* Général */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{width: 100%;min-height: 100vh;}
+/* Partie cacher pour mobile/responsive */
+#mobileNav,#nav{display: none;}
+/*************Partie Header************* */
+header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-items: center;}
+/* partie boxLogo */
+.boxLogo > img{height: 10vh;margin-top: 30px;margin-left: 30px;}
+.fa-solid{font-size: 40px;}
+.fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
+.fa-arrow-rotate-right{color: #ffff;}
+/* partie boxIdentité */
+#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;align-items: flex-start;height: 75vh;}
+.hello{display: flex; margin-left: 15%;}
+h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 400; color: #ffff;}
+.moi{font-size: 47px;margin-top: 45px;margin-left: 20px;}
+.prenom{font-size: 224px;margin-left: 15%;}
+/* partie boxReseau */
+.boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;}
 .reseau{margin-right: 30px;}
-.fa-brands{
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-/************section  A Propos *************/
-#aPropos{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;}
-.boxPhoto{
-    width: 30%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: #4A8442;}
+.fa-brands{font-size: 30px;color: white;text-decoration: none; margin-left: 20px;}
+/********************section  A Propos ************************/
+#aPropos{width: 100%; min-height: 100vh; display: flex;}
+.boxPhoto{width: 30%;height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction: row; background: #4A8442;}
 /* BoxLogo et A propos */
-.boxPhoto >.boxLogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;} 
-.boxPhoto >.boxLogo > img {margin-top: 0px;margin-left: -20px;}
-.boxPhoto >.boxLogo > h2{
-    font-family: "NovaRound"; 
-    font-size: 95px;
-    color: white;
-    margin-left: 50px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    letter-spacing : -35px;}
+.boxPhoto >.boxLogo{display: flex;justify-content: center;align-items: center;flex-direction: column;} 
+.boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
+.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 95px;color: white;margin-left: 50px;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -35px;}
 /* photoChris*/
-.boxPhoto >.boxLogo >.photoChris {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;}
+.boxPhoto >.boxLogo >.photoChris {display: flex;justify-content: flex-end;align-items: center;}
 .photoChris > img{margin-right: -155px;}
 /* Logo Chris */
 .boxphoto > .boxLogo >.fa-solid{font-size: 40px;}
-.boxphoto > .boxLogo >.fa-leaf{
-    color: #6CC431;
-    transform: rotate(45deg);
-    margin-top : 20px ;}
+.boxphoto > .boxLogo >.fa-leaf{color: #6CC431;transform: rotate(45deg); margin-top : 20px ;}
 .boxphoto > .boxLogo >.fa-arrow-rotate-right{color: #ffff;}
-/* boxPrensentation */
-#boxPresentation{
-    width:70%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;}
+/* partie boxPrensentation */
+#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */
-.presentation{
-   width: 100%;  
-   height: 100vh;
-   display: flex;
-   justify-content: flex-end;
-   flex-direction: column;
-   margin-right: 25px;}
-.presentation > h3, h4 {margin-left: 25px;}
+.presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;margin-right: 25px;}
+.presentation > h3, h4 {margin-left: 43px;margin-top: -35px;}
 .presentation > h3 {font-family: "NovaRound";font-size: 40px;}
 .presentation > h3> span{color:#ffff;font-size: 50px;}
-.presentation > h3> span:hover{color: black;}
-.presentation > h4{font-family: 'Rubik', sans-serif;font-size: 80px;}
-.resumer{
-    width:100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 80px;}
-.resumer > p {
-    width: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Numans"; 
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top:20px;}  
-/* #roundContact{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    }
+.presentation > h3> span:hover{color: black;} 
+.presentation > h4{width:80%;font-family: 'Rubik', sans-serif;font-size: 80px;}
+/* partie résumer */
+.resumer{width:90%;height: 100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin-left: 80px;}
+.resumer > p {width: 50%;display: flex;justify-content: center;align-items: center;font-family: "Numans";font-size: 16px;margin-left: 20px; margin-top:20px;}  
+/* #roundContact{ width: 100%;height: 100vh; position: relative; display: flex;justify-content: center; align-items: center; flex-direction: column;}
 .roundC{font-size: 25px;margin-top: 20px;}
 .roundC:hover{color: black;}
-#roundContact > a{
-    color: white;  
-    text-decoration: none;
-    z-index: 2;
-    margin-right: 4px;}
-#roundContact::after{
-    content:"Contact";
-    position: absolute;
-    border-radius: 80px / 40px;
-    width: 150px;
-    height: 75px;
-    background:#4A8442;
-    z-index: 1;
-    top: 10px;
-    right: 20px;
-    color: white;  
-    text-decoration: none;
-} */
-/* SECTION COMPETENCES */
-#competences{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #AEE68A;
-    margin: 50px 0;
-    clip-path: circle(50% at 0 51%);}
-#competences> .boxCompetences{margin-left: 20px;}
-.boxCompetences{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;}
-#competences> .boxCompetences >h2{
-    font-family: "NovaRound"; 
-    font-size: 80px;
-    color: white;
-    letter-spacing : 0px;}
-#competences> .boxCompetences >.forme{
-   transform: rotate(90deg);
-}
-#competences> .boxCompetences >.forme:hover{
-    transform: scale(1.2);
-}
-
-
+#roundContact > a{color: white; text-decoration: none;z-index: 2; margin-right: 4px;}
+#roundContact::after{content:"Contact";position: absolute;border-radius: 80px / 40px;width: 150px; height: 75px; background:#4A8442; z-index: 1; top: 10px; right: 20px; color: white;  text-decoration: none;}*/
+/**************** SECTION COMPETENCES *********************/
+#competences{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+/* partie langages de compétence */
+.boxLangages{width: 100%;height:100vh;}
+#langages{background:lightgrey; border-radius:30px;display: flex;margin: 80px;color:black} 
+#langages>.barLangages{background-color:#4A8442;color: white; border-radius: 30px; } 
+#langages>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap{color: black;margin-left: -38px;}
+.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}
+/* Partie Compétence */
+#competences> .boxCompetences{ width:100%; justify-content: center;
+    align-items: center;flex-direction: column-reverse; color:#6CC431;}
+/* clip-path: circle(100% at 0 100%); */
+#competences> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px; 
+    margin-left: -60px;color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
+#competences> .boxCompetences >h3{font-family: "Numans"; font-size:4.5rem;margin-left: 10px;}
+/* #competences> .boxCompetences >.forme:hover{transform: scale(1.2);} */
+/* partie Barre de compétence des Langages */
