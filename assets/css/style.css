@@ -76,18 +76,54 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #competencesDev> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 55px;color: black;writing-mode: vertical-rl;text-orientation: upright}
 #competencesDev> .boxCompetencesDev >h3{width:83%;font-family: "Numans"; font-size:3.5rem;margin-left: 30px; background: #AEE68A;color: white;}
 /**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
-#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
-#competencesDeg> .boxCompetencesDeg{ width:100%; justify-content: center; align-items: center;flex-direction: column; color:#6CC431;}
-#competencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px; color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
+#competencesDeg{ width: 100%; height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+#competencesDeg> .boxCompetencesDeg{ width:80%; color:#6CC431;display: flex;justify-content: center;}
+.boxCompetencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 55px; color: black; writing-mode: vertical-rl;text-orientation: upright}
 #competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans"; font-size:3.5rem;margin-left: 80px;}
 /* partie langages de compétence */
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
-.type> h2{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 10px;margin-top: 20px;}
-.type>.fa-leaf{margin-top:40px;}
+.type> h2{ font-family: 'NovaRound';font-size: 1.8rem;font-weight:900;color: black;margin-left: 47px;margin-top: 57px;}
+.type>.fa-leaf{margin-top:67px;font-size: 25px;}
 /* partie langages de compétence developpement */
 .boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
 .barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
 #langagesDig{ width:85%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px} 
-#langagesDig>.fa-figma, .fa-mobile-button, .fa-sass {color:#095933; margin-left: -38px;}
-.figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}
+.progres{width: 100%; font-family: 'NovaRound';font-size: 1.4rem;color: black;}
+/*.boxIntegration{}
+.boxResponsiveDesign{ }
+.responvive{}
+.frameworks{} */
+#langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square{color:#095933; margin-left: -38px;font-size: 1.6rem;}
+.figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.responsive{width: 85%;}.git{width:50%}
+
+
+
+
+
+
+
+
+
+
+/* Spin */
+/* .hamburger--spin .hamburger-inner {
+transition-duration: 0.22s;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--spin .hamburger-inner::before {
+ transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+.hamburger--spin .hamburger-inner::after {
+ transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+transform: rotate(225deg);
+transition-delay: 0.12s;
+transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+.hamburger--spin.is-active .hamburger-inner::before {
+ top: 0;
+ opacity: 0;
+ transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+.hamburger--spin.is-active .hamburger-inner::after {
+ bottom: 0;
+ transform: rotate(-90deg);
+ transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); } */
