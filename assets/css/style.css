@@ -31,7 +31,7 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxPhoto{width: 30%;height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction: row; background: #4A8442;}
 /* BoxLogo et A propos */
-.boxPhoto >.boxLogo{display: flex;justify-content: center;align-items: center;flex-direction: column;} 
+/*.boxPhoto >.boxLogo{display: flex;justify-content: center;align-items: center;flex-direction: column;}  */
 .boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
 .boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 95px;color: white;margin-left: 50px;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -35px;}
 /* photoChris*/
@@ -58,20 +58,28 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 .roundC:hover{color: black;}
 #roundContact > a{color: white; text-decoration: none;z-index: 2; margin-right: 4px;}
 #roundContact::after{content:"Contact";position: absolute;border-radius: 80px / 40px;width: 150px; height: 75px; background:#4A8442; z-index: 1; top: 10px; right: 20px; color: white;  text-decoration: none;}*/
-/**************** SECTION COMPETENCES *********************/
-#competences{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+/**************** SECTION COMPETENCES DEV*********************/
+#competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+.division{width: 95%;height:10vh;display: flex;justify-content:center;align-items: center;}
+.division> h2{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 10px;margin-top: 20px;}
+.division>.fa-leaf{margin-top:40px;}
 /* partie langages de compétence */
-.boxLangages{width: 100%;height:100vh;}
-#langages{background:lightgrey; border-radius:30px;display: flex;margin: 80px;color:black} 
-#langages>.barLangages{background-color:#4A8442;color: white; border-radius: 30px; } 
-#langages>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap{color: black;margin-left: -38px;}
-.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}
+.boxLangages{width: 100%;height:100vh;display: flex;justify-content: center; 
+    align-items: center;flex-direction: column;}
+.barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
+#langages{ width:85%;height:20px; background:lightgrey; border-radius:30px;display: flex;justify-content: flex-start;
+    align-items:center; color:black; margin:48px 0px 0px 60px} 
+#langages>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color: black; margin-left: -38px;}
+.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}.wordpress{width: 15%;}
 /* Partie Compétence */
-#competences> .boxCompetences{ width:100%; justify-content: center;
-    align-items: center;flex-direction: column-reverse; color:#6CC431;}
-/* clip-path: circle(100% at 0 100%); */
-#competences> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px; 
-    margin-left: -60px;color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
-#competences> .boxCompetences >h3{font-family: "Numans"; font-size:4.5rem;margin-left: 10px;}
-/* #competences> .boxCompetences >.forme:hover{transform: scale(1.2);} */
-/* partie Barre de compétence des Langages */
+#competencesDev> .boxCompetences{ width:100%;height: 100vh; justify-content: center; align-items: center;flex-direction: column-reverse; color:#6CC431;}
+#competencesDev> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 65px;color: black;writing-mode: vertical-rl;text-orientation: upright}
+#competencesDev> .boxCompetences >h3{width:83%;height: 98vh;font-family: "Numans"; font-size:3.5rem;margin-left: 30px; background: #AEE68A;color: white;}
+
+/**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
+#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+#competencesDeg> .boxCompetencesDeg{ width:100%; justify-content: center; align-items: center;flex-direction: column-reverse; color:#6CC431;}
+#competencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px;margin-left: -60px;color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
+#competencesDeg> .boxCompetencesDeg >h3{width:39%;font-family: "Numans"; font-size:3.5rem;margin-left: 20px;}
+
+#
