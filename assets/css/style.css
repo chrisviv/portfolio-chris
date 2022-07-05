@@ -45,7 +45,7 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */
 .presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;margin-right: 25px;}
-.presentation > h3, h4 {margin-left: 43px;margin-top: -35px;}
+.presentation > h3, h4 {margin-left: 50px;margin-top: -35px;}
 .presentation > h3 {font-family: "NovaRound";font-size: 40px;}
 .presentation > h3> span{color:#ffff;font-size: 50px;}
 .presentation > h3> span:hover{color: black;} 
@@ -60,26 +60,34 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #roundContact::after{content:"Contact";position: absolute;border-radius: 80px / 40px;width: 150px; height: 75px; background:#4A8442; z-index: 1; top: 10px; right: 20px; color: white;  text-decoration: none;}*/
 /**************** SECTION COMPETENCES DEV*********************/
 #competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
-.division{width: 95%;height:10vh;display: flex;justify-content:center;align-items: center;}
+.division{width: 100%;height:10vh;display: flex;justify-content:center;align-items: center;}
 .division> h2{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 10px;margin-top: 20px;}
 .division>.fa-leaf{margin-top:40px;}
-/* partie langages de compétence */
+/* partie langages de compétence developpement */
 .boxLangages{width: 100%;height:100vh;display: flex;justify-content: center; 
     align-items: center;flex-direction: column;}
 .barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
-#langages{ width:85%;height:20px; background:lightgrey; border-radius:30px;display: flex;justify-content: flex-start;
+#langagesDev{ width:85%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;
     align-items:center; color:black; margin:48px 0px 0px 60px} 
-#langages>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color: black; margin-left: -38px;}
+#langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color:#095933; margin-left: -38px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}.wordpress{width: 15%;}
 /* Partie Compétence */
-#competencesDev> .boxCompetences{ width:100%;height: 100vh; justify-content: center; align-items: center;flex-direction: column-reverse; color:#6CC431;}
-#competencesDev> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 65px;color: black;writing-mode: vertical-rl;text-orientation: upright}
-#competencesDev> .boxCompetences >h3{width:83%;height: 98vh;font-family: "Numans"; font-size:3.5rem;margin-left: 30px; background: #AEE68A;color: white;}
-
+#competencesDev> .boxCompetencesDev{ width:100%;height: 100vh; justify-content: center; align-items: center;flex-direction: column-reverse; background:#AEE68A;margin: 0 50px;display: flex;justify-content: center;align-items: center;}
+#competencesDev> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 55px;color: black;writing-mode: vertical-rl;text-orientation: upright}
+#competencesDev> .boxCompetencesDev >h3{width:83%;font-family: "Numans"; font-size:3.5rem;margin-left: 30px; background: #AEE68A;color: white;}
 /**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
-#competencesDeg> .boxCompetencesDeg{ width:100%; justify-content: center; align-items: center;flex-direction: column-reverse; color:#6CC431;}
-#competencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px;margin-left: -60px;color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
-#competencesDeg> .boxCompetencesDeg >h3{width:39%;font-family: "Numans"; font-size:3.5rem;margin-left: 20px;}
-
-#
+#competencesDeg> .boxCompetencesDeg{ width:100%; justify-content: center; align-items: center;flex-direction: column; color:#6CC431;}
+#competencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 70px; color: black; letter-spacing : -15px; writing-mode: vertical-rl;text-orientation: upright}
+#competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans"; font-size:3.5rem;margin-left: 80px;}
+/* partie langages de compétence */
+#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+.type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
+.type> h2{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 10px;margin-top: 20px;}
+.type>.fa-leaf{margin-top:40px;}
+/* partie langages de compétence developpement */
+.boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
+.barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
+#langagesDig{ width:85%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px} 
+#langagesDig>.fa-figma, .fa-mobile-button, .fa-sass {color:#095933; margin-left: -38px;}
+.figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}
