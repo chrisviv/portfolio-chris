@@ -5,24 +5,48 @@
 @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
 @font-face {font-family: "Raleway-variableFont";src: url("../fonts/Raleway-VariableFont_wght.ttf");font-display: swap;}
 /* Général */
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box;scroll-behavior: smooth;}
 body{width: 100%;min-height: 100vh;}
 /* Partie cacher pour mobile/responsive */
 #mobileNav,#nav{display: none;}
+/******************************************************************************************/
+/************************Partie de la navigation burger*************************************/
+.none{display: none !important;}
+#mobileNavArea{ overflow: hidden; width: 100%; height: 0px;
+    background-color : rgba(255,255,255,0.21); color: black;
+    display: flex; justify-content: flex-start; align-items: center;transition: all 0.2s ease 0s;}
+.openNav{ height: 300px !important;}
+#mobileNavArea > ul > li { list-style-type: none; margin: 15px 0px;}
+#mobileNavArea > ul > li > a { text-decoration: none; color: #f5f5f5; font-weight: 500; margin: 0px 80px;font-family: "Numans";}
+#mobileNavArea > ul > li > a:hover{color: #6cc431;}
+/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
+.mobileReseau {width: 100%;display: flex;justify-content: flex-end;padding: 0px 50px;}
+.fa-brands{margin: 0px 10px; text-decoration: none; color: #ffffff;}
+.fa-brands:hover{ color: #6cc431;}
+/*************************************************************************************************/
 /*************Partie Header************* */
-header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+header{width: 100%;height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-items: center;}
-/* partie boxLogo */
-.boxLogo > img{height: 10vh;margin-top: 30px;margin-left: 30px;}
+#boxScroll{display: flex;align-items: center; flex-direction: column;}
+#boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
+#boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
+#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px;}
+#boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(180deg);}
+#boxScroll > div > a:hover {color: #6cc431; transform: rotate(180deg);}
+
+/* partie boxLogo*/
+#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
+#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 30px;margin-left: 30px;}
+#burger {display: block; margin-right: 20px;cursor: pointer;color: #ffffff;}
 .fa-solid{font-size: 40px;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
 .fa-arrow-rotate-right{color: #ffff;}
 /* partie boxIdentité */
-#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;align-items: flex-start;height: 75vh;}
+#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;}
 .hello{display: flex; margin-left: 15%;}
 h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 400; color: #ffff;}
 .moi{font-size: 47px;margin-top: 45px;margin-left: 20px;}
-.prenom{font-size: 224px;margin-left: 15%;}
+.prenom{font-size: 224px;margin-left: 14%;}
 /* partie boxReseau */
 .boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;}
 .reseau{margin-right: 30px;}
@@ -83,7 +107,7 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 /* partie langages de compétence */
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
-.type> h2{ font-family: 'NovaRound';font-size: 1.8rem;font-weight:900;color: black;margin-left: 47px;margin-top: 57px;}
+.type> h2{ font-family: 'NovaRound';font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
 .type>.fa-leaf{margin-top:67px;font-size: 25px;}
 /* partie langages de compétence developpement */
 .boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
@@ -94,11 +118,15 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 .boxResponsiveDesign{ }
 .responvive{}
 .frameworks{} */
-#langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square{color:#095933; margin-left: -38px;font-size: 1.6rem;}
-.figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.responsive{width: 85%;}.git{width:50%}
-
-
-
+#langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
+.figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
+/*********************************** SECTION PORTFORLIO ********************************/
+#portFolio{width: 100%;min-height: 100vh;background: #AEE68A;display: flex;flex-direction: column;}
+#titleProjets{width: 100%;height: 15vh;display:flex; justify-content: flex-start;align-items: center;}
+#titleProjets>h2{ color: white;font-size: 5rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;}
+#lesProjets{width: 100%;display: flex;justify-content: center;align-items: center;background: yellow;}
+.projet{width: 25%; height: 75vh;
+}
 
 
 

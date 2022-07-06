@@ -49,8 +49,11 @@
             </div>
         </div>
     <header>
-        <div class="boxLogo">
-           <img src="./assets/img/Logo1.png" alt="logo chris">
+        <div id="logoLeaf">
+           <img class="logoChris" src="./assets/img/Logo1.png" alt="logo chris">
+           <i class="fa-solid fa-bars fa-2x" id="burger"></i>
+           <i class="fa-solid fa-xmark none fa-2x" id="closeNav"></i>
+
         </div> 
         <div id="boxIdentite">
             <div class="hello">
@@ -58,6 +61,12 @@
                 <h2 class="moi">moi c'est</h2>
             </div>
             <h2 class="prenom">CHRIS</h2>
+        </div>
+        <div id="boxScroll">
+            <p class="scroll">Scroll Moi</p>
+            <div class="roundH">
+               <a href="#APROPOS"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
         </div>
         <div class="boxReseau">
             <div class="reseau">
@@ -105,10 +114,13 @@
             <div id="langagesDev">
                 <div class="barLangages html"></div> 
                 <i class="fa-brands fa-html5"></i>
+                <!-- <button onclick="move()">Click Me</button>  -->
             </div>
             <div id="langagesDev">
                 <div class="barLangages css"></div>
                 <i class="fa-brands fa-css3-alt"></i> 
+                <!-- <button onclick="move()">Click Me</button>  -->
+
             </div>
             <div id="langagesDev">
                 <div class="barLangages js"></div> 
@@ -138,7 +150,6 @@
     </div>  
     </section>
     <section id="competencesDeg">
-        
         <div class="boxCompetencesDeg">
             <h3>Eco-Responsable et Accessible pour Tous!</h3>
             <h2>COMPETENCES</h2>
@@ -182,18 +193,43 @@
                 <i class="fa-brands fa-sass"></i>
             </div>
             <div id="langagesDig">
-                <div class="barLangages bootstrap"></div> 
-                <i class="fa-brands fa-bootstrap"></i>
+                <div class="barLangages leaf"></div> 
+                <i class="fa-brands fa-envira"></i>
                 <!-- <h4 class="progres frameworks">Frameworks</h4> -->
             </div>
         </div>
     </section>
-
     <section id="portFolio">
-
-
-
-
+        <div id="titleProjets">
+            <h2>PortFolio</h2>
+        </div>
+        <div id="lesProjets">
+            <div class="projet creatives">
+                <h3>Intégration sans Bootstrap</h3>
+                <h4>Créatives</h4>
+                <img src="" alt="">
+            </div>
+            <div class="projet fmaquette">
+                <h3>Réalisation d'une maquette avec Figma</h3>
+                <h4>La commune de Cornod</h4>
+                <img src="" alt="">
+            </div>
+            <div class="projet capgemen">
+                <h3>Intégration avec Bootstrap</h3>
+                <h4>Capgemen</h4>
+                <img src="./assets/img/capgemen.jpg" alt="">
+            </div>
+            <div class="projet popCode">
+                <h3>Intégration au choix</h3>
+                <h4>Pop Code</h4>
+                <img src="./assets/img/capgemen.jpg" alt="">
+            </div>
+            <div class="projet folio">
+                <h3>Intégration au choix</h3>
+                <h4>PortFolio</h4>
+                <img src="./assets/img/capgemen.jpg" alt="">
+            </div>
+        </div>
 
     </section>
     <section id="contact">
