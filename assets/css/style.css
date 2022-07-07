@@ -33,7 +33,7 @@ header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-it
 #boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px;}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(180deg);}
 #boxScroll > div > a:hover {color: #6cc431; transform: rotate(180deg);}
-
+/***************************************************************************************************/
 /* partie boxLogo*/
 #logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
 #logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 30px;margin-left: 30px;}
@@ -41,6 +41,7 @@ header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-it
 .fa-solid{font-size: 40px;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
 .fa-arrow-rotate-right{color: #ffff;}
+/*******************************************************************************************************/
 /* partie boxIdentité */
 #boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;}
 .hello{display: flex; margin-left: 15%;}
@@ -51,6 +52,7 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 .boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;}
 .reseau{margin-right: 30px;}
 .fa-brands{font-size: 30px;color: white;text-decoration: none; margin-left: 20px;}
+/***********************************************************************************************************/
 /********************section  A Propos ************************/
 #aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxPhoto{width: 30%;height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction: row; background: #4A8442;}
@@ -74,6 +76,7 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 .presentation > h3> span{color:#ffff;font-size: 50px;}
 .presentation > h3> span:hover{color: black;} 
 .presentation > h4{width:80%;font-family: 'Rubik', sans-serif;font-size: 80px;}
+/************************************************************************************************************************************************************************/
 /* partie résumer */
 .resumer{width:90%;height: 100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin-left: 80px;}
 .resumer > p {width: 50%;display: flex;justify-content: center;align-items: center;font-family: "Numans";font-size: 16px;margin-left: 20px; margin-top:20px;}  
@@ -83,32 +86,38 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #roundContact > a{color: white; text-decoration: none;z-index: 2; margin-right: 4px;}
 #roundContact::after{content:"Contact";position: absolute;border-radius: 80px / 40px;width: 150px; height: 75px; background:#4A8442; z-index: 1; top: 10px; right: 20px; color: white;  text-decoration: none;}*/
 /**************** SECTION COMPETENCES DEV*********************/
-#competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
-.division{width: 100%;height:10vh;display: flex;justify-content:center;align-items: center;}
-.division> h2{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 10px;margin-top: 20px;}
-.division>.fa-leaf{margin-top:40px;}
-/* partie langages de compétence developpement */
-.boxLangages{width: 100%;height:100vh;display: flex;justify-content: center; 
-    align-items: center;flex-direction: column;}
-.barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
-#langagesDev{ width:85%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;
-    align-items:center; color:black; margin:48px 0px 0px 60px} 
-#langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color:#095933; margin-left: -38px;}
-.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}.wordpress{width: 15%;}
 /* Partie Compétence */
-#competencesDev> .boxCompetencesDev{ width:100%;height: 100vh; justify-content: center; align-items: center;flex-direction: column-reverse; background:#AEE68A;margin: 0 50px;display: flex;justify-content: center;align-items: center;}
-#competencesDev> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 55px;color: black;writing-mode: vertical-rl;text-orientation: upright}
-#competencesDev> .boxCompetencesDev >h3{width:83%;font-family: "Numans"; font-size:3.5rem;margin-left: 30px; background: #AEE68A;color: white;}
+#competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:column;}
+#competencesDev> .boxCompetencesDev{ width:60%;flex-direction: column-reverse; background:#AEE68A;margin: 0 50px;display: flex;justify-content: center;align-items: center;}
+/********************************************************************************************************************************************************/
+.division{width: 43%;display: flex;justify-content:space-around;align-items: center;flex-direction: column;}
+.develop{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 20px;margin-top: 20px;}
+.fa-leaf{margin-top:40px;}
+.comptet{width:100%; background: #AEE68A;font-family: "Rubik",sans-serif;font-weight: bold; font-size:5.5rem;color: black;margin-top: 30px;}
+.boxLeafDeve{flex-direction: row-reverse;display: flex;width: 100vw;height: 12vh;justify-content: flex-end;}
+/*****************************************************************************************************************************************************************************/
+/* partie langages de compétence developpement */
+#contenaireDev{width: 100%;height: 100vh; display: flex;justify-content: center; align-items: center;}
+.contenaireLang{width: 100%; height: 100vh; display: flex;flex-direction: column;justify-content: flex-start; align-items: center;}
+#langagesDev{ width:80%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px}
+#langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color:#095933; margin-left: -38px;} 
+.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}.wordpress{width: 15%;}
+.boxLangages{width: 100%;height:100vh; display: flex;justify-content: flex-start;align-items: center;}
+.barLangages{ width: 100%;Height:20px;background: #6CC431;border-radius: 30px;display: flex;flex-direction: column;}
+.imgGreen{width: 100%;height: 100vh;display: flex; align-items: center;justify-content: center;background:yellow}
+
+/*****************************************************************************************************************************************************/
 /**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
 #competencesDeg{ width: 100%; height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 #competencesDeg> .boxCompetencesDeg{ width:80%; color:#6CC431;display: flex;justify-content: center;}
-.boxCompetencesDeg> h2{font-family: "Rubik",sans-serif;font-weight: bold; font-size: 55px; color: black; writing-mode: vertical-rl;text-orientation: upright}
 #competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans"; font-size:3.5rem;margin-left: 80px;}
+/******************************************************************************************************************************************************************/
 /* partie langages de compétence */
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
 .type> h2{ font-family: 'NovaRound';font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
 .type>.fa-leaf{margin-top:67px;font-size: 25px;}
+/******************************************************************************************************************************************************************/
 /* partie langages de compétence developpement */
 .boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
 .barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
@@ -120,47 +129,49 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 .frameworks{} */
 #langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
+/************************************************************************************************************************************************************************/
 /*********************************** SECTION PORTFORLIO ********************************/
-#portFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column;}
-#titleProjets{width: 100%;height: 25vh;display:flex;align-items: center;margin-bottom: 50px;}
+#portFolio{width: 100%;height: 89vh;display: flex;flex-direction: column;margin-top: 20px;}
+#titleProjets{width: 100%;height:100vh;display:flex;align-items: center;margin-bottom: 50px;background: white;}
 #titleProjets>h2{ color:black;font-size: 5rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;}
-#titleProjets>.fa-leaf{
-    font-size: 50px;
-}
+#titleProjets>.fa-leaf{font-size: 50px;}
+/************************************************************************************************************************************************************************/
 /* premiere partie des projets  */
-#lesProjets1{width: 100%;height:75vh;display:flex;}
-figure{width: 100%;margin: 10px;}
+figure{width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.titleDescrip{font-size: 2rem;font-family: 'NovaRound';display: flex;justify-content: center;align-items: center;}
+figcaption{width: 35vw;height: 15vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 50px;}
+figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
+button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
+.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
+.boutonProjets:hover{ color:white; background-color:#6cc431;}
+/************************************************************************************************************************************************************************/
+/* partie 1 projet */
+#listeProjets1{width: 100%;height:75vh;display:flex;}
 /* porjet creatives */
 figure>.creatives{width: 25vw; height: 75vh;flex-direction: column;}
-.creatives>img{width: 30vw;height: 40vh;margin-left: 30px;}
-.creatives>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
-figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
-figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
-button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
-.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
-.boutonProjets:hover{ color:white; background-color:#6cc431;}
+.creatives>img{width: 35vw;height: 45vh;}
+/****************************************************************************************************************************************************************************/
 /* projet maquette*/
-figure>.maquette{width: 25vw; height: 75vh;flex-direction: column;}
-.maquette>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
-.boxImgMaq{display: flex;width: 28vw;height: 40vh;margin-left: 30px;justify-content: center;}
-figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
-figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
-button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
-.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
-.boutonProjets:hover{ color:white; background-color:#6cc431;}
-/* projet capgemen */
-figure>.capgemen{width: 25vw; height: 75vh;flex-direction: column;background: yellow;}
-.capgemen>img{width: 30vw;height: 40vh;margin-left: 30px;}
-.capgemen>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
-figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
-figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
-button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
-.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
-.boutonProjets:hover{ color:white; background-color:#6cc431;}
+figure>.maquette{width: 25vw; height: 75vh;flex-direction: column;} 
+.boxImgMaq{display: flex;width: 28vw;height: 45vh;margin-left: 30px;justify-content: center;}
+.imgMaq1,.imgMaq2{width:13vw;padding: 10px;height: 40vh;}
+/*****************************************************************************************************************************************************************************/
 /* 2eme partie des projets */
-
-
-
+#listeProjets2{width: 100%;height:100vh;display:flex;margin-top: 50px;}
+/* partie 2 projet */
+/************************************************************************************************************************************************************************/
+/* projet capgemen */
+figure>.capgemen{width: 25vw; height:100vh;flex-direction: column;} 
+.capgemen>img{width: 30vw;height: 40vh;margin-left: 30px;}
+/* projet Pop Code */
+figure>.popCode{width: 25vw; height:100vh;flex-direction: column;} 
+.popCode>img{width: 30vw;height: 40vh;margin-left: 30px;}
+/* partie 3 projet */
+/************************************************************************************************************************************************************************/
+/* projet portFolio */
+figure>.folio{width: 25vw; height:100vh;flex-direction: column;}
+.folio>img{width: 30vw;height: 40vh;margin-left: 30px;}
+/************************************************************************************************************************************************************************/
 
 
 /* Spin */
