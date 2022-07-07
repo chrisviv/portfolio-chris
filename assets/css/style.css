@@ -121,14 +121,43 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 #langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
 /*********************************** SECTION PORTFORLIO ********************************/
-#portFolio{width: 100%;min-height: 100vh;background: #AEE68A;display: flex;flex-direction: column;}
-#titleProjets{width: 100%;height: 15vh;display:flex; justify-content: flex-start;align-items: center;}
-#titleProjets>h2{ color: white;font-size: 5rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;}
-#lesProjets{width: 100%;display: flex;justify-content: center;align-items: center;background: yellow;}
-.projet{width: 25%; height: 75vh;
+#portFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column;}
+#titleProjets{width: 100%;height: 25vh;display:flex;align-items: center;margin-bottom: 50px;}
+#titleProjets>h2{ color:black;font-size: 5rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;}
+#titleProjets>.fa-leaf{
+    font-size: 50px;
 }
-
-
+/* premiere partie des projets  */
+#lesProjets1{width: 100%;height:75vh;display:flex;}
+figure{width: 100%;margin: 10px;}
+/* porjet creatives */
+figure>.creatives{width: 25vw; height: 75vh;flex-direction: column;}
+.creatives>img{width: 30vw;height: 40vh;margin-left: 30px;}
+.creatives>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
+figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
+figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
+button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
+.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
+.boutonProjets:hover{ color:white; background-color:#6cc431;}
+/* projet maquette*/
+figure>.maquette{width: 25vw; height: 75vh;flex-direction: column;}
+.maquette>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
+.boxImgMaq{display: flex;width: 28vw;height: 40vh;margin-left: 30px;justify-content: center;}
+figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
+figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
+button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
+.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
+.boutonProjets:hover{ color:white; background-color:#6cc431;}
+/* projet capgemen */
+figure>.capgemen{width: 25vw; height: 75vh;flex-direction: column;background: yellow;}
+.capgemen>img{width: 30vw;height: 40vh;margin-left: 30px;}
+.capgemen>h4{width: 30vw;font-family: 'Rubik';font-size: 2rem;}
+figcaption{width: 30vw;height: 20vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 30px;}
+figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
+button{width: 27vh;height: 7vh; background: white;border-radius: 50px;font-family: 'Numans';}
+.boutonProjets{font-size: 1rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
+.boutonProjets:hover{ color:white; background-color:#6cc431;}
+/* 2eme partie des projets */
 
 
 
