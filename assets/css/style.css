@@ -30,9 +30,8 @@ header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-it
 #boxScroll{display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
-#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px;}
-#boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(180deg);}
-#boxScroll > div > a:hover {color: #6cc431; transform: rotate(180deg);}
+#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px; rotate: 180deg;}
+#boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
 /***************************************************************************************************/
 /* partie boxLogo*/
 #logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
@@ -43,11 +42,11 @@ header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-it
 .fa-arrow-rotate-right{color: #ffff;}
 /*******************************************************************************************************/
 /* partie boxIdentité */
-#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;}
-.hello{display: flex; margin-left: 15%;}
-h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 400; color: #ffff;}
-.moi{font-size: 47px;margin-top: 45px;margin-left: 20px;}
-.prenom{font-size: 224px;margin-left: 14%;}
+#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
+.hello{display: flex; margin-left: 15%;font-weight: 300;}
+.moi{font-weight: 500;font-size: 47px;margin-top: 45px;margin-left: 20px;}
+h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
+.prenom{font-weight: 700; font-size: 224px;margin-left: 14%;}
 /* partie boxReseau */
 .boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;}
 .reseau{margin-right: 30px;}
@@ -59,74 +58,63 @@ h1,.moi,.prenom{font-family: 'Rubik', sans-serif;font-size: 90px;font-weight: 40
 /* BoxLogo et A propos */
 /*.boxPhoto >.boxLogo{display: flex;justify-content: center;align-items: center;flex-direction: column;}  */
 .boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
-.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 95px;color: white;margin-left: 50px;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -35px;}
+.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 6rem;color: white;margin-left: 50px;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -35px;}
 /* photoChris*/
 .boxPhoto >.boxLogo >.photoChris {display: flex;justify-content: flex-end;align-items: center;}
 .photoChris > img{margin-right: -155px;}
 /* Logo Chris */
-.boxphoto > .boxLogo >.fa-solid{font-size: 40px;}
+.boxphoto > .boxLogo >.fa-solid{font-size: 1rem;}
 .boxphoto > .boxLogo >.fa-leaf{color: #6CC431;transform: rotate(45deg); margin-top : 20px ;}
 .boxphoto > .boxLogo >.fa-arrow-rotate-right{color: #ffff;}
 /* partie boxPrensentation */
-#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
+#boxPresentation{width:70%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */
 .presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;margin-right: 25px;}
 .presentation > h3, h4 {margin-left: 50px;margin-top: -35px;}
-.presentation > h3 {font-family: "NovaRound";font-size: 40px;}
+.presentation > h3 {font-family: "NovaRound";font-size: 2.5rem;}
 .presentation > h3> span{color:#ffff;font-size: 50px;}
 .presentation > h3> span:hover{color: black;} 
 .presentation > h4{width:80%;font-family: 'Rubik', sans-serif;font-size: 80px;}
 /************************************************************************************************************************************************************************/
 /* partie résumer */
 .resumer{width:90%;height: 100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin-left: 80px;}
-.resumer > p {width: 50%;display: flex;justify-content: center;align-items: center;font-family: "Numans";font-size: 16px;margin-left: 20px; margin-top:20px;}  
-/* #roundContact{ width: 100%;height: 100vh; position: relative; display: flex;justify-content: center; align-items: center; flex-direction: column;}
-.roundC{font-size: 25px;margin-top: 20px;}
-.roundC:hover{color: black;}
-#roundContact > a{color: white; text-decoration: none;z-index: 2; margin-right: 4px;}
-#roundContact::after{content:"Contact";position: absolute;border-radius: 80px / 40px;width: 150px; height: 75px; background:#4A8442; z-index: 1; top: 10px; right: 20px; color: white;  text-decoration: none;}*/
+.resumer > p {width: 50%;display: flex;justify-content: center;align-items: center;font-family: "Numans";font-size: 1rem;margin-left: 20px; margin-top:20px;}  
 /**************** SECTION COMPETENCES DEV*********************/
 /* Partie Compétence */
-#competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:column;}
-#competencesDev> .boxCompetencesDev{ width:60%;flex-direction: column-reverse; background:#AEE68A;margin: 0 50px;display: flex;justify-content: center;align-items: center;}
-/********************************************************************************************************************************************************/
+#competencesDev{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:column;background:#095933;}
 .division{width: 43%;display: flex;justify-content:space-around;align-items: center;flex-direction: column;}
-.develop{ font-family: 'NovaRound';font-size: 2.5rem;color: black;margin-left: 20px;margin-top: 20px;}
-.fa-leaf{margin-top:40px;}
-.comptet{width:100%; background: #AEE68A;font-family: "Rubik",sans-serif;font-weight: bold; font-size:5.5rem;color: black;margin-top: 30px;}
-.boxLeafDeve{flex-direction: row-reverse;display: flex;width: 100vw;height: 12vh;justify-content: flex-end;}
+.develop{ font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 20px;margin-top: 20px;}
+.comptet{width:100%;font-family: "Rubik",sans-serif;font-weight: 500; font-size:5.5rem;color:white;margin-top: 30px;}
+.boxLeafDeve{flex-direction: row-reverse;display: flex;width: 100vw;height: 0vh;justify-content: flex-end;margin-left:30px;}
+.fa-leaf{margin-top:44px;margin-left: 10px;}
 /*****************************************************************************************************************************************************************************/
 /* partie langages de compétence developpement */
 #contenaireDev{width: 100%;height: 100vh; display: flex;justify-content: center; align-items: center;}
-.contenaireLang{width: 100%; height: 100vh; display: flex;flex-direction: column;justify-content: flex-start; align-items: center;}
 #langagesDev{ width:80%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px}
-#langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-bootstrap,.fa-wordpress-simple{color:#095933; margin-left: -38px;} 
-.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.bootstrap{width: 60%;}.wordpress{width: 15%;}
+#langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
+.html{width: 85%;}.css{width: 75%;}.js{width:20%}.php{width: 2%;}.laravel{width: 0%;}.wordpress{width: 15%;}
 .boxLangages{width: 100%;height:100vh; display: flex;justify-content: flex-start;align-items: center;}
-.barLangages{ width: 100%;Height:20px;background: #6CC431;border-radius: 30px;display: flex;flex-direction: column;}
-.imgGreen{width: 100%;height: 100vh;display: flex; align-items: center;justify-content: center;background:yellow}
+/* partie des compétences */
+.contenaireLang{width: 100%; height: 70vh; display: flex;flex-direction: column;justify-content: flex-start; align-items: center;}
+.barLangages{height:20px;background: #6CC431;border-radius: 30px;display: flex;flex-direction: column;}
+.imgGreen{height: 70vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease-out;} 
 
-/*****************************************************************************************************************************************************/
+/****Animation*****************/
+@keyframes moveLamp {0%{width:75%;margin-right: 500px;}50%{margin-top: 250px;}100%{ margin-bottom: 150px;}}
 /**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
-#competencesDeg{ width: 100%; height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 #competencesDeg> .boxCompetencesDeg{ width:80%; color:#6CC431;display: flex;justify-content: center;}
 #competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans"; font-size:3.5rem;margin-left: 80px;}
 /******************************************************************************************************************************************************************/
 /* partie langages de compétence */
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+/* partie langages de compétence developpement */
+.boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
 .type> h2{ font-family: 'NovaRound';font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
 .type>.fa-leaf{margin-top:67px;font-size: 25px;}
 /******************************************************************************************************************************************************************/
-/* partie langages de compétence developpement */
-.boxDig{width: 100%;height:100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin: 50px;}
-.barLangages{ height:20px;background: #6CC431;border-radius: 30px;}
 #langagesDig{ width:85%;height:20px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px} 
 .progres{width: 100%; font-family: 'NovaRound';font-size: 1.4rem;color: black;}
-/*.boxIntegration{}
-.boxResponsiveDesign{ }
-.responvive{}
-.frameworks{} */
 #langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
 /************************************************************************************************************************************************************************/
