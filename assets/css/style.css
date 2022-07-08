@@ -5,8 +5,14 @@
 @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
 @font-face {font-family: "Raleway-variableFont";src: url("../fonts/Raleway-VariableFont_wght.ttf");font-display: swap;}
 /* Général */
-*{margin: 0; padding: 0; box-sizing: border-box;scroll-behavior: smooth;}
-body{width: 100%;min-height: 100vh;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{width: 100%;min-height: 100vh;scroll-behavior: smooth;cursor:none;}
+/* cursor */
+.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;}
+.cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;}
+.expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;}
+    @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
+    @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
 /* Partie cacher pour mobile/responsive */
 #mobileNav,#nav{display: none;}
 /******************************************************************************************/
@@ -27,6 +33,7 @@ body{width: 100%;min-height: 100vh;}
 /*************Partie Header************* */
 header{width: 100%;height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-items: center;}
+/*********************************************************************************************************************************/
 #boxScroll{display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
