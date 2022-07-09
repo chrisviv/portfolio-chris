@@ -1,9 +1,9 @@
-//////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
-})
+});
 
 document.addEventListener('click', ()=>{
     cursor.classList.add('expand');
@@ -11,8 +11,8 @@ document.addEventListener('click', ()=>{
     setTimeout(()=>{
         cursor.classList.remove("expand");
     }, 500);
-})
- 
+});
+/*******************************************************************************************/
  window.onscroll = () => {
  	if (window.scrollY > 200) {
 		document.getElementById('nav').style.background = '#0000007e';
@@ -39,7 +39,7 @@ document.addEventListener('click', ()=>{
     
      this.classList.add('none');
      closeNav.classList.remove('none');
- })
+ });
 
  closeNav.addEventListener('click', function(){
 
@@ -52,18 +52,18 @@ document.addEventListener('click', ()=>{
      this.classList.add('none');
      burger.classList.remove('none');
     
- })
+ });
  /* animation du H2 section 1 */
- var coucou =  document.getElementById('titleH2')
+//  var coucou =  document.getElementById('titleH2')
 
- window.onscroll = function() {scrollH2()};
+//  window.onscroll = function() {scrollH2()};
 
- function scrollH2(){
-     if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 600) {
-         coucou.classList.add("apparitionH2")
-    }else {
-         coucou.classList.remove("apparitionH2")
- }}
+//  function scrollH2(){
+//      if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 600) {
+//          coucou.classList.add("apparitionH2")
+//     }else {
+//          coucou.classList.remove("apparitionH2")
+//  }}
 
 
 // Pour réaliser une animation en Js à revoir
@@ -85,3 +85,35 @@ document.addEventListener('click', ()=>{
 //     }
 //   }
 // }
+//Modale pour la navigation/////////////////////////////////////
+// const modalContainer = document.querySelector(".modal-container"); 
+// const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+// modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+// function toggleModal(){
+//   modalContainer.classList.toggle("active")}
+
+  //////////////////////////////////////////////////////////////////////
+  window.addEventListener("scroll", (event) => {
+
+    //Récupération de la hauteur de l'ecran
+    let viewport_height = window.innerHeight;
+
+    //Recupération des informations de position des éléments
+    // let positionHeader = document.querySelector("header").getBoundingClientRect()
+    // let positionPropos = document.querySelector("#aPropos").getBoundingClientRect()
+    let positionLangages = document.querySelector("#comptenceDev").getBoundingClientRect()
+   
+    
+    
+    console.log(positionLangages)
+
+    //Déclanchement de l'action quand l'élément arrive à une certaine position dans l'écran
+    if (positionLangages.y <= viewport_height / 2) {
+        document.querySelector('.imgGeeen').style = "";
+    }
+
+    // console.log(positionDivOne);
+
+});
