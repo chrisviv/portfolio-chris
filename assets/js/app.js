@@ -1,4 +1,32 @@
-///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
+
+ var burger = document.getElementById('burger');
+ var closeNav = document.getElementById('closeNav');
+ var mobileNavArea = document.getElementById('mobileNavArea');
+ 
+ burger.addEventListener('click', function(){
+     mobileNavArea.classList.remove('none');
+ 
+     setTimeout(() => {
+         mobileNavArea.classList.add('openNav');
+     }, 200);
+     
+     this.classList.add('none');
+     closeNav.classList.remove('none');
+ })
+ 
+ closeNav.addEventListener('click', function(){
+ 
+     mobileNavArea.classList.remove('openNav');
+ 
+     setTimeout(() => {
+         mobileNavArea.classList.add('none');
+     }, 200);
+    
+     this.classList.add('none');
+     burger.classList.remove('none');
+     
+ })
+ ///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -25,34 +53,7 @@ document.addEventListener('click', ()=>{
 		document.getElementById('nav').style.boxShadow = 'inherit';
  	}
    };
- /*---------------modale navigation-----------------------------*/
- var burger = document.getElementById('burger');
- var closeNav = document.getElementById('closeNav');
- var mobileNavArea = document.getElementById('mobileNavArea');
 
- burger.addEventListener('click', function(){
-     mobileNavArea.classList.remove('none');
-
-    setTimeout(() => {
-        mobileNavArea.classList.add('openNav');
-     }, 200);
-    
-     this.classList.add('none');
-     closeNav.classList.remove('none');
- });
-
- closeNav.addEventListener('click', function(){
-
-     mobileNavArea.classList.remove('openNav');
-
-    setTimeout(() => {
-         mobileNavArea.classList.add('none');
-     }, 200);
-   
-     this.classList.add('none');
-     burger.classList.remove('none');
-    
- });
  /* animation du H2 section 1 */
 //  var coucou =  document.getElementById('titleH2')
 

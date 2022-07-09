@@ -13,32 +13,27 @@ body{margin: 0; padding: 0;box-sizing: border-box; }
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
-/* Partie cacher pour mobile/responsive */
-#mobileNav,#nav{display: none;}
-/******************************************************************************************/
-/*****************************************************************************************************************/
-/* .modal-btn{ padding: 10px 14px;font-size: 1.125rem; margin: 100px auto;display:block;min-width: 150px; cursor: pointer; } */
-/* .modal.container{display: none visibility: hidden; transition:visibility 0.4s; position: fixed; top: 0; width: 100vw; height: 100vh;} */
-/* .modal-container.active{ display: block; visibility: visible; transition:visibility 0;} */
-/* .overlay {position: absolute; width: 100%; height: 100%;background:#095933; opacity: 1;transition: opacity 0.4s 0.2s ease-out} */
-/* .modal-container.active> .overlay{opacity: 1; transition: opacity 0.4s ease-out;} */
-/* .modal{opacity:0; width: 100%; max-width: 800px; min-height: 400px;background: #fff;border-radius: 5px; position: absolute; top: 40%; left: 50%;  */
- /* transform: translate(-50%, calc(-50% - 50%));transition: opacity 0.4s ease-out; transform: 0.4s ease-out;}  */
-/* .modal-container.active> .modal{ opacity:0.75;transition: opacity 0.4s 0.2s ease-out;transform: translate(-50%, -50%); transform: 0.4s 0.2s ease-out;} */
-/* .close-modal{padding: 8px 10px; border: none; border-radius: 5px;font-size: 1.125rem;  position: absolute;top:10px;right: 10px; */
-    /* cursor: pointer; background:#0AEFF7;;color:#fff;} */
-/************************Partie de la navigation burger*************************************/
+/* Navigation */
+#nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
+#nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 3px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
+/* partie boxLogo*/
+#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
+#logoLeaf>.logoChris {width:120px;height: 80px;}
+ul > li a { font-size: 14px; font-weight: 600;color:while;}
+nav > ul {display: flex;justify-content: center; align-items: center;}
+nav > ul > li {list-style-type: none; margin: 0px 10px;}
+nav > ul > li > a {text-decoration: none;color: white; font-weight: 700;}
 .none{display: none !important;}
-#mobileNavArea{ overflow: hidden; width: 100%; height: 0px; background-color : rgba(255,255,255,0.21); color: black;
-    display: flex; justify-content: flex-start; align-items: center;transition: all 0.2s ease 0s;}
-.openNav{ height: 300px !important;}
-#mobileNavArea > ul > li { list-style-type: none; margin: 15px 0px;}
-#mobileNavArea > ul > li > a { text-decoration: none; color: #f5f5f5; font-weight: 500; margin: 0px 80px;font-family: "Numans";}
-#mobileNavArea > ul > li > a:hover{color: #6cc431;}
-/*---------------------------partie reseau sociaux  mobile chris/pc------------------------*/
-.mobileReseau {width: 100%;display: flex;justify-content: flex-end;padding: 0px 50px;}
-.fa-brands{margin: 0px 10px; text-decoration: none; color: #ffffff;}
-.fa-brands:hover{ color: #6cc431;}
+#mobileNavArea{overflow: hidden; width: 100%; height: 0px; background: #4A8442; 
+    display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;}
+.openNav{height: 300px !important;}
+#mobileNavArea > ul > li {list-style-type: none;margin: 10px 0px;}
+#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight: 300;font-family: 'Numans';font-size: 1.2rem;text-align: center;}
+#burger{color: white;margin-right: 30px;}
+#closeNav{color: white;margin-right: 30px;}   
+.fa-solid{font-size: 25px;}
+.fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
+.fa-arrow-rotate-right{color: white;}
 /*************************************************************************************************/
 /*************Partie Header************* */
 header{width: 100%;height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
@@ -48,14 +43,6 @@ header{width: 100%;height: 100vh;background:#AEE68A;display: flex;justify-conten
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
 #boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px; rotate: 180deg;}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
-/***************************************************************************************************/
-/* partie boxLogo*/
-#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
-#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 30px;margin-left: 30px;}
-#burger {display: block; margin-right: 20px;cursor: pointer;color: #ffffff;}
-.fa-solid{font-size: 40px;}
-.fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
-.fa-arrow-rotate-right{color: #ffff;}
 /*******************************************************************************************************/
 /* partie boxIdentité */
 #boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
@@ -179,24 +166,16 @@ figure>.folio{width: 25vw; height:100vh;flex-direction: column;}
 /************************************************************************************************************************************************************************/
 
 
-/* Spin */
-/* .hamburger--spin .hamburger-inner {
-transition-duration: 0.22s;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-.hamburger--spin .hamburger-inner::before {
- transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
-.hamburger--spin .hamburger-inner::after {
- transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
-.hamburger--spin.is-active .hamburger-inner {
-transform: rotate(225deg);
-transition-delay: 0.12s;
-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-.hamburger--spin.is-active .hamburger-inner::before {
- top: 0;
- opacity: 0;
- transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
-.hamburger--spin.is-active .hamburger-inner::after {
- bottom: 0;
- transform: rotate(-90deg);
- transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); } */
+/*****************************************************************************************************************/
+/* .modal-btn{ padding: 10px 14px;font-size: 1.125rem; margin: 100px auto;display:block;min-width: 150px; cursor: pointer; } */
+/* .modal.container{display: none visibility: hidden; transition:visibility 0.4s; position: fixed; top: 0; width: 100vw; height: 100vh;} */
+/* .modal-container.active{ display: block; visibility: visible; transition:visibility 0;} */
+/* .overlay {position: absolute; width: 100%; height: 100%;background:#095933; opacity: 1;transition: opacity 0.4s 0.2s ease-out} */
+/* .modal-container.active> .overlay{opacity: 1; transition: opacity 0.4s ease-out;} */
+/* .modal{opacity:0; width: 100%; max-width: 800px; min-height: 400px;background: #fff;border-radius: 5px; position: absolute; top: 40%; left: 50%;  */
+ /* transform: translate(-50%, calc(-50% - 50%));transition: opacity 0.4s ease-out; transform: 0.4s ease-out;}  */
+/* .modal-container.active> .modal{ opacity:0.75;transition: opacity 0.4s 0.2s ease-out;transform: translate(-50%, -50%); transform: 0.4s 0.2s ease-out;} */
+/* .close-modal{padding: 8px 10px; border: none; border-radius: 5px;font-size: 1.125rem;  position: absolute;top:10px;right: 10px; */
+    /* cursor: pointer; background:#0AEFF7;;color:#fff;} */
+/************************Partie de la navigation burger*************************************/
