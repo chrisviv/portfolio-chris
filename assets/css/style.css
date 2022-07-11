@@ -6,7 +6,7 @@
 @font-face {font-family: "Raleway-variableFont";src: url("../fonts/Raleway-VariableFont_wght.ttf");font-display: swap;}
 /* Général */
 html{scroll-behavior: smooth;}
-body{margin: 0; padding: 0;box-sizing: border-box; }
+body{margin: 0; padding: 0;box-sizing: border-box; cursor:none}
 /* cursor */
 .cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;}
 .cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;}
@@ -15,45 +15,49 @@ body{margin: 0; padding: 0;box-sizing: border-box; }
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
 /* Navigation */
 #nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
-#nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 3px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
+#nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 0px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
 /* partie boxLogo*/
 #logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
-#logoLeaf>.logoChris {width:120px;height: 80px;}
-ul > li a { font-size: 14px; font-weight: 600;color:while;}
-nav > ul {display: flex;justify-content: center; align-items: center;}
-nav > ul > li {list-style-type: none; margin: 0px 10px;}
-nav > ul > li > a {text-decoration: none;color: white; font-weight: 700;}
-.none{display: none !important;}
-#mobileNavArea{overflow: hidden; width: 100%; height: 0px; background: #4A8442; 
+#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 15px;margin-left: 15px;}
+.logoChris:hover{transform: scale(1.2)}
+.none {display: none !important;}
+#mobileNavArea{overflow: hidden; width: 100%; height: 0; background: #4A8442; 
     display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;}
-.openNav{height: 300px !important;}
+.openNav{height: 100vh !important;}
+ul {text-align:center; margin-top: 85px;}
 #mobileNavArea > ul > li {list-style-type: none;margin: 10px 0px;}
-#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight: 300;font-family: 'Numans';font-size: 1.2rem;text-align: center;}
+#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound';font-size: 3.75rem;text-align: center;}
 #burger{color: white;margin-right: 30px;}
-#closeNav{color: white;margin-right: 30px;}   
-.fa-solid{font-size: 25px;}
+#closeNav{color: white;margin-right: 30px;}
+.navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
+.fa-solid{font-size: 1.536rem;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px ;}
 .fa-arrow-rotate-right{color: white;}
 /*************************************************************************************************/
 /*************Partie Header************* */
 header{width: 100%;height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-/* header > .boxLogo{width: 100%;display: flex;justify-content: flex-start;align-items: center;} */
-#boxScroll{display: flex;align-items: center; flex-direction: column;}
+/* partie boxIdentité */
+#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
+.hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}
+.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
+h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
+.prenom{font-weight: 700; font-size: 14rem;margin-left: 14%;font-family: 'Rubik';color: white;}
+/* partie boxReseau */
+/* partie boxReseau */
+.boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;margin-right: 40px;margin-top: 25px;}
+.fa-brands{font-size:1.875rem;color:white;text-decoration: none; margin-left: 20px;}
+.fa-linkedin:hover{color:#095933;}
+.fa-facebook-square:hover{color:#095933;}
+.fa-github-square:hover{color:#095933;}
+/*******************************************************************************************************/
+#boxScroll{width: 100%; height:20vh;
+    display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
-#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 30px; rotate: 180deg;}
+#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
 /*******************************************************************************************************/
-/* partie boxIdentité */
-#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
-.hello{display: flex; margin-left: 15%;font-weight: 300;}
-.moi{font-weight: 500;font-size: 47px;margin-top: 45px;margin-left: 20px;}
-h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
-.prenom{font-weight: 700; font-size: 224px;margin-left: 14%;}
-/* partie boxReseau */
-.boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;}
-.reseau{margin-right: 30px;}
-.fa-brands{font-size: 30px;color: white;text-decoration: none; margin-left: 20px;}
+
 /***********************************************************************************************************/
 /********************section  A Propos ************************/
 #aPropos{width: 100%; min-height: 100vh; display: flex;}
@@ -75,9 +79,9 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;margin-right: 25px;}
 .presentation > h3, h4 {margin-left: 50px;margin-top: -35px;}
 .presentation > h3 {font-family: "NovaRound";font-size: 2.5rem;}
-.presentation > h3> span{color:#ffff;font-size: 50px;}
+.presentation > h3> span{color:#ffff;font-size: 3.125rem;}
 .presentation > h3> span:hover{color: black;} 
-.presentation > h4{width:80%;font-family: 'Rubik', sans-serif;font-size: 80px;}
+.presentation > h4{width:80%;font-family: 'Rubik', sans-serif;font-size:5rem;}
 /************************************************************************************************************************************************************************/
 /* partie résumer */
 .resumer{width:90%;height: 100vh;display: flex;justify-content: center; align-items: center;flex-direction: column; margin-left: 80px;}
@@ -89,7 +93,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .division{display: flex;flex-direction: column;text-align:center ;}
 .comptet{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5.5rem;color:white;margin-top: 30px;}
 .boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}
-.fa-leaf{margin-top:44px;margin-left: 10px;}
+.fa-leaf{margin-top:44px;margin-left: 0px;}
 .develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 60px;margin-top: 50px;}
 /*****************************************************************************************************************************************************************************/
 /* partie langages compétence developpement web */
@@ -122,49 +126,88 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
 /************************************************************************************************************************************************************************/
 /*********************************** SECTION PORTFORLIO ********************************/
-#portFolio{width: 100%;height: 100vh;display: flex;flex-direction: column;margin-top: 20px;background:#AEE68A;}
-#titleProjets{width: 100%;height:100vh;display:flex;align-items: center;background: white;}
-#titleProjets>h2{ color:black;font-size: 5rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;}
+#portFolio{width: 100%;height: 100vh;display: flex;flex-direction: column;margin-top: 20px;}
+#titleProjets{width: 100%;height:25vh;display:flex;justify-content:center;background: white;}
+#titleProjets>h2{ height:20vh;color:black;font-size: 6rem;font-family: 'Rubik';font-weight: 500;margin-left:50px;margin-top: 15px;}
 #titleProjets>.carreGreen{width: 10vw;height: 10vh;background: #4A8442;display: flex;}
-#titleProjets>.fa-leaf{font-size: 3.125rem;}
+#titleProjets>.fa-leaf{font-size: 4.125rem;margin-top: 44px;margin-left: -38px;}
 /************************************************************************************************************************************************************************/
 /* premiere partie des projets  */
-figure{width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-.titleDescrip{font-size: 2rem;font-family: 'NovaRound';display: flex;justify-content: center;align-items: center;}
+figure{width: 100%;display: flex;flex-direction: column;}
+/* .titleDescrip{font-size: 2rem;font-family: 'NovaRound';} */
 figcaption{width: 35vw;height: 15vh;display: flex;justify-content: center;align-items: center; flex-direction: column;margin-left: 50px;}
 figcaption>.description{font-family: 'NovaRound';font-size: 2rem;color: black;}
 button{width: 24vh;height: 6vh; background: white;border-radius: 50px;font-family: 'Numans';}
-.boutonProjets{font-size: 1.2rem;margin-top: 25px; border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
+.boutonProjets{font-size: 1.2rem;border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;}
 .boutonProjets:hover{ color:white; background-color:#6cc431;}
 /************************************************************************************************************************************************************************/
 /* partie 1 projet */
-#listeProjets1{width: 100%;height:75vh;display:flex;}
+#listeProjets1{width: 100%;height:100vh;display:flex; justify-content: center;align-items: flex-start;flex-direction: column;}
 /* porjet creatives */
-figure>.creatives{width: 25vw; height: 75vh;flex-direction: column;}
-.creatives>img{width: 35vw;height: 35vh;}
-/****************************************************************************************************************************************************************************/
+.projet1{width:40%;display: flex;background: #686868;justify-content: flex-start;margin-left: 50px;}
+.titleDescrip1{font-size: 2rem;font-family: 'NovaRound';color: white;}
+figure>.creatives{width: 25vw; height: 75vh;}
+.creatives>img{width: 30vw;height: 30vh;margin-left: 50px;}
 /* projet maquette*/
+.projet2{width: 100%;display: flex;}
 figure>.maquette{width: 25vw; height: 75vh;flex-direction: column;} 
-.boxImgMaq{display: flex;width: 28vw;height: 45vh;margin-left: 30px;justify-content: center;}
-.imgMaq1,.imgMaq2{width:13vw;padding: 10px;height: 40vh;}
+.boxImgMaq{display: flex;width: 28vw;justify-content: center;margin-left: 50px;}
+.imgMaq1,.imgMaq2{width:15vw;padding: 10px;height: 30vh;}
 /*****************************************************************************************************************************************************************************/
 /* 2eme partie des projets */
-#listeProjets2{width: 100%;height:100vh;display:flex;margin-top: 50px;}
+#listeProjets2{width: 100%;height:100vh;display:flex;flex-direction: column;}
 /* partie 2 projet */
-/************************************************************************************************************************************************************************/
+.projet3{width: 100%;height: 100vh; display: flex;flex-direction: column;}
 /* projet capgemen */
 figure>.capgemen{width: 25vw; height:100vh;flex-direction: column;} 
-.capgemen>img{width: 30vw;height: 40vh;margin-left: 30px;}
+.capgemen>img{width: 30vw;height: 30vh;margin-left: 30px;}
 /* projet Pop Code */
 figure>.popCode{width: 25vw; height:100vh;flex-direction: column;} 
-.popCode>img{width: 30vw;height: 40vh;margin-left: 30px;}
+.popCode>img{width: 30vw;height: 30vh;margin-left: 30px;}
 /* partie 3 projet */
 /************************************************************************************************************************************************************************/
+#listeProjets3{width: 100%;height:100vh;display:flex;}
 /* projet portFolio */
-figure>.folio{width: 25vw; height:100vh;flex-direction: column;}
-.folio>img{width: 30vw;height: 40vh;margin-left: 30px;}
+figure>.folio{width: 25vw;flex-direction: column;}
+.folio>img{width: 30vw;height: 30vh;margin-left: 30px;}
 /************************************************************************************************************************************************************************/
-
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* contact */
+/* #contact{width: 100%;height: 100vh;background: yellow;}
+.contact {padding-bottom: 130px;}
+.contact .info {padding: 30px;background: #fff; width: 100%;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); }
+.contact .info i {font-size: 20px;color: #759D59;float: left;width: 44px;height: 44px;background: #dff3fc;
+    display: flex;justify-content: center;align-items: center; border-radius: 50px; transition: all 0.3s ease-in-out;}
+.contact .info h4 {padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px; color: #050d18;}
+.contact .info p {padding: 0 0 10px 60px;margin-bottom: 20px;font-size: 14px;color: #173b6c;}
+.contact .info .email p {padding-top: 5px;}
+.contact .info .social-links {padding-left: 60px;}
+.contact .info .social-links a {font-size: 18px; display: inline-block; background: #333;color: #fff;line-height: 1;
+    padding: 8px 0; border-radius: 50%; text-align: center; width: 36px;height: 36px;transition: 0.3s;margin-right: 10px;}
+.contact .info .social-links a:hover {background: #759D59;color: #fff; }
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {background: #759D59; color: #fff;}
+.contact .php-email-form {width: 100%;padding: 30px;background: #fff;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);}
+.contact .php-email-form .form-group {padding-bottom: 8px;}
+.contact .php-email-form .validate {display: none;color: red;margin: 0 0 15px 0;font-weight: 400;font-size: 13px; }
+.contact .php-email-form .error-message {display: none;color: #fff; background: #ed3c0d;text-align: left; padding: 15px;font-weight: 600;}
+.contact .php-email-form .error-message br + br {margin-top: 25px;}
+.contact .php-email-form .sent-message {display: none;color: #fff;background: #18d26e; text-align: center; padding: 15px; font-weight: 600;}
+.contact .php-email-form .loading {display: none; background: #fff; text-align: center;padding: 15px; }
+.contact .php-email-form .loading:before {content: "";display: inline-block; border-radius: 50%; width: 24px; height: 24px; margin: 0 10px -6px 0;
+border: 3px solid #18d26e;border-top-color: #eee; -webkit-animation: animate-loading 1s linear infinite;animation: animate-loading 1s linear infinite; }
+.contact .php-email-form .form-group {margin-bottom: 15px;}
+.contact .php-email-form label {padding-bottom: 8px; }
+.contact .php-email-form input, .contact .php-email-form textarea { border-radius: 0; box-shadow: none; font-size: 14px;}
+.contact .php-email-form input {height: 44px;}
+.contact .php-email-form textarea {padding: 10px 15px;}
+.contact .php-email-form button[type=submit] {background: #759D59;border: 0;padding: 10px 24px; color: #fff; transition: 0.4s; border-radius: 4px;}
+.contact .php-email-form button[type=submit]:hover {background: #759D59;}
+@-webkit-keyframes animate-loading { */
+/* 0% {transform: rotate(0deg); }
+100% {transform: rotate(360deg);}}
+@keyframes animate-loading { */
+/* 0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}} */
 
 
 /*****************************************************************************************************************/

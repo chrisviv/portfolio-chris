@@ -1,4 +1,4 @@
-
+//////////////////// Barre de navivagation/////////////////////////////
  var burger = document.getElementById('burger');
  var closeNav = document.getElementById('closeNav');
  var mobileNavArea = document.getElementById('mobileNavArea');
@@ -13,8 +13,7 @@
      this.classList.add('none');
      closeNav.classList.remove('none');
  })
- 
- closeNav.addEventListener('click', function(){
+  closeNav.addEventListener('click', function(){
  
      mobileNavArea.classList.remove('openNav');
  
@@ -28,7 +27,6 @@
  })
  ///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
 const cursor = document.querySelector('.cursor');
-
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
 });
@@ -40,7 +38,7 @@ document.addEventListener('click', ()=>{
         cursor.classList.remove("expand");
     }, 500);
 });
-/*******************************************************************************************/
+ ///////////////////////////////////SCROLL: LOGO+BURGER///////////////////////////////////////////////////
  window.onscroll = () => {
  	if (window.scrollY > 200) {
 		document.getElementById('nav').style.background = '#0000007e';
@@ -48,11 +46,36 @@ document.addEventListener('click', ()=>{
  		document.getElementById('nav').style.boxShadow = '1px 4px 13px 0px rgba(0,0,0,0.75)';
       
 	} else {
-        console.log('inf');
+        // console.log('inf');
  		document.getElementById('nav').style.background = 'transparent';
 		document.getElementById('nav').style.boxShadow = 'inherit';
  	}
    };
+
+  //////////////////////////////////////////////////////////////////////
+  window.addEventListener("scroll", (event) => {
+
+    //Récupération de la hauteur de l'ecran
+    let viewport_height = window.innerHeight;
+
+    //Recupération des informations de position des éléments
+    let nav = document.querySelector("#nav").getBoundingClientRect();
+    let header = document.querySelector("#header").getBoundingClientRect();
+    let propos = document.querySelector("#aPropos").getBoundingClientRect();
+    let animationLamp = document.querySelector("#comptencesDev").getBoundingClientRect();
+          
+    console.log(animation);
+
+    //Déclanchement de l'action quand l'élément arrive à une certaine position dans l'écran
+    if (animationLamp.y <= viewport_height / 4) {
+        document.querySelector('.animation').keyframe = " moveLamp";
+    }
+
+    // console.log(positionDivOne);
+
+});
+
+
 
  /* animation du H2 section 1 */
 //  var coucou =  document.getElementById('titleH2')
@@ -94,27 +117,3 @@ document.addEventListener('click', ()=>{
 
 // function toggleModal(){
 //   modalContainer.classList.toggle("active")}
-
-  //////////////////////////////////////////////////////////////////////
-  window.addEventListener("scroll", (event) => {
-
-    //Récupération de la hauteur de l'ecran
-    let viewport_height = window.innerHeight;
-
-    //Recupération des informations de position des éléments
-    // let positionHeader = document.querySelector("header").getBoundingClientRect()
-    // let positionPropos = document.querySelector("#aPropos").getBoundingClientRect()
-    let positionLangages = document.querySelector("#comptenceDev").getBoundingClientRect()
-   
-    
-    
-    console.log(positionLangages)
-
-    //Déclanchement de l'action quand l'élément arrive à une certaine position dans l'écran
-    if (positionLangages.y <= viewport_height / 2) {
-        document.querySelector('.imgGeeen').style = "";
-    }
-
-    // console.log(positionDivOne);
-
-});
