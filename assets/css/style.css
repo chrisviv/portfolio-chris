@@ -90,7 +90,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .comptet{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5.5rem;color:white;margin-top: 30px;}
 .boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}
 .fa-leaf{margin-top:44px;margin-left: 0px;}
-.develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 60px;margin-top: 50px;}
+.develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: 50px;}
 /*****************************************************************************************************************************************************************************/
 /* partie langages compétence developpement web */
 #contenaireDev{width:100%;height: 70vh; display: flex;}
@@ -104,9 +104,10 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /****Animation*****************/
 @keyframes moveLamp {0%{width:75%;margin-right: 500px;}50%{margin-top: 250px;}100%{ margin-bottom: 150px;}}
 /**************** SECTION COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
-#competencesDeg> .boxCompetencesDeg{ width:60%;height:100vh; color:white;display: flex;flex-direction: column;justify-content:space-around;background: #AEE68A;}
-#competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans"; font-size:3.5rem;margin-top: 20px;margin-left: 30px;}
-#competencesDeg >.boxCompetencesDeg> img{width: 200px;height: 200px;margin-left: 30px;}
+#competencesDeg> .boxCompetencesDeg{ width:60%;height:100vh;display: flex; flex-direction: column;}
+#competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans";
+     font-size:3.5rem;margin-left: 25px;}
+#competencesDeg >.boxCompetencesDeg> img{width: 400px;height: 400px;margin-left: 30px;transform: rotate(15deg);}
 /******************************************************************************************************************************************************************/
 /* partie langages de compétence */
 #competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
@@ -122,25 +123,23 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
 /************************************************************************************************************************************************************************/
 /*********************************** SECTION PORTFORLIO ********************************/
-#portFolio{width: 100%;height: 100vh;display: flex;flex-direction: column;margin-top: 20px;align-items: center;}
-#titleProjets{width: 100%;height:15vh;display:flex;justify-content:center;background: white;}
-#titleProjets>h2{ height:20vh;color:black;font-size: 6rem;font-family: 'Rubik';font-weight: 500;margin-top: 15px;}
+/* titre porfolio */
+#portFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column;align-items: center;}
+#titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
+#titleProjets>h2{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;margin-top: 15px;}
 #titleProjets>.carreGreen{width: 10vw;height: 10vh;background: #4A8442;display: flex;}
-#titleProjets>.fa-leaf{font-size: 4.125rem;margin-top: 44px;margin-left: -38px;}
+#titleProjets>.fa-leaf{font-size: 6.125rem;margin-top: -14px;margin-left: -23px;}
 /************************************************************************************************************************************************************************/
 /* premiere partie des projets  */
 figure{width: 100%;height:20vh; display: flex;flex-direction: column;}
-/* .titleDescrip{font-size: 2rem;font-family: 'NovaRound';} */
-/* button{width: 24vh;height: 6vh; background: white;border-radius: 50px;font-family: 'Numans';}
-.boutonProjets{font-size: 1.2rem;border:2px solid #6cc431;text-decoration: none;display: inline-block;transition-duration: 0.4s;cursor: pointer;} */
 .boutonProjets:hover{ color:white; background-color:#6cc431;}
 /************************************************************************************************************************************************************************/
 /* partie 1 projet */
-#listeProjets1{width: 100%;height:100vh;display: flex;justify-content: space-around;margin-top: 35px;}
+#listeProjets1{width: 100%;height:100vh;display: flex;justify-content: space-around;}
 /*//////////////////////////////////////////////////////////////////////////////////*/
 /*********************** projet creatives */
 .projet1{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);display:flex;flex-direction: column;
-         background-image: url(../img/creatives1.jpg);z-index: 200000;position: relative;}
+         background-image: url(../img/creatives1.jpg);z-index: 200000;position: relative;margin-top:80px}
 .titleDescrip1{font-size: 2rem;font-family: 'NovaRound';color: white;margin-left: 35px;}
 figure>.creatives{width: 25vw; height: 75vh;display: flex;}
 .creatives > img {width: 29vw;height: 27vh;z-index: 1000000;opacity: 1; position: absolute; box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%); margin-top: -37px;margin-left: 32px;}
@@ -151,8 +150,8 @@ figure>.creatives{width: 25vw; height: 75vh;display: flex;}
                 font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
 .boutonProjets1:hover{background-color: #d21243;color:white} 
 /********************* projet maquette*/
-.projet2{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
-        background: #84ba40;z-index:200000;position: relative;}
+.projet2{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);align-self: flex-end;;
+        background: #84ba40;z-index:200000;position: relative;margin-bottom: 80px;}
 .titleDescrip2{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 35px;}
 figure > .maquette{width: 25vw; height: 75vh;display: flex;} 
 .maquette > img{width: 29vw;height: 27vh;z-index: 1000000;opacity: 1; position: absolute; 
@@ -163,8 +162,9 @@ figure > .maquette{width: 25vw; height: 75vh;display: flex;}
                 border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
                 font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
 .boutonProjets2:hover{background-color: #84ba40;color:white}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /********************************************************2eme partie des projets*********************************************************************************************************************/
-#listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;align-items: center;padding: 50px;}
+#listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;background: #16124f;}
 /* partie 2 projet */
 .projet3{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
     background:#00a0c2;z-index:200000;position: relative;}
@@ -188,61 +188,13 @@ figure > .popCode{width: 25vw; height:100vh;flex-direction: column;}
     border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
     font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
 .boutonProjets4:hover{background-color: #16124f;color:white}
-/* partie 3 projet */
-/************************************************************************************************************************************************************************/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*****************************************partie 3 projet******************************************************************************************************************************/
 #listeProjets3{width: 100%;height:100vh;display:flex;}
 /* projet portFolio */
 figure > .folio{width: 25vw;flex-direction: column;}
 .folio > img{width: 30vw;height: 30vh;margin-left: 30px;}
 /************************************************************************************************************************************************************************/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* contact */
-/* #contact{width: 100%;height: 100vh;background: yellow;}
-.contact {padding-bottom: 130px;}
-.contact .info {padding: 30px;background: #fff; width: 100%;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); }
-.contact .info i {font-size: 20px;color: #759D59;float: left;width: 44px;height: 44px;background: #dff3fc;
-    display: flex;justify-content: center;align-items: center; border-radius: 50px; transition: all 0.3s ease-in-out;}
-.contact .info h4 {padding: 0 0 0 60px;font-size: 22px;font-weight: 600;margin-bottom: 5px; color: #050d18;}
-.contact .info p {padding: 0 0 10px 60px;margin-bottom: 20px;font-size: 14px;color: #173b6c;}
-.contact .info .email p {padding-top: 5px;}
-.contact .info .social-links {padding-left: 60px;}
-.contact .info .social-links a {font-size: 18px; display: inline-block; background: #333;color: #fff;line-height: 1;
-    padding: 8px 0; border-radius: 50%; text-align: center; width: 36px;height: 36px;transition: 0.3s;margin-right: 10px;}
-.contact .info .social-links a:hover {background: #759D59;color: #fff; }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {background: #759D59; color: #fff;}
-.contact .php-email-form {width: 100%;padding: 30px;background: #fff;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);}
-.contact .php-email-form .form-group {padding-bottom: 8px;}
-.contact .php-email-form .validate {display: none;color: red;margin: 0 0 15px 0;font-weight: 400;font-size: 13px; }
-.contact .php-email-form .error-message {display: none;color: #fff; background: #ed3c0d;text-align: left; padding: 15px;font-weight: 600;}
-.contact .php-email-form .error-message br + br {margin-top: 25px;}
-.contact .php-email-form .sent-message {display: none;color: #fff;background: #18d26e; text-align: center; padding: 15px; font-weight: 600;}
-.contact .php-email-form .loading {display: none; background: #fff; text-align: center;padding: 15px; }
-.contact .php-email-form .loading:before {content: "";display: inline-block; border-radius: 50%; width: 24px; height: 24px; margin: 0 10px -6px 0;
-border: 3px solid #18d26e;border-top-color: #eee; -webkit-animation: animate-loading 1s linear infinite;animation: animate-loading 1s linear infinite; }
-.contact .php-email-form .form-group {margin-bottom: 15px;}
-.contact .php-email-form label {padding-bottom: 8px; }
-.contact .php-email-form input, .contact .php-email-form textarea { border-radius: 0; box-shadow: none; font-size: 14px;}
-.contact .php-email-form input {height: 44px;}
-.contact .php-email-form textarea {padding: 10px 15px;}
-.contact .php-email-form button[type=submit] {background: #759D59;border: 0;padding: 10px 24px; color: #fff; transition: 0.4s; border-radius: 4px;}
-.contact .php-email-form button[type=submit]:hover {background: #759D59;}
-@-webkit-keyframes animate-loading { */
-/* 0% {transform: rotate(0deg); }
-100% {transform: rotate(360deg);}}
-@keyframes animate-loading { */
-/* 0% {transform: rotate(0deg);}
-100% {transform: rotate(360deg);}} */
-
 
 /*****************************************************************************************************************/
-/* .modal-btn{ padding: 10px 14px;font-size: 1.125rem; margin: 100px auto;display:block;min-width: 150px; cursor: pointer; } */
-/* .modal.container{display: none visibility: hidden; transition:visibility 0.4s; position: fixed; top: 0; width: 100vw; height: 100vh;} */
-/* .modal-container.active{ display: block; visibility: visible; transition:visibility 0;} */
-/* .overlay {position: absolute; width: 100%; height: 100%;background:#095933; opacity: 1;transition: opacity 0.4s 0.2s ease-out} */
-/* .modal-container.active> .overlay{opacity: 1; transition: opacity 0.4s ease-out;} */
-/* .modal{opacity:0; width: 100%; max-width: 800px; min-height: 400px;background: #fff;border-radius: 5px; position: absolute; top: 40%; left: 50%;  */
- /* transform: translate(-50%, calc(-50% - 50%));transition: opacity 0.4s ease-out; transform: 0.4s ease-out;}  */
-/* .modal-container.active> .modal{ opacity:0.75;transition: opacity 0.4s 0.2s ease-out;transform: translate(-50%, -50%); transform: 0.4s 0.2s ease-out;} */
-/* .close-modal{padding: 8px 10px; border: none; border-radius: 5px;font-size: 1.125rem;  position: absolute;top:10px;right: 10px; */
-    /* cursor: pointer; background:#0AEFF7;;color:#fff;} */
-/************************Partie de la navigation burger*************************************/
