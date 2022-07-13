@@ -139,8 +139,8 @@ figure{width: 100%;height:20vh; display: flex;flex-direction: column;}
 /*//////////////////////////////////////////////////////////////////////////////////*/
 /*********************** projet creatives */
 .projet1{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);display:flex;flex-direction: column;
-         background-image: url(../img/creatives1.jpg);z-index: 200000;position: relative;margin-top:80px}
-.titleDescrip1{font-size: 2rem;font-family: 'NovaRound';color: white;margin-left: 35px;}
+         background-image: url(../img/creatives1.jpg);z-index: 200000;position: relative;margin-top:100px}
+.titleDescrip1{font-size: 2rem;font-family: 'NovaRound';color: white;margin-left: 15px;}
 figure>.creatives{width: 25vw; height: 75vh;display: flex;}
 .creatives > img {width: 29vw;height: 27vh;z-index: 1000000;opacity: 1; position: absolute; box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%); margin-top: -37px;margin-left: 32px;}
 .creatives>img:hover{transform: scale(1.1);}
@@ -150,9 +150,9 @@ figure>.creatives{width: 25vw; height: 75vh;display: flex;}
                 font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
 .boutonProjets1:hover{background-color: #d21243;color:white} 
 /********************* projet maquette*/
-.projet2{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);align-self: flex-end;;
-        background: #84ba40;z-index:200000;position: relative;margin-bottom: 80px;}
-.titleDescrip2{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 35px;}
+.projet2{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);align-self: flex-end;
+        background: #84ba40;z-index:200000;position: relative;margin-bottom: 100px;}
+.titleDescrip2{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;}
 figure > .maquette{width: 25vw; height: 75vh;display: flex;} 
 .maquette > img{width: 29vw;height: 27vh;z-index: 1000000;opacity: 1; position: absolute; 
                 box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%); margin-top: -20px;margin-left: 32px;}
@@ -164,23 +164,23 @@ figure > .maquette{width: 25vw; height: 75vh;display: flex;}
 .boutonProjets2:hover{background-color: #84ba40;color:white}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /********************************************************2eme partie des projets*********************************************************************************************************************/
-#listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;background: #16124f;}
+#listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;}
 /* partie 2 projet */
 .projet3{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
-    background:#00a0c2;z-index:200000;position: relative;}
-.titleDescrip3{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 35px;}
+    background:#00a0c2;z-index:200000;position: relative;margin-top: 100px;}
+.titleDescrip3{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;}
 .boutonProjets3{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
         font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -34px;left: 0px;
         border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
         font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets3:hover{background-color: #00a0c2;color:white}
+.boutonProjets3:hover{background-color: #00a0c2;color:white;}
 /* projet capgemen */
 figure >.capgemen{width: 25vw; height:100vh;flex-direction: column;} 
 .capgemen > img{width: 30vw;height: 30vh;margin-left: 30px;}
 /* projet Pop Code */
 .projet4{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
-    background-image: url(../img/Chargement.jpg);z-index:200000;position: relative;}
-.titleDescrip4{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 35px;}
+    background-image: url(../img/Chargement.jpg);z-index:200000;position: relative;align-self: flex-end; margin-bottom: 100px;}
+.titleDescrip4{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;}
 figure > .popCode{width: 25vw; height:100vh;flex-direction: column;} 
 .popCode > img{width: 30vw;height: 30vh;margin-left: 30px;}
 .boutonProjets4{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
@@ -190,10 +190,30 @@ figure > .popCode{width: 25vw; height:100vh;flex-direction: column;}
 .boutonProjets4:hover{background-color: #16124f;color:white}
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*****************************************partie 3 projet******************************************************************************************************************************/
-#listeProjets3{width: 100%;height:100vh;display:flex;}
+#listeProjets3{width: 100%;height:100vh;display: flex;justify-content: space-around;}
 /* projet portFolio */
+.projet5{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+    background:url(../img/pc.png);z-index:200000;position: relative;margin-top: 100px;}
+.titleDescrip5{font-size: 2rem;font-family: 'NovaRound';color:black;margin-left: 15px;padding-bottom: 15px;}
+figure > .folio{width: 25vw;flex-direction: column;}
+.folio > img{width: 27vw;height: 27vh;margin-left: 77px;margin-top:-53px;}
+.boutonProjets5{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
+        font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -34px;left: 0px;
+        border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
+        font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
+.boutonProjets5:hover{background-color: #AEE68A;color:white;}
+/*projet  */
+.projet6{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+    background:white;z-index:200000;position: relative;margin-top: 100px;}
+.titleDescrip6{font-size: 2rem;font-family: 'NovaRound';color:black;margin-left: 15px;padding-bottom: 15px;}
 figure > .folio{width: 25vw;flex-direction: column;}
 .folio > img{width: 30vw;height: 30vh;margin-left: 30px;}
+.boutonProjets6{width: 24vw;height: 6vh; background: black;border-bottom-left-radius: 50px;
+        font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -34px;left: 0px;
+        border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
+        font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
+.boutonProjets6:hover{background-color: #00a0c2;color:white;}
+
 /************************************************************************************************************************************************************************/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
