@@ -67,8 +67,8 @@
         </div>
        <div id="boxPresentation">
             <div class="presentation">
-                <h3><span>Chris</span> Vivancos</h3>
-                <h4>DEVELOPPEUR WEB FRONT-END</h4>
+                <h3 class="nomPrenom"><span>Chris</span> Vivancos</h3>
+                <h4 class="dev">DEVELOPPEUR WEB FRONT-END</h4>
             </div>
             <div class="resumer">
                 <P>spanLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
@@ -224,49 +224,47 @@
     <section id="contact">
        <div class="boxContact">
             <h2 class="titleContact">Contact</h2>
-            <i class="fa-solid fa-leaf"></i> 
+            <i class="fa-solid fa-leaf"></i>
         </div>
+        <p class="paraContact">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+            purus sit amet luctus venenatis, lectus magna fringilla urna.
+        </p>
         <div id="contenairContact">
             <div class="boxMap">
-                <!-- <div class="cardInfo"> -->
-                    <div class="address">
+                    <div class="boxAddress">
                         <i class="bi bi-geo-alt"></i>
-                        <h4>Adresse:</h4>
-                        <p>239, rue de la république Hameau Thoregna 39240 Cornod</p>
+                        <h4 class="addresse">Adresse:</h4>
+                        <p class="rue">239, rue de la république Hameau Thoregna 39240 Cornod</p>
                     </div>
-                <!-- </div> -->
-                <!-- <div class="cardEmail"> -->
-                    <div class="email">
+                    <div class="boxEmail">
                         <i class="bi bi-envelope"></i>
-                        <h4>Email:</h4>
+                        <h4 class="email">Email:</h4>
                         <a href="" class="mail">c.vivancos09@outlook.fr</a>
                     </div>
-                <!-- </div> -->
-                <!-- <div class="cardPhone"> -->
-                    <div class="phone">
+                    <div class="boxPhone">
                         <i class="bi bi-phone"></i>
-                        <a href="" class="phone">+3319917548</a>
+                        <h4 class="phone">Téléphone:</h4>
+                        <a href="" class="phon">+33 6 19 91 7548</a>
                     </div>
-                <!-- </div> -->
+                
                 <iframe
                     src="https://maps.google.com/maps?q=239%20rue%20de%20la%20republique%2039240%20cornod&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
                  </iframe>
             </div>
-        
             <div id="mapContact">
                 <div class="formulaire">
-                        <form method="post" action="traitement.php">
+                    <form method="post" action="traitement.php">
                         <div class="contactName">
                             <input type="text" class="name" name="user_name" placeholder="Nom" autofocus required>
                             <input type="text" class="surname" name="user_name" placeholder="Prénom" autofocus required>
                         </div>
-                            <input type="text" class="sujet" name="sujet" placeholder="Sujet" autofocus>
-                            <input type="email" class="mail" name="email" placeholder="Email" autofocus>
-                            <input type="textarea" class="msg" name="user_message" placeholder="Entrez Votre message..">
-                            <input type="submit" class="envoye" name="submit" placeholder="Envoyer">
-                        </form>
-                    <div class="traitSend">
-                    </div>
+                        <input type="text" class="sujet" name="sujet" placeholder="Sujet" autofocus>
+                        <input type="email" class="courriel" name="email" placeholder="Email" autofocus>
+                        <input type="textarea" class="msg" name="user_message" placeholder="Entrez Votre message..">
+                        <input type="submit" class="envoye" name="submit" placeholder="Envoyer">
+                    </form>
+                    <div class="traitSend"></div>
                 </div>
             </div>
         </div>
