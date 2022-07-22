@@ -5,6 +5,7 @@
 @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
 @font-face {font-family: "Raleway-variableFont";src: url("../fonts/Raleway-VariableFont_wght.ttf");font-display: swap;}
 /*//////////////////////// Général */
+*{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;}
 /*//////////////////////// cursor */
@@ -127,109 +128,119 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #titleProjets>.fa-leaf{font-size: 6.125rem;margin-top: -14px;margin-left: -23px;}
 /************************************************************************************************************************************************************************/
 /* premiere partie des projets  */
-figure{width: 100%;height:20vh; display: flex;flex-direction: column;}
-.boutonProjets:hover{ color:white; background-color:#6cc431;}
+/* figure{width: 100%;height:20vh; display: flex;flex-direction: column;}
+.boutonProjets:hover{ color:white; background-color:#6cc431;} */
 /************************************************************************************************************************************************************************/
 /* partie 1 projet */
-#listeProjets1{width: 100%;height:100vh;display: flex;justify-content: space-around;}
 /*//////////////////////////////////////////////////////////////////////////////////*/
 /*********************** projet creatives ********************************************/
-.projet1{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);display:flex;flex-direction: column;
- background-image: url(../img/creatives1.jpg);z-index: 200000;position: relative;margin-top:50px}
-.titleDescrip1{font-size: 2rem;font-family: 'NovaRound';color: white;margin-left: 15px;}
-figure>.creatives{width: 25vw; height: 75vh;display: flex;}
-.creatives > img {width: 29vw;height: 27vh;z-index: 1000000;opacity: 1;position: absolute; box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%); margin-top: -37px;margin-left: 32px;}
-.creatives>img:hover{transform: scale(1.1);}
+#listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
+#slideShowProjets{width: 100%;height: 100vh;position: relative; display: flex;justify-content: center; align-items: center; flex-direction: column;}
+#slideShowProjets > .titleDescrip, .crea {width: 82%;text-align: left;font-size: 2.5rem;font-family:'NovaRound';color: black;margin-bottom: -34px;margin-top: 32px;}
+#slideShowProjets> .crea{width: 65%;display: flex;justify-content: flex-start;font-size: 3rem;font-family:'NovaRound';color: black;margin-left: 20px;}
+.mySlides{display: none;padding: 80px;text-align: center;}
+.prev, .next {cursor: pointer;position: absolute;top: 50%;width: auto; margin-top: -30px;padding: 16px;color: #888;font-weight: bold;
+  font-size: 20px;border-radius: 0 3px 3px 0; user-select: none;}
+.next {position: absolute;right: 0; border-radius: 3px 0 0 3px; }
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);color: white;}
+.dot {cursor: pointer;height: 15px;width: 15px;margin: 0 2px;background-color: #bbb;border-radius: 50%;display: inline-block; transition: background-color 0.6s ease;}
+.active, .dot:hover { background-color: #717171;}
+
+
+.figProj{width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;}
+figure>.creatives{width: 25vw; height: 75vh;display: flex;background: #AEE68A;}
+.creatives > img {width: 85vw;height:auto;z-index: 1000000;opacity: 1; box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 20%);object-fit: cover;}
+/* .creatives>img:hover{transform: scale(1.1);} */ 
 /* partie description*/
-.description{width: 100%;height: 45vh; background:#d21243;display: flex;flex-direction: column;justify-content: space-around;}
-.description>h4{color: white; font-family: 'NovaRound';font-size: 1.2rem; margin: 15px 0 5px 30px;}
+/* .description{width: 100%;height: 45vh; background:#d21243;display: flex;flex-direction: column;justify-content: space-around;}
+.description>h4{color: white; font-family: 'NovaRound';font-size: 1.2rem; margin: 15px 0 5px 30px;} */
 /* description du projet */
-.descProjet1, .techProjet1>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;}
+/* .descProjet1, .techProjet1>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;} */
 /* partie tech */
-.techProjet1>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -5px;}
+/* .techProjet1>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -5px;}
 .techProjet1>.tech1{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;margin-top: -10px;}
 .html1{ margin-left: 20px;}
 .css1{ margin-left: 33px;}
-.javascript1{margin-left: 30px;} 
+.javascript1{margin-left: 30px;}  */
 /* partie moyen */
-.moyenProjet1>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -5px;}
-.moyenProjet1 >.moyen1{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;}
+/* .moyenProjet1>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -5px;}
+.moyenProjet1 >.moyen1{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;} */
 /* bouton en savoir plus */
-.boutonProjets1{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
+/* .boutonProjets1{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
                 font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -45px;left: 0px;
                 border-bottom-left-radius: 40px; border: 0px solid black;border-top: 0;font-size: 1.2rem;
                 font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets1:hover{background-color: #d21243;color:white} 
+.boutonProjets1:hover{background-color: #d21243;color:white}  */ 
 /********************* projet maquette*************************************************/
-.projet2{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+/* .projet2{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
         background: #84ba40;z-index:200000;position: relative;margin-top: 50px;}
 .titleDescrip2{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;}
 figure > .maquette{width: 25vw; height: 75vh;display: flex;} 
 /* partie description */
-.description2{width: 100%;height: 45vh; background:#84ba40;display: flex;flex-direction: column;justify-content: space-around;}
+/* .description2{width: 100%;height: 45vh; background:#84ba40;display: flex;flex-direction: column;justify-content: space-around;}
 .description2>h4{color: white; font-family: 'NovaRound';font-size: 1.2rem; margin: 40px 0 5px 30px;}
 .maquette > img{width: 29vw;height: 27vh;z-index: 1000000;opacity: 1; position: absolute; 
                 box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%); margin-top: -20px;margin-left: 32px;}
-.maquette > img:hover{transform: scale(1.1);}
+.maquette > img:hover{transform: scale(1.1);} */
 /* partie savoir plus */
-.boutonProjets2{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
+/* .boutonProjets2{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
                 font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -45px;left: 0px;
                 border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
                 font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets2:hover{background-color: #84ba40;color:white}
+.boutonProjets2:hover{background-color: #84ba40;color:white} */
 /********************************************************2eme partie des projets*********************************************************************************************************************/
-#listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;}
+/* #listeProjets2{width: 100%;height:100vh;display: flex;justify-content: space-around;} */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* partie 2 projet */
 /******************************************* projet Capgemen *************************/
-.projet3{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);background:#00a0c2;z-index:200000;position: relative;margin-top: 100px;}
-.titleDescrip3{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;}
+/* .projet3{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);background:#00a0c2;z-index:200000;position: relative;margin-top: 100px;} */
+/* .titleDescrip3{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;} */
 /* partie description */
-.description3{width: 100%;height: 45vh; background:#00a0c2;display: flex;flex-direction: column;justify-content: space-around;}
+/* .description3{width: 100%;height: 45vh; background:#00a0c2;display: flex;flex-direction: column;justify-content: space-around;}
 .description3>h4{color: white; font-family: 'NovaRound';font-size: 1.2rem; margin: 40px 0 5px 30px;}
-.descProjet3, .techProjet3>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;}
+.descProjet3, .techProjet3>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;} */
 /* partie tech */
-.techProjet3>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -8px;}
+/* .techProjet3>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -8px;}
 .techProjet3>.tech3{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;margin-top: 0px;}
-.css3{margin-left: 10px;}
+.css3{margin-left: 10px;} */
 /* partie moyen */
-.moyenProjet3>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -7px;}
+/* .moyenProjet3>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -7px;}
 .moyenProjet3 >.moyen3{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;}
 figure >.capgemen{width: 25vw; height:100vh;flex-direction: column;} 
-.capgemen > img{width: 30vw;height: 30vh;margin-left: 30px;}
+.capgemen > img{width: 30vw;height: 30vh;margin-left: 30px;} */
 /* partie savoir plus */
-.boutonProjets3{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
+/* .boutonProjets3{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
         font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -45px;left: 0px;border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
         font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets3:hover{background-color: #00a0c2;color:white;}
+.boutonProjets3:hover{background-color: #00a0c2;color:white;} */
 /***************************************** projet Pop Code********************************/
-.projet4{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+/* .projet4{width:40%;height: 80vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
     background: url(../img/Chargement.jpg);z-index:200000;position: relative;align-self: flex-end; margin-bottom: 80px;}
-.titleDescrip4{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;}
+.titleDescrip4{font-size: 2rem;font-family: 'NovaRound';color:white;margin-left: 15px;padding-bottom: 15px;} */
 /* partie descriptif */
-.description4{width: 100%;height: 45vh; background: url(../img/Chargement.jpg);display: flex;flex-direction: column;justify-content: space-around;}
+/* .description4{width: 100%;height: 45vh; background: url(../img/Chargement.jpg);display: flex;flex-direction: column;justify-content: space-around;}
 .description4>h4{color: white; font-family: 'NovaRound';font-size: 1.2rem; margin: 10px 0 5px 30px;}
-.descProjet4, .techProjet4>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;color: white;}
+.descProjet4, .techProjet4>p{font-family: 'Numans';font-size: 0.75rem;margin-left:30px;color: white;} */
 /* partie tech */
-.techProjet4>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -8px;color: white;}
+/* .techProjet4>p{font-family: 'Numans';font-size: 0.875rem;margin-left:30px;margin-top: -8px;color: white;}
 .techProjet4>.tech4{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;margin-top: 0px;}
-.css3{margin-left: 10px;}
+.css3{margin-left: 10px;} */
 /* partie moyen */
-.moyenProjet4>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -7px;color: white;}
+/* .moyenProjet4>p{font-family: 'Numans';font-size: 0.688rem;margin-left:30px;margin-top: -7px;color: white;}
 .moyenProjet4 >.moyen4{color: white; font-family: 'NovaRound';font-size: 1.2rem;margin-left: 30px;}
 figure > .popCode{width: 25vw; height:100vh;flex-direction: column;} 
-.popCode > img{width: 30vw;height: 30vh;margin-left: 30px;}
+.popCode > img{width: 30vw;height: 30vh;margin-left: 30px;} */
 /* partie savoir plus */
-.boutonProjets4{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
+/* .boutonProjets4{width: 24vw;height: 6vh; background: white;border-bottom-left-radius: 50px;
     font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -45px;left: 0px;
     border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
     font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets4:hover{background-color: #16124f;color:white}
+.boutonProjets4:hover{background-color: #16124f;color:white} */
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*****************************************partie 3 projet******************************************************************************************************************************/
-#listeProjets3{width: 100%;height:100vh;display: flex;justify-content: space-around;background: #00a0c2;}
+/* #listeProjets3{width: 100%;height:100vh;display: flex;justify-content: space-around;background: #00a0c2;} */
 /* projet portFolio */
-.projet5{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+/* .projet5{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
     background:url(../img/pc.png);z-index:200000;position: relative;margin-top: 100px;}
 .titleDescrip5{font-size: 2rem;font-family: 'NovaRound';color:black;margin-left: 15px;padding-bottom: 15px;}
 figure > .folio{width: 25vw;flex-direction: column;}
@@ -238,9 +249,9 @@ figure > .folio{width: 25vw;flex-direction: column;}
         font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -34px;left: 0px;
         border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
         font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets5:hover{background-color: #AEE68A;color:white;}
+.boutonProjets5:hover{background-color: #AEE68A;color:white;} */
 /*projet  */
-.projet6{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
+/* .projet6{width:40%;height: 40vh;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);
     background:greenyellow;z-index:200000;position: relative;margin-top: 100px;}
 .titleDescrip6{font-size: 2rem;font-family: 'NovaRound';color:black;margin-left: 15px;padding-bottom: 15px;}
 figure > .folio{width: 25vw;flex-direction: column;}
@@ -251,7 +262,7 @@ figure > .folio{width: 25vw;flex-direction: column;}
         font-family: 'Numans';position: absolute;z-index: 300000000;bottom: -34px;left: 0px;
         border-bottom-left-radius: 40px;border: 0px solid black;border-top: 0;font-size: 1.2rem;
         font-weight: 700;box-shadow: 10px 10px 5px 0px  rgba(0,0,0,0.75);}
-.boutonProjets6:hover{background-color: #00a0c2;color:white;}
+.boutonProjets6:hover{background-color: #00a0c2;color:white;}  */
 /******************************************************************************************************************************/
 /*/////////////////////////////////////Section Contact////////////////////////////////////////////////////////////////*/
 #contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}
