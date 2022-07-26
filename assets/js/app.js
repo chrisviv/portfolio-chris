@@ -51,27 +51,27 @@ document.addEventListener('click', ()=>{
  	}
    };
   //////////////////////////////////////////////////////////////////////
-  window.addEventListener("scroll", (event) => {
+//   window.addEventListener("scroll", (event) => {
 
-    //Récupération de la hauteur de l'ecran
-    let viewport_height = window.innerHeight;
+//     //Récupération de la hauteur de l'ecran
+//     let viewport_height = window.innerHeight;
 
-    //Recupération des informations de position des éléments
-    let nav = document.querySelector("#nav").getBoundingClientRect();
-    let header = document.querySelector("#header").getBoundingClientRect();
-    let propos = document.querySelector("#aPropos").getBoundingClientRect();
-    let animationLamp = document.querySelector("#comptencesDev").getBoundingClientRect();
+//     //Recupération des informations de position des éléments
+//     let nav = document.querySelector("#nav").getBoundingClientRect();
+//     let header = document.querySelector("#header").getBoundingClientRect();
+//     let propos = document.querySelector("#aPropos").getBoundingClientRect();
+//     let animationLamp = document.querySelector("#comptencesDev").getBoundingClientRect();
           
-    console.log(animation);
+//     console.log(animation);
 
-    //Déclanchement de l'action quand l'élément arrive à une certaine position dans l'écran
-    if (animationLamp.y <= viewport_height / 4) {
-        document.querySelector('.animation').keyframe = " moveLamp";
-    }
+//     //Déclanchement de l'action quand l'élément arrive à une certaine position dans l'écran
+//     if (animationLamp.y <= viewport_height / 4) {
+//         document.querySelector('.animation').keyframe = " moveLamp";
+//     }
 
     // console.log(positionDivOne);
 
-});
+// });
 // var slideIndex = 1;
 // showSlides(slideIndex);
 
@@ -85,8 +85,8 @@ document.addEventListener('click', ()=>{
 
 // function showSlides(n) {
 //   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
+//   var slides = document.getElementsByClassName("slideshw");
+//   var dots = document.getElementsByClassName("slide-btn");
 //   if (n > slides.length) {slideIndex = 1}
 //     if (n < 1) {slideIndex = slides.length}
 //     for (i = 0; i < slides.length; i++) {
