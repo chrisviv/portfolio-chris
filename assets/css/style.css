@@ -135,15 +135,15 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /*********************** projet creatives ********************************************/
 #listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
  /* Container stylings: -> centers the whole content of the page -> defines width and height for container */
-.container {display: flex; flex-direction: column;justify-content: center;align-items: center; margin: auto;width: 80vw;height: 100vh;}
+.container {display: flex; flex-direction: column;align-items: center; margin: auto;width: 80vw;height: 100vh;}
 /* End of container stylings *//* Provides padding to main heading */
-/* .main-heading {padding: 2rem 0 2rem 0;} */
+.main-heading {padding: 2rem 0 2rem 0;}
 .content {position: relative;}
 /* Carousel content stylings *//* Places the carousel content on center of the carousel */
 .carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;}
   /* To center the content horizontally  and vertically */
 .carousel-heading {margin-bottom: 1rem;width: 100%;color: black;font-size: 5.5rem;text-align: center;font-family: 'Rubik';
-  font-weight: 900;margin-top: 30px;letter-spacing: 20px;text-align: center;margin-top: -40px;}
+  font-weight: 900;letter-spacing: 20px;text-align: center;}
 /* End of carousel content stylings *//* Slideshow stylings */
 .slideshow {height: 100%;overflow: hidden;position: relative;}
   /* To hide slides in x-direction *//* Wrapper which wraps all the  slideshow images stylings */
@@ -171,24 +171,16 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
   90% {left: 0%;}}
 /* End of slideshow stylings *//* Carousel control buttons stylings */
 .slide-btn { width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;
-  width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 20px;margin-left: 20px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;}
+  width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 20px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;}
   /* Stylings for positioning the buttons at the bottom of the carousel */
  /* As we provide position as absolute,the buttons places one over the other.So, we have to place them individuallyat their correct positions. */
-.slide-btn-1 {left: 45%;}
-.slide-btn-2 {left: 50%;}
-.slide-btn-3 {left: 55%;}
-.slide-btn-4 {left: 60%;}
-.slide-btn-5 {left: 65%;}
-.slide-btn-6 {left: 70%;}
-.slide-btn-7 {left: 75%;}
+.slide-btn-1 {left: 45%;}.slide-btn-2 {left: 50%;}.slide-btn-3 {left: 55%;}.slide-btn-4 {left: 60%;}
+.slide-btn-5 {left: 65%;}.slide-btn-6 {left: 70%;}.slide-btn-7 {left: 75%;}
 /* .boxSlide-btn{height: 15vh; width: 100%;display: flex;justify-content: center;} */
 /* When we focus on the particular button,the animation stops to that particular image to which the button is associated. */
-.slide-btn-1:focus~.slideshow-wrapper {animation: none;left: 0;}
-.slide-btn-2:focus~.slideshow-wrapper {animation: none;left: -100%;}
-.slide-btn-3:focus~.slideshow-wrapper {animation: none; left:-200%;}
-.slide-btn-4:focus~.slideshow-wrapper {animation: none;left: -300%;}
-.slide-btn-5:focus~.slideshow-wrapper {animation: none;left: -400%;}
-.slide-btn-6:focus~.slideshow-wrapper {animation: none;left: -500%;}
+.slide-btn-1:focus~.slideshow-wrapper {animation: none;left: 0;}.slide-btn-2:focus~.slideshow-wrapper {animation: none;left: -100%;}
+.slide-btn-3:focus~.slideshow-wrapper {animation: none; left:-200%;}.slide-btn-4:focus~.slideshow-wrapper {animation: none;left: -300%;}
+.slide-btn-5:focus~.slideshow-wrapper {animation: none;left: -400%;}.slide-btn-6:focus~.slideshow-wrapper {animation: none;left: -500%;}
 /* When we focus on the button, the background color changes */
 .slide-btn:focus {background-color: #6CC431;}
 /* End of carousel control buttons stylings */
