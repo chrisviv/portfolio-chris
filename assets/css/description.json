@@ -1,0 +1,58 @@
+{
+    "listeProjets": {
+      "projets": [
+        {
+          "name": "Allojyvé",
+          "description": "Projet d'intégration et de création d'un site de film", 
+          "collaboration":"Réalisaer en collaboration en équipe de 3 personnes",
+          "date":"Date de réalisation: du     /  /2022 au    /   /2022",
+          "technologie":"HTML/CSS",
+          "picture" : "assets/img/logos/html.png"
+        },
+        {
+          "name": "TechnNews",
+          "description": "Projet d'intégration avec wordpress",
+          "collaboration":"Réalisaer en collaboration en équipe de 7 personnes",
+          "date":"Date de réalisation: du 25/04/2022 au 06/05/2022",
+          "technologie":"HTML/CSS", 
+          "picture" : "assets/img/logos/javascript.png"
+        },
+        {
+          "name": "Créatives",
+          "description": "", 
+          "collaboration":"Réalisaer en collaboration en équipe de 2 personnes",
+          "date":"Date de réalisation: du 2/0/2022 au 0/0/2022",
+          "technologie":"HTML/CSS", 
+          "picture" : "assets/img/logos/css.png"
+        },
+        {
+          "name": "Commune de Cornod",
+          "description": "", 
+          "collaboration":"Réalisaer en projet individuel",
+          "date":"Dte de réalisation: du 25/0/2022 au 06/0/2022",
+          "technologie":"", 
+          "picture" : "assets/img/logos/python.png"
+        },
+        {
+          "name": "Capgemen",
+          "description": "", 
+          "picture" : "assets/img/logos/java.png"
+        },
+        {
+          "name": "Pop Code",
+          "description": "", 
+          "picture" : "assets/img/logos/bash.png"
+         
+        },
+      
+        {
+          "name": "PortFolio",
+          "description": "", 
+          "picture" : "assets/img/logos/sql.png"
+         
+        }
+              
+      ]
+    }
+   
+  }
