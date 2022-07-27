@@ -51,6 +51,39 @@ document.addEventListener('click', ()=>{
  	}
    };
   //////////////////////////////////////////////////////////////////////
+fetch('assets/js/descrption.json').then(responce => responce.json().then(responce =>{
+    for (let i = 0; i < responce.listeProjets.projets.length; i++) {
+        // console.log(responce.languages.langage[i].name,input.toUpperCase());
+        if (input.toUpperCase() === responce.listeProjets.projets[i].name) {
+          document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
+          document.querySelector('.langageDesc').textContent = responce.listeProjets.projets[i].description;
+          document.querySelector('.secondLine > img').src = responce.listeProjets.projets[i].picture;
+          document.querySelector('.secondLine > img').alt= 'logo de ' + responce.languages.langage[i].name;
+}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   window.addEventListener("scroll", (event) => {
 
 //     //Récupération de la hauteur de l'ecran
