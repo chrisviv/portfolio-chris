@@ -51,18 +51,35 @@ document.addEventListener('click', ()=>{
  	}
    };
   //////////////////////////////////////////////////////////////////////
-fetch('assets/js/descrption.json').then(responce => responce.json().then(responce =>{
+  fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
     for (let i = 0; i < responce.listeProjets.projets.length; i++) {
-        // console.log(responce.languages.langage[i].name,input.toUpperCase());
-        if (input.toUpperCase() === responce.listeProjets.projets[i].name) {
+        // console.log(responce.listeProjets.projets[i].language1);
           document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
-          document.querySelector('.langageDesc').textContent = responce.listeProjets.projets[i].description;
-          document.querySelector('.secondLine > img').src = responce.listeProjets.projets[i].picture;
-          document.querySelector('.secondLine > img').alt= 'logo de ' + responce.languages.langage[i].name;
-}))
+          document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
+          document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
+          document.querySelector('.date').textContent = responce.listeProjets.projets[i].date;
+          document.querySelector('.technologie1').textContent = responce.listeProjets.projets[i].technologie1;
+          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language1;
+          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language2;
+          document.querySelector('.thirdLine> img').src = responce.listeProjets.projets[i].language3;
+          document.querySelector('.technologie2').textContent = responce.listeProjets.projets[i].technologie2;
+          document.querySelector('.thirdLine> img').src = responce.listeProjets.projets[i].language4;
+          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language5;
+          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language6;
+          document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].Moyen1;
+          document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].Moyen2;
+          document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].Moyen3;
+}
+  }
+  ));
 
-
-
+/*///////////////////////////////////////////////////////// close ModalDesc*/////////////////////////////////*/
+document.getElementsByClassName('cross')[0].addEventListener('click' , function(){
+    document.getElementById('boxModalDesc').classList.add('none');
+  });
+document.getElementsByClassName('slide-btn-1')[0].addEventListener('click', function() {
+    document.getElementById('boxModalDesc').classList.remove('none')
+});
 
 
 
