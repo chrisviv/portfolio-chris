@@ -53,7 +53,7 @@ document.addEventListener('click', ()=>{
   //////////////////////////////////////////////////////////////////////
   fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
     for (let i = 0; i < responce.listeProjets.projets.length; i++) {
-        // console.log(responce.listeProjets.projets[i].language1);
+        console.log(responce.listeProjets.projets[i].moyens1);
           document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
           document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
           document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
