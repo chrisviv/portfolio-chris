@@ -9,9 +9,11 @@
 html{scroll-behavior: smooth;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;}
 /*//////////////////////// cursor */
-.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;}
-.cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;}
-.expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;}
+.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;
+  animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 99999999999999999999;}
+.cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;
+  background:#4A8442;border-radius: 50%;z-index: 999999999999999;}
+.expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 999999999999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
 /*////////////////// Navigation */
@@ -207,39 +209,37 @@ figure>.creatives{width: 25vw; height: 75vh;display: flex;background: #AEE68A;}
 /******************************************************************************************************************************/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /********************************** Section partie modal pour description des languages trouvés id = boxModalDesc****************************************/
-#boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background-color: rgba(174, 230, 138, 1); color: white;z-index: 666666666666;}
-.modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;justify-content: space-between;box-sizing: border-box;overflow-y: auto;margin-left: 100px;}
-.titleModal{width: 100%;font-size: 5.5rem;font-family: 'rubik';font-weight: 500;}
-.projetDesc{font-size: 0.813rem;font-family: 'Numans';font-weight: 500;}
+#boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background: white;z-index: 9999999999999999;}
+.modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;box-sizing: border-box;overflow-y: auto;}
+/* background-color: rgba(174, 230, 138, 1); */
+.firstLine{width: 100%;display: flex;justify-content: space-between;align-items: center;}
+.titleModal{width: 100%;font-size: 5.5rem;font-family: 'rubik';font-weight: 500;margin-left:20px;color:#4A8442;display: flex; justify-content: center;}
+.bi{color:white;font-size: 3rem;width: 100%;display: flex;justify-content:flex-end;margin-right:30px;color: #4A8442;}
 /*  */
-.firstLine{width: 100%;height:20vh;display: flex;justify-content: space-around;align-items: center;}
-.bi{color:white;font-size: 3rem;width: 100%;display: flex;justify-content:center;margin-right:20px;}
+.secondLine{width:100%;height: 20vh;display: flex;flex-direction: column;}
+.projetDesc, .collaboration, .date {font-family: 'Numans';font-size: 1.25rem;margin-left: 20px;}
 /*  */
-.secondLine{width:100%;height: 25vh;display: flex;justify-content: space-between;flex-direction: column;}
-.secondLine > .projetDesc {font-family: 'Numans';font-size: 0.813rem;margin-left: 25px;}
-.secondLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
+#boxTech{width: 100%; height: 50%;display: flex;}
 /*  */
-.thirdLine{width: 100%;display: flex;justify-content: flex-end;align-items: center;}
-.thirdLine > p {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
-.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
-.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
-.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
+.thirdLine{width: 50%;height: 50vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background:white;margin-left: 30px; }
+.thirdLine > .tech {font-family: 'NovaRound';font-size: 2.5rem;font-weight: 500;letter-spacing: 2px;display: flex;justify-content: center;margin-top: 20px;color: #4A8442;}
 /*  */
-.thirdLine > .technologie1 {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
+.thirdLine > .technologie1 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;color:black;margin-top: -10px;}
 .thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
 .thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
 .thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
 /*  */
-.thirdLine > .technologie2 {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
+.thirdLine > .technologie2 {font-family: 'Numans';font-size: 0.813rem;margin-left: 25px;color: #4A8442;}
+/* .thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
 .thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
-.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
-.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;}
+.thirdLine > img { max-width: 400px;max-height: 400px;object-fit: cover;} */
 /*  */
-.thirdLine > .moyens {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
-.thirdLine > .moyen1 {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
-.thirdLine > .moyen2 {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
-.thirdLine > .moyen3 {font-family: 'Numnas';font-size: 0.813rem;margin-left: 25px;}
-.foorLine > label{font-family: 'Numans'; padding-left: 10px;font-size: 1rem;margin-right: 10px;}
+.fourLine{width: 50%;height: 50vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background: white;margin-left: 30px;margin-right: 30px;}
+.fourLine > .moyens{font-family: 'NovaRound';font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color: #4A8442;display: flex;justify-content: center;margin-top: 20px;}
+.moyen1 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;}
+.moyen2 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;}
+.moyen3 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;}
+/* .foorLine > label{font-family: 'Numans'; padding-left: 10px;font-size: 1rem;margin-right: 10px;} */
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////Section Contact////////////////////////////////////////////////////////////////*/
 #contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}

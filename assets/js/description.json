@@ -14,12 +14,12 @@
           "language4" : "",
           "language5" : "",
           "language6" : "",
-          "Moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
-          "Moyens2":"Réalisatiion de l'intégration du site avec VSC",
-          "Moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
+          "moyens2":"Réalisatiion de l'intégration du site avec VSC",
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
         },
         {
-          "name": "TechnNews",
+          "name": "TechNews",
           "description": "Projet d'intégration avec wordpress",
           "collaboration":"Réaliser en collaboration en équipe de 7 personnes",
           "date":"Date de réalisation: du 25/04/2022 au 06/05/2022",
@@ -31,9 +31,9 @@
           "language4" : "assets/img/logo/php.png",
           "language5" : "assets/img/logo/wordpress.png",
           "language6" : "",
-          "Moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
-          "Moyens2":"Réalisatiion de l'intégration du site avec VSC",
-          "Moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
+          "moyens2":"Réalisatiion de l'intégration du site avec VSC",
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
         },
         {
           "name": "Créatives",
@@ -48,9 +48,9 @@
           "language4" : "",
           "language5" : "",
           "language6" : "",
-          "Moyens1":"Photopeo pour visualisation de la maquette",
-          "Moyens2":"Réalisatiion de l'intégration du site avec VSC à partir d'une maquette",
-          "Moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens1":"Photopeo pour visualisation de la maquette",
+          "moyens2":"Réalisatiion de l'intégration du site avec VSC à partir d'une maquette",
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
         },
         {
           "name": "Commune de Cornod",
@@ -65,9 +65,9 @@
           "language4" : "",
           "language5" : "",
           "language6" : "",
-          "Moyens1":"Internet: Vidéo sur l'utilisation de Figma",
-          "Moyens2":"Inspiration sur d'autre site de commune proche",
-          "Moyens3":"Réalisation d'un audit UX/UI pour identifier les points à améliorer"
+          "moyens1":"Internet: Vidéo sur l'utilisation de Figma",
+          "moyens2":"Inspiration sur d'autre site de commune proche",
+          "moyens3":"Réalisation d'un audit UX/UI pour identifier les points à améliorer"
         },
         {
           "name": "Capgemen",
@@ -82,9 +82,9 @@
           "language4" : "assets/img/logo/html.png",
           "language5" : "assets/img/logo/css.png",
           "language6" : "assets/img/logo/javascript.png",
-          "Moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
-          "Moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
-          "Moyens3":"Utilisation de <strong>Git</strong> (versionning) et <strong>GitHub</strong> pour le stockage du code et du serveur de l'ASC"
+          "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
+          "moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
+          "moyens3":"Utilisation de <strong>Git</strong> (versionning) et <strong>GitHub</strong> pour le stockage du code et du serveur de l'ASC"
         },
         {
             "name": "Pop code",
@@ -99,9 +99,9 @@
             "language4" : "assets/img/logo/html.png",
             "language5" : "assets/img/logo/css.png",
             "language6" : "assets/img/logo/javascript.png",
-            "Moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
-            "Moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-            "Moyens3":"Utilisation du serveur de l'ASC"
+            "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
+            "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
+            "moyens3":"Utilisation du serveur de l'ASC"
          
         },
         {
@@ -117,9 +117,9 @@
             "language4" : "",
             "language5" : "",
             "language6" : "",
-            "Moyens1":"Intégration avec Visual Studio Code",
-            "Moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-            "Moyens3":"Utilisation du serveur de l'ASC"
+            "moyens1":"Intégration avec Visual Studio Code",
+            "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
+            "moyens3":"Utilisation du serveur de l'ASC"
          
         }
               

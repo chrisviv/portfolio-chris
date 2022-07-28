@@ -2,7 +2,7 @@
  var burger = document.getElementById('burger');
  var closeNav = document.getElementById('closeNav');
  var mobileNavArea = document.getElementById('mobileNavArea');
- 
+ let listingProjets = ['Allojyvé', 'TechNews', 'Créatives', 'Commune de Cornod', 'Capgemen', 'Pop Code', 'PortFolio'];
  burger.addEventListener('click', function(){
      mobileNavArea.classList.remove('none');
  
@@ -66,9 +66,9 @@ document.addEventListener('click', ()=>{
           document.querySelector('.thirdLine> img').src = responce.listeProjets.projets[i].language4;
           document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language5;
           document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language6;
-          document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].Moyen1;
-          document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].Moyen2;
-          document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].Moyen3;
+          document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].moyens1;
+          document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].moyens2;
+          document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].moyens3;
 }
   }
   ));
