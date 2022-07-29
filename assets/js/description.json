@@ -84,7 +84,7 @@
           "language6" : "assets/img/logo/javascript.png",
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
-          "moyens3":"Utilisation de <strong>Git</strong> (versionning) et <strong>GitHub</strong> pour le stockage du code et du serveur de l'ASC"
+          "moyens3":"Utilisation de Git (versionning) et GitHub pour le stockage du code et du serveur de l'ASC"
         },
         {
             "name": "Pop code",

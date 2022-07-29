@@ -2,7 +2,8 @@
  var burger = document.getElementById('burger');
  var closeNav = document.getElementById('closeNav');
  var mobileNavArea = document.getElementById('mobileNavArea');
- let listingProjets = ['Allojyvé', 'TechNews', 'Créatives', 'Commune de Cornod', 'Capgemen', 'Pop Code', 'PortFolio'];
+ let boxslideshow = document.querySelector('.boxslideshow');
+//  let listingProjets = ['Allojyvé', 'TechNews', 'Créatives', 'Commune de Cornod', 'Capgemen', 'Pop Code', 'PortFolio'];
  burger.addEventListener('click', function(){
      mobileNavArea.classList.remove('none');
  
@@ -54,8 +55,8 @@ document.addEventListener('click', ()=>{
   function modalContent(target){
     fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
         for (let i = 0; i < responce.listeProjets.projets.length; i++) {
-            // console.log(responce.listeProjets.projets[i].moyens1);
-            let test = responce.listeProjets.projets[i].name
+            // console.log(responce.listeProjets.projets[i].description);
+            let test = responce.listeProjets.projets[i].name;
             if (target.toLowerCase() === test.replace('é','e').toLowerCase()) {
                 document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
                 document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
@@ -75,16 +76,16 @@ document.addEventListener('click', ()=>{
                 break;
             }
     }}));
-}
-slideshow-wrapper.addEventListener('click', function(e){
+  }
+boxslideshow.addEventListener('click', function(e){
     modalContent(e.target.id);
-})
+});
 /*//////////////////////////////////////////////////////// close ModalDesc*/////////////////////////////////*/
 
 document.getElementsByClassName('cross')[0].addEventListener('click' , function(){
     document.getElementById('boxModalDesc').classList.add('none');
   });
-document.getElementsByClassName('slide-btn-1')[0].addEventListener('click', function() {
+document.getElementsByClassName('boxslideshow')[0].addEventListener('click', function() {
     document.getElementById('boxModalDesc').classList.remove('none')
 });
 
