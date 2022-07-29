@@ -56,8 +56,8 @@ document.addEventListener('click', ()=>{
     fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
         for (let i = 0; i < responce.listeProjets.projets.length; i++) {
             // console.log(responce.listeProjets.projets[i].description);
-            let test = responce.listeProjets.projets[i].name;
-            if (target.toLowerCase() === test.replace('é','e').toLowerCase()) {
+            let listejson = responce.listeProjets.projets[i].name;
+            if (target.toLowerCase() === listejson.replace('é','e').toLowerCase()) {
                 document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
                 document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
                 document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
@@ -81,7 +81,6 @@ boxslideshow.addEventListener('click', function(e){
     modalContent(e.target.id);
 });
 /*//////////////////////////////////////////////////////// close ModalDesc*/////////////////////////////////*/
-
 document.getElementsByClassName('cross')[0].addEventListener('click' , function(){
     document.getElementById('boxModalDesc').classList.add('none');
   });
