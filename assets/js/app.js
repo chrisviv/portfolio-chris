@@ -51,29 +51,36 @@ document.addEventListener('click', ()=>{
  	}
    };
   //////////////////////////////////////////////////////////////////////
-  fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
-    for (let i = 0; i < responce.listeProjets.projets.length; i++) {
-        console.log(responce.listeProjets.projets[i].moyens1);
-          document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
-          document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
-          document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
-          document.querySelector('.date').textContent = responce.listeProjets.projets[i].date;
-          document.querySelector('.technologie1').textContent = responce.listeProjets.projets[i].technologie1;
-          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language1;
-          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language2;
-          document.querySelector('.thirdLine> img').src = responce.listeProjets.projets[i].language3;
-          document.querySelector('.technologie2').textContent = responce.listeProjets.projets[i].technologie2;
-          document.querySelector('.thirdLine> img').src = responce.listeProjets.projets[i].language4;
-          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language5;
-          document.querySelector('.thirdLine > img').src = responce.listeProjets.projets[i].language6;
-          document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].moyens1;
-          document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].moyens2;
-          document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].moyens3;
+  function modalContent(target){
+    fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
+        for (let i = 0; i < responce.listeProjets.projets.length; i++) {
+            // console.log(responce.listeProjets.projets[i].moyens1);
+            let test = responce.listeProjets.projets[i].name
+            if (target.toLowerCase() === test.replace('é','e').toLowerCase()) {
+                document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
+                document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
+                document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
+                document.querySelector('.date').textContent = responce.listeProjets.projets[i].date;
+                document.querySelector('.technologie1').textContent = responce.listeProjets.projets[i].technologie1;
+                document.querySelector('.tech01').src = responce.listeProjets.projets[i].language1;
+                document.querySelector('.tech02').src = responce.listeProjets.projets[i].language2;
+                document.querySelector('.tech03').src = responce.listeProjets.projets[i].language3;
+                document.querySelector('.technologie2').textContent = responce.listeProjets.projets[i].technologie2;
+                document.querySelector('.tech04').src = responce.listeProjets.projets[i].language4;
+                document.querySelector('.tech05').src = responce.listeProjets.projets[i].language5;
+                document.querySelector('.tech06').src = responce.listeProjets.projets[i].language6;
+                document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].moyens1;
+                document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].moyens2;
+                document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].moyens3;
+                break;
+            }
+    }}));
 }
-  }
-  ));
+slideshow-wrapper.addEventListener('click', function(e){
+    modalContent(e.target.id);
+})
+/*//////////////////////////////////////////////////////// close ModalDesc*/////////////////////////////////*/
 
-/*///////////////////////////////////////////////////////// close ModalDesc*/////////////////////////////////*/
 document.getElementsByClassName('cross')[0].addEventListener('click' , function(){
     document.getElementById('boxModalDesc').classList.add('none');
   });
