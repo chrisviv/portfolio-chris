@@ -6,7 +6,7 @@
           "description": "Projet d'intégration et de création d'un site de film", 
           "collaboration":"Réaliser en collaboration en équipe de 3 personnes",
           "date":"Date de réalisation: du     /     /2022 au    /     /2022",
-          "picture": "assets/img/modalDesc/allojye.jpg",
+          "picture": "assets/img/modalDesc/allojyve.jpg",
           "technologie1":"HTML / CSS / Javascript",
           "language1" : "assets/img/logo/html.png",
           "language2" : "assets/img/logo/css.png",
@@ -17,7 +17,8 @@
           "language6" : "",
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
-          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
+          "moyens4":"Utilisation du serveur de l'ASC"
         },
         {
           "name": "TechNews",
@@ -25,7 +26,7 @@
           "collaboration":"Réaliser en collaboration en équipe de 7 personnes",
           "date":"Date de réalisation: du 25/04/2022 au 06/05/2022",
           "picture": "assets/img/modalDesc/technews.jpg",
-          "technologie1":"HTML/CSS",
+          "technologie1":"HTML/CSS/Javascript",
           "language1" : "assets/img/logo/html.png",
           "language2" : "assets/img/logo/css.png",
           "language3" : "assets/img/logo/javascript.png",
@@ -35,7 +36,8 @@
           "language6" : "",
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
-          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
+          "moyens4":"Utilisation du serveur de l'ASC"
         },
         {
           "name": "Créatives",
@@ -53,10 +55,11 @@
           "language6" : "",
           "moyens1":"Photopeo pour visualisation de la maquette",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC à partir d'une maquette",
-          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code,Utilisation du serveur de l'ASC"
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
+          "moyens4":"Utilisation du serveur de l'ASC"
         },
         {
-          "name": "Commune de Cornod",
+          "name": "Maquette_Cornod",
           "description": "Projet d'une rélisatinon d'une wireframe et d'une maquette d'un site au choix sur le théme du tourisme (Ville, Lieu, Monument).", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 25/0/2022 au 06/0/2022",
@@ -71,7 +74,8 @@
           "language6" : "",
           "moyens1":"Internet: Vidéo sur l'utilisation de Figma",
           "moyens2":"Inspiration sur d'autre site de commune proche",
-          "moyens3":"Réalisation d'un audit UX/UI pour identifier les points à améliorer"
+          "moyens3":"Réalisation d'un audit UX/UI pour identifier les points à améliorer",
+          "moyens4":""
         },
         {
           "name": "Capgemen",
@@ -89,10 +93,11 @@
           "language6" : "assets/img/logo/javascript.png",
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
-          "moyens3":"Utilisation de Git (versionning) et GitHub pour le stockage du code et du serveur de l'ASC"
+          "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
+          "moyens4":"Utilisation du serveur de l'ASC"
         },
         {
-          "name": "Pop code",
+          "name": "PopCode",
           "description": "Projet de création d'une application web ludique qui consiste de trouver des langages informatiques de programmation ", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 23/06/2022 au 22/07/2022",
@@ -107,8 +112,8 @@
           "language6" : "assets/img/logo/javascript.png",
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-          "moyens3":"Utilisation du serveur de l'ASC"
-         
+          "moyens3":"Utilisation du serveur de l'ASC",
+          "moyens4":""
         },
         {
           "name": "PortFolio",
@@ -126,7 +131,8 @@
           "language6" : "",
           "moyens1":"Intégration avec Visual Studio Code",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-          "moyens3":"Utilisation du serveur de l'ASC"
+          "moyens3":"Utilisation du serveur de l'ASC",
+          "moyens4":""
          
         }
               

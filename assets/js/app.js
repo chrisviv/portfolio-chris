@@ -42,7 +42,7 @@ document.addEventListener('click', ()=>{
  window.onscroll = () => {
  	if (window.scrollY > 200) {
 		document.getElementById('nav').style.background = '#0000007e';
- 		/*document.getElemenyId('nav').style.backdrop = '#0000007e';*/
+ 		document.getElemenyId('nav').style.backdrop = '#0000007e';
  		document.getElementById('nav').style.boxShadow = '1px 4px 13px 0px rgba(0,0,0,0.75)';
       
 	} else {
@@ -55,13 +55,14 @@ document.addEventListener('click', ()=>{
   function modalContent(target){
     fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
         for (let i = 0; i < responce.listeProjets.projets.length; i++) {
-            // console.log(responce.listeProjets.projets[i].description);
+            console.log(responce.listeProjets.projets[i].picture);
             let listejson = responce.listeProjets.projets[i].name;
             if (target.toLowerCase() === listejson.replace('é','e').toLowerCase()) {
                 document.querySelector('.titleModal').textContent = responce.listeProjets.projets[i].name;
                 document.querySelector('.projetDesc').textContent = responce.listeProjets.projets[i].description;
                 document.querySelector('.collaboration').textContent = responce.listeProjets.projets[i].collaboration;
                 document.querySelector('.date').textContent = responce.listeProjets.projets[i].date;
+                document.querySelector('.desc').src = responce.listeProjets.projets[i].picture;
                 document.querySelector('.technologie1').textContent = responce.listeProjets.projets[i].technologie1;
                 document.querySelector('.tech01').src = responce.listeProjets.projets[i].language1;
                 document.querySelector('.tech02').src = responce.listeProjets.projets[i].language2;
@@ -73,6 +74,7 @@ document.addEventListener('click', ()=>{
                 document.querySelector('.moyen1').textContent = responce.listeProjets.projets[i].moyens1;
                 document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].moyens2;
                 document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].moyens3;
+                document.querySelector('.moyen4').textContent = responce.listeProjets.projets[i].moyens4;
                 break;
             }
     }}));
