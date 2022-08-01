@@ -42,7 +42,7 @@ document.addEventListener('click', ()=>{
  window.onscroll = () => {
  	if (window.scrollY > 200) {
 		document.getElementById('nav').style.background = '#0000007e';
- 		document.getElemenyId('nav').style.backdrop = '#0000007e';
+ 		// document.getElemenyId('nav').style.backdrop = '#0000007e';
  		document.getElementById('nav').style.boxShadow = '1px 4px 13px 0px rgba(0,0,0,0.75)';
       
 	} else {
