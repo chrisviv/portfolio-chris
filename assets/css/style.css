@@ -5,7 +5,7 @@
 @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
 /*//////////////////////// Général  /* Default stylings */
 *{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
+html{width:100vw;height: 100vh; scroll-behavior: smooth;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
 /*//////////////////////// cursor */
 .cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;
@@ -70,7 +70,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* partie boxPrensentation */
 #boxPresentation{width:70%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */
-.presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;margin-right: 25px;}
+.presentation{width: 100%;height: 100vh;display: flex;justify-content: flex-end;flex-direction: column;}
 .presentation > .nomPrenom, .dev {margin-left: 85px;margin-top: -50px;}
 .presentation > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
 .presentation > .nomPrenom > span{color:#ffff;font-size: 3.125rem;}
@@ -85,15 +85,15 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #competencesDev{ width: 100%; height: 100vh;background: #095933;}
 .boxLangages{width: 100%;height: 70vh;display: flex;justify-content: center;}
 .division{display: flex;flex-direction: column;text-align:center ;}
-.comptet{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5.5rem;color:white;margin-top: 30px;}
+.comptet{width:100%;height: 15vh; font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:white;margin-top: 30px;}
 .boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}
-.fa-leaf{margin-top:44px;margin-left: 0px;}
-.develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: 50px;}
+.boxLeafDeve >.fa-leaf{margin:-26px 0px 0px -14px;font-size: 2.5rem;}
+.develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
 /*****************************************************************************************************************************************************************************/
 /* partie langages compétence developpement web */
 #contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;}
-.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:48px 0px 0px 60px}
+.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:45px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:25%}.php{width: 2%;}.laravel{width: 0%;}.wordpress{width: 15%;}
@@ -354,11 +354,37 @@ input{margin-top: 30px;}
 .photoChris > img {width:350px; display: flex; justify-content: center;align-content: center;}
 .boxPhoto > .boxLogo > h2 {letter-spacing: -10px; font-size: 5rem; }
 .prenom{font-size: 11rem;}
-.presentation{justify-content: flex-end; width:90%}
+.presentation{justify-content: flex-end; width:90%;height: 80vh;margin-left: 20px;}
 .presentation > .nomPrenom, .dev {margin-left: 65px;margin-bottom: -15px;}
 .presentation > .dev {font-size:3rem;margin-top: 20px;width: 85%;}
+.resumer{justify-content: flex-end;}
+/* partie competences */
+.comptet {font-size: 4.5rem;}.develop {font-size: 2rem;}
+.fa-leaf {margin: 56px 0px 0px -5px; font-size: 2.5rem;}
+/* partie competences 2 */
+#competencesDeg > .boxCompetencesDeg > h3 {font-size: 2rem;}
+#competencesDeg > .boxCompetencesDeg {width: 35%;justify-content: center;}
+#competencesDeg > .boxCompetencesDeg > img {width: 300px;height: 300px;}
+/* partir portfolio */
+.titlePort {font-size: 9rem;}
+#titleProjets > .fa-leaf {font-size: 5.125rem;margin-top: -5px;margin-left: -13px;}
+/* partie carousel */
+.slide-img {width: 96vw; height: 36vh;}.slide-btn{margin-left: -82px;}
+/* modal */
+.tech01, .tech02, .tech03, .tech04, .tech05, .tech06 {height: 65px;}
+.desc {width: 96%;height: 71%;} 
+/* partie contact */
+.boxContact > .titleContact {font-size: 3.5rem;}.fa-leaf {margin: 26px 0px 0px 0px;font-size: 2.5rem;}
+.boxContact {height: 10vh;}.contactName {width: 100%;}
+.contactName > .name, .surname {width: 90%; margin-left: 15px;}
+.contactName {width: 100%;display: block;margin-top: -83px; }
+.paraContact {width: 100%;font-size: 1rem;}
+.rue, .mail, .phon {font-size: 0.875rem;}
+.addresse, .email, .phone {font-size: 1rem;}
+iframe {height: 250px;}
+.formulaire {margin-top: -38px;}
+  }
 
-}
 
 
 
