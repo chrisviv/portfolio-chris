@@ -95,7 +95,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:45px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
-.html{width: 85%;}.css{width: 75%;}.js{width:25%}.php{width: 2%;}.laravel{width: 0%;}.wordpress{width: 15%;}
+.html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
 /* partie des compétences */
 .imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease-out;} 
 /****Animation*****************/
@@ -377,14 +377,36 @@ iframe {height: 250px;}.formulaire {margin-top: -38px;}}
 .resumer > p {width: 100%;font-size: 0.75rem;}
 /* PARTIE COMPETENCES */
 .comptet{font-size: 2.5rem;}
-#logoLeaf > .logoChris {margin: 0 0;}
+#logoLeaf > .logoChris {margin: 0 0 0 10px;}
 .develop {font-size: 1.5rem;}
 .boxLeafDeve > .fa-leaf {margin: -36px 0px 3px -3px;font-size: 1.8rem;}
+/* PARTIE COMPETENCES2 */
+#competencesDeg{width:100%;height: 100vh;flex-direction: column;}
+#competencesDeg > .boxCompetencesDeg {width: 100%; height: 10vh;display: flex;justify-content: space-between;}
+#competencesDeg > .boxCompetencesDeg > h3 {font-size: 1.2rem; margin-left:85px;}
+#competencesDeg > .boxCompetencesDeg > img {width: 100px;height: 100px;margin: -7px 0 0 auto;}
+.type > h2 {font-size: 1.2rem; margin-left: 25px;}.type > .fa-leaf {margin-top: 53px;font-size: 1.3rem;}
+.boxDig {width: 100%;height: 100vh;display: flex; flex-direction: column;}.langagesDig {margin: 40px 0px 0px 25px;}
+#titleProjets{flex-direction: column;}
+.titlePort{font-size: 6rem;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -35px;flex-direction: column;}
+#titleProjets > .fa-leaf {font-size: 4rem; margin-top: -30px;margin-left: 84px;}
+/* PARTIE PORTFOLIO */
+.carousel-heading {font-size: 3rem;}.slide-img {width: 94vw;height: 22vh;}
+.slide-btn{width: 1rem;height: 1rem;display: flex;justify-content: center;align-items: center;}
+
+
+/* PARTIR CONTACT */
+.boxContact > .titleContact {font-size: 2.5rem;}.boxContact >.fa-leaf {font-size: 2rem;}
+.paraContact {width: 90%;font-size: 0.75rem;}
+
+#contenairContact { width: 100%; display: flex; flex-direction: column;}
+.boxMap{width: 100%;margin: 0 0;}
 
 
 
-}
-  
+
+
+} 
 
 
 
