@@ -264,7 +264,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .boxImgTech1{ width: 100%; height: 15vh;display: flex;align-items: center;}
 .tech01, .tech02, .tech03, .tech04, .tech05, .tech06{height: 80px;object-fit: cover;margin-left: 30px;display: inline-block;}
 /*  partie technologie2*/
-.boxImgTech2{ width: 100%; height: 15vh;}.technologie2 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;color: #4A8442;}
+.boxImgTech2{ width: 100%; height: 15vh;}.technologie2 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;colo:black}
 /* partie fourLine */
 .fourLine{width: 50%;height: 58vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background: white;margin-left: 30px;margin-right: 30px;}
 .fourLine > .moyens{font-family: 'NovaRound';font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color: #4A8442;display: flex;justify-content: center;margin-top: 20px;}
@@ -352,9 +352,16 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 /* partir portfolio */
 .titlePort {font-size: 9rem;}#titleProjets > .fa-leaf {font-size: 5.125rem;margin-top: -5px;margin-left: -13px;}
 /* partie carousel */
-.slide-img {width: 96vw; height: 36vh;}.slide-btn{margin-left: -82px;}
+.slide-img {width: 80vw; height: 34vh;margin-top: 80px;}.slide-btn{margin-left: -82px;}
+.boxSlide-btn{margin-top:50px;}
 /* modal */
-.tech01, .tech02, .tech03, .tech04, .tech05, .tech06 {height: 65px;}.desc {width: 96%;height: 71%;} 
+.thirdLine > .tech{font-size: 2rem;margin: 10px 0 0 20px;}
+.technologie1{font-size: 1rem;margin: 40px 0 0 10px;}
+.technologie2{font-size: 1rem;margin: 0 0 0 20px;}
+.tech01, .tech02, .tech03, .tech04,.tech06 {height: 58px;margin-left: 40px;}.desc {width: 96%;height: 71%;}
+.tech05{height: 100px;width: 100px;}
+.fourLine > .moyens{font-size: 2rem;margin: 10px 0;} 
+.moyen1, .moyen2, .moyen3, .moyen4{font-size: 0.875rem;}
 /* partie contact */
 .boxContact > .titleContact {font-size: 3.5rem;}.fa-leaf {margin: 26px 0px 0px 0px;font-size: 2.5rem;}
 .boxContact {height: 10vh;}.contactName {width: 100%;}.contactName > .name, .surname {width: 90%; margin-left: 15px;}
@@ -387,11 +394,14 @@ iframe {height: 250px;}.formulaire {margin-top: -38px;}}
 #competencesDeg > .boxCompetencesDeg > img {width: 100px;height: 100px;margin: -7px 0 0 auto;}
 .type > h2 {font-size: 1.2rem; margin-left: 25px;}.type > .fa-leaf {margin-top: 53px;font-size: 1.3rem;}
 .boxDig {width: 100%;height: 100vh;display: flex; flex-direction: column;}.langagesDig {margin: 40px 0px 0px 25px;}
-#titleProjets{height: 30vh;}
-.titlePort{font-size: 4rem;}
-#titleProjets > .fa-leaf {font-size: 2rem;margin-top: 47px 0 0 0;}
+/* PARTIE PROJETS */
+#listeProjets{width: 100%;height: 0vh;}
+#titleProjets{height: 40vh;}
+.titlePort{font-size: 4rem;margin: 0;}
+#titleProjets > .fa-leaf {font-size: 2rem;margin: 42px 0 0 -5px;}
+.main-heading {padding: 0;} 
 /* PARTIE PORTFOLIO */
-.carousel-heading {font-size: 2.5rem;margin-bottom: 100px;}.slide-img {width: 94vw;height: 22vh;}
+.carousel-heading {font-size: 2.5rem;}.slide-img {width: 90vw;height: 22vh;margin-bottom: 30px;}
 .slide-btn{width: 1rem;height: 1rem;display: flex;justify-content: center;align-items: center;margin-left: 10px;}
 .boxSlide-btn{margin-top: 20px;}
 /* PARTIE MODAL */
