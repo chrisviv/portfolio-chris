@@ -116,7 +116,7 @@
           "moyens4":" "
         },
         {
-          "name": "PortFolio",
+          "name": "portfolio",
           "description": "Réalisation de notre portFolio", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 23/06/2022 au 12/08/2022",
@@ -126,7 +126,7 @@
           "language2" : "assets/img/logo/css.png",
           "language3" : "assets/img/logo/javascript.png",
           "technologie2":"Autres technologies", 
-          "language4" : "",
+          "language4" : "assets/img/logo/figma.png",
           "language5" : "",
           "language6" : "",
           "moyens1":"Intégration avec Visual Studio Code",
