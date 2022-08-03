@@ -68,6 +68,25 @@ document.addEventListener('click', ()=>{
                 document.querySelector('.tech02').src = responce.listeProjets.projets[i].language2;
                 document.querySelector('.tech03').src = responce.listeProjets.projets[i].language3;
                 document.querySelector('.technologie2').textContent = responce.listeProjets.projets[i].technologie2;
+                if (responce.listeProjets.projets[i].language4 === "") {
+                    if (responce.listeProjets.projets[i].language5 === "") {
+                        if (responce.listeProjets.projets[i].language6 === "") {
+                            document.querySelector('.tech06').classList.remove('cssTech06');
+                        }
+                        document.querySelector('.tech05').classList.remove('cssTech05');
+                    }
+                    document.querySelector('.tech04').classList.remove('cssTech04');
+                }else{
+                    if(document.querySelector('.tech04').classList.contains('cssTech04')===false){
+                        document.querySelector('.tech04').classList.add('cssTech04');
+                    }
+                    if(responce.listeProjets.projets[i].language5 != ""){
+                    document.querySelector('.tech05').classList.add('cssTech05');
+                    }
+                    if(responce.listeProjets.projets[i].language6 != ""){
+                        document.querySelector('.tech06').classList.add('cssTech06');
+                    }
+                }
                 document.querySelector('.tech04').src = responce.listeProjets.projets[i].language4;
                 document.querySelector('.tech05').src = responce.listeProjets.projets[i].language5;
                 document.querySelector('.tech06').src = responce.listeProjets.projets[i].language6;
