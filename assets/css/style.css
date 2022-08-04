@@ -116,7 +116,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* Carousel content stylings *//* Places the carousel content on center of the carousel */
 .carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;}
 /* To center the content horizontally  and vertically */
-.carousel-heading {margin-bottom: 1rem;width: 100%;color: black;font-size: 5.5rem;text-align: center;font-family: 'Rubik';
+.carousel-heading {width: 100%;color: black;font-size: 5rem;text-align: center;font-family: 'Rubik';
   font-weight: 900;letter-spacing: 20px;text-align: center;}
 /* End of carousel content stylings *//* Slideshow stylings */
 .slideshow {height: 100%; overflow: hidden;}
@@ -125,7 +125,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* We give it width as 400% because we are making a 4 image carousel. If you want to make for example,5 images carousel, then give width as 500%. */
 /* Change the animation settings *//* Define width and height for images */
 .slide {width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
-.slide-img {width: 75vw;height: 60vh;object-fit: cover;}
+.slide-img {width: 60vw;height: 65vh;object-fit: cover;}
 /* @keyframes are used to provide amations We make these settings for 4 image carousel. Make modification accourding to your needs. */
 @keyframes slideshow {
 0% {left: 0;}  
@@ -145,7 +145,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 95% {right: 0%;} 
 100%{ right: 0%;}} 
 /* End of slideshow stylings *//* Carousel control buttons stylings */
-.slide-btn { width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;
+.slide-btn {width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;margin-top: -100px;
   width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 20px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;}
   /* Stylings for positioning the buttons at the bottom of the carousel */
  /* As we provide position as absolute,the buttons places one over the other.So, we have to place them individuallyat their correct positions. */
@@ -189,8 +189,8 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}
 .boxContact{width: 100%; height: 20vh;display: flex;justify-content: center; align-items: center;}
 .boxContact > .titleContact{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:black;margin-bottom: -8px;}
-.fa-leaf{margin: 124px 0px 0px 5px; font-size:3rem}.paraContact{ width: 65%;font-size: 1.4rem; margin-left: 30px;margin-top: 0px;}
-/*/////////////////////////////*/#contenairContact{width: 100%;height: 50vh; display: flex;}
+.fa-leaf{margin: 124px 0px 0px 5px; font-size:3rem}.paraContact{ width: 100%;font-size: 1.2rem; margin-left: 30px;margin-top: 18px;}
+/*////////*/#contenairContact{width: 100%;height: 50vh; display: flex;}
 /*///////*/.boxMap{width: 50%; height: 65vh;display: flex; flex-direction: column;;background:white;align-items: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); margin: 25px 30px 0 30px;}
 .bi-geo-alt, .bi-phone, .bi-envelope{ font-size: 20px; color: #759D59;width: 44px;height: 44px;background: #dff3fc;  border-radius: 50px; transition: all 0.3s ease-in-out;
   display: flex;justify-content: center; align-items: center;margin-left:20px}
@@ -199,10 +199,9 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .boxAddress, .boxEmail, .boxPhone{width: 100%;height: 6vh;margin-top: 20px;display: flex;justify-content: flex-start;align-items: center;}
 .bi-geo-alt:hover{background: #6CC431;color: white;}.bi-envelope:hover{background: #6CC431;color: white;}
 .bi-phone:hover{background: #6CC431;color: white;} 
-/* ////////////////////////Partie Map */iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
-/*///////////////////////////////////*/#mapContact{width: 50%; height: 65vh;display: flex;margin: 25px 30px 0 30px;justify-content: center;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); align-items: center;}
-/*////////////////////Partie formulaire*/.formulaire{width: 90%;}.formulaire > form{width: 100%;height: 50vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
+/* Partie Map */iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
+#mapContact{width: 50%; height: 65vh;display: flex;margin: 25px 30px 0 30px;justify-content: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); align-items: center;}
+/*Partie formulaire*/.formulaire{width: 90%;}.formulaire > form{width: 100%;height: 50vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .contactName{width:91%; display: flex;font-family: 'Numans';justify-content: space-between;}input{margin-top: 30px;}
 .contactName > .name, .surname { width: 60%;padding: 10px 15px;border:0.5px solid #759D59;} 
 .contactName > .surname{margin-left: 15px;}.msg{width: 90%;height: 15vh;border:0.5px solid #759D59;}
