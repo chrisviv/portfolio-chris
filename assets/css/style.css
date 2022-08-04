@@ -19,7 +19,7 @@ body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: 
 #nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 0px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
 /*/////////////// partie boxLogo*/
 #logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
-#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 35px;margin-left: 15px;}
+#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 20px;margin-left: 15px;}
 .logoChris:hover{transform: scale(1.2)}.none {display: none !important;}
 #mobileNavArea{overflow: hidden; width: 100%; height: 0; background: #4A8442;display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;}
 .openNav{height: 100vh !important;}ul {text-align:center; margin-top: 85px;}
@@ -49,7 +49,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
 /********************section  A Propos ************************/
 #aPropos{width: 100%; min-height: 100vh; display: flex;}
-.boxPhoto{width: 30%;height: 100vh;display: flex;align-items: center;flex-direction: row; background: #4A8442;}
+.boxPhoto{width: 30%;height: 100vh;display: flex;align-items: center;flex-direction: row; background: #4A8442;justify-content: ;}
 /* BoxLogo et A propos */
 /*.boxPhoto >.boxLogo{display: flex;justify-content: center;align-items: center;flex-direction: column;}  */
 .boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
@@ -188,10 +188,10 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /*////////////////////////////////////////////////////////////////Section Contact////////////////////////////////////////////////////////////////*/
 #contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}
 .boxContact{width: 100%; height: 20vh;display: flex;justify-content: center; align-items: center;}
-.boxContact > .titleContact{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5.5rem;color:black;margin-top: 30px;}
-.fa-leaf{margin: 15px 0px 0px 6px; font-size:3rem}.paraContact{ width: 65%;font-size: 1.4rem; margin-left: 30px;margin-top: 0px;}
+.boxContact > .titleContact{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:black;margin-bottom: -8px;}
+.fa-leaf{margin: 124px 0px 0px 5px; font-size:3rem}.paraContact{ width: 65%;font-size: 1.4rem; margin-left: 30px;margin-top: 0px;}
 /*/////////////////////////////*/#contenairContact{width: 100%;height: 50vh; display: flex;}
-/*///////*/.boxMap{width: 50%; height: 65vh;display: flex; flex-direction: column;;background:white;align-items: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); margin: 0 30px 0 30px;}
+/*///////*/.boxMap{width: 50%; height: 65vh;display: flex; flex-direction: column;;background:white;align-items: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); margin: 25px 30px 0 30px;}
 .bi-geo-alt, .bi-phone, .bi-envelope{ font-size: 20px; color: #759D59;width: 44px;height: 44px;background: #dff3fc;  border-radius: 50px; transition: all 0.3s ease-in-out;
   display: flex;justify-content: center; align-items: center;margin-left:20px}
 .addresse, .email, .phone{margin-left: 20px;font-size: 1.2rem;font-family: 'Numans';}
@@ -200,7 +200,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .bi-geo-alt:hover{background: #6CC431;color: white;}.bi-envelope:hover{background: #6CC431;color: white;}
 .bi-phone:hover{background: #6CC431;color: white;} 
 /* ////////////////////////Partie Map */iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
-/*///////////////////////////////////*/#mapContact{width: 50%; height: 65vh;display: flex;margin: 0 30px 0 30px;justify-content: center;
+/*///////////////////////////////////*/#mapContact{width: 50%; height: 65vh;display: flex;margin: 25px 30px 0 30px;justify-content: center;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); align-items: center;}
 /*////////////////////Partie formulaire*/.formulaire{width: 90%;}.formulaire > form{width: 100%;height: 50vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .contactName{width:91%; display: flex;font-family: 'Numans';justify-content: space-between;}input{margin-top: 30px;}
@@ -211,19 +211,17 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .envoye:hover {background: #759D59;color: white;}  
 /* /////////////////////////Section Footer */
 #boxFooter{width: 100%;min-height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
-.footerLigne1 > img {width:120px;height: 80px;margin-bottom: -15px;margin-left: 20px;}
-.footerLigne2 > p{ font-size: 1.3rem;font-family:'NovaRound';color: white;font-weight:500;}
-.footerLigne3{width: 30%;display: flex;padding: 20px;}
-.lienPortFolio{width: 100%;display: flex;font-size: 1rem;font-family: 'NovaRound';color:white;padding: 10px
-;
-}
+.footerLigne1 > img {width:90px;height: 60px;margin-bottom: -15px;margin-left: 20px;}
+.footerLigne2 > p{ font-size: 0.875rem;font-family:'NovaRound';color: white;font-weight:500;}
+.footerLigne3{display: flex;padding: 20px;}span{font-size: 0.875rem;}
+.lienPortFolio{width: 100%;display: flex;font-size: 1rem;font-family: 'NovaRound';color:white;padding: 10px;}
 .fa-link {color: white;font-size: 1.2rem;padding-left: 30px;margin-top: 8px;text-decoration: none;}
 .fa-link:hover{ color:#6cc431;}
 /*///////////////////////////////////////////////////////////MEDIA QUERY/////////////////////////////////////////////////////////////////////////*/
 @media  screen and (max-width:1024px) {
 /* PARIE NAV */
 /* #burger {margin-right: 30px;margin-top: 20px;} */
-/* PARTIE A PROPOS */.photoChris{width: 100%; display: flex;justify-content: end;}.photoChris > img{width: 400px;}
+/* PARTIE A PROPOS */.photoChris{width: 100%; display: flex;justify-content: end;}.photoChris > img{width: 310px;height: 310px;}
 .boxLogo{width: 70%;display: flex;}.boxPhoto > .boxLogo > h2 {display: flex; justify-content: center;width: 30vw;}
 /* BOXPRESENTATION */
 .presentation{height: 100vh;display: flex; justify-content: flex-end;flex-direction: column;margin-bottom: 65px;margin-left: 15px;}
@@ -234,42 +232,41 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* PARTIR COMPETENCESDEG */#competencesDeg > .boxCompetencesDeg > h3 {font-size: 3rem;}
 /* PARTIE PORTFOLIO */.titlePort{font-size: 11rem;}.carousel-heading {font-size: 4.5rem;}.slide-img {width: 90vw;height: 60vh;object-fit: cover;}
 /* PARTIE MODALE */.desc {width: 70%;height: 76%}.projetDesc, .collaboration, .date {font-size: 1rem;}
-/* partie contact */.boxContact > .titleContact {font-size: 4.5rem;}#mapContact {margin: 0px 30px 0px 0px;} .formulaire {width: 100%;}}
+/* partie contact */.boxContact > .titleContact {font-size: 4.5rem;}#mapContact {margin: 50px 30px 0px 0px;}.boxMap{margin: 50px 30px 0 30px;}
+ .formulaire {width: 100%;}.paraContact {width: 100%;font-size: 1.2rem;} .rue, .mail, .phon { font-size: 1rem;}
+ .addresse, .email, .phone { margin: 0;font-size: 1rem;}}
 @media screen and (max-width: 768px) {
-/* PARTIE A */.photoChris{width: 100%;}.photoChris > img {width:350px; display: flex; justify-content: center;align-content: center;}
+/* PARTIE A */.photoChris{width: 100%;}.photoChris > img {width:250px;height: 250px; display: flex; justify-content: center;align-content: center;}
 .boxPhoto > .boxLogo > h2 {letter-spacing: -10px; font-size: 5rem; }.prenom{font-size: 11rem;}
 .presentation{justify-content: flex-end; width:90%;height: 80vh;margin-left: 20px;}
 .presentation > .nomPrenom, .dev {margin-left: 65px;margin-bottom: -15px;}
 .presentation > .dev {font-size:3rem;margin-top: 20px;width: 85%;}.resumer{justify-content: flex-end;}
 /* partie competences */.comptet {font-size: 4.5rem;}.develop {font-size: 2rem;}.fa-leaf {margin: 56px 0px 0px -5px; font-size: 2.5rem;}
-/* partie competences 2 */#competencesDeg > .boxCompetencesDeg > h3 {font-size: 2rem;}
+/* partie competences 2 */#competencesDeg > .boxCompetencesDeg > h3 {font-size: 2rem;}.langagesDig{width: 80%;}
 #competencesDeg > .boxCompetencesDeg {width: 35%;justify-content: center;}
 #competencesDeg > .boxCompetencesDeg > img {width: 300px;height: 300px;}
 /* partir portfolio */.titlePort {font-size: 9rem;}#titleProjets > .fa-leaf {font-size: 5.125rem;margin-top: -5px;margin-left: -13px;}
-/* partie carousel */.slide-img {width: 80vw; height: 34vh;margin-top: 80px;}.slide-btn{margin-left: -82px;}
-.boxSlide-btn{margin-top:50px;}
+/* partie carousel */.slide-img {width: 80vw; height: 34vh;margin-top: 80px;}.slide-btn{margin-left: -82px;}.boxSlide-btn{margin-top:50px;}
 /* modal */.titleModal{font-size: 3rem;}.date{width: 60%;padding-bottom: 10px;}
 .thirdLine > .tech{font-size: 2rem;margin: 10px 0 0 20px;}.technologie1{font-size: 1rem;margin: 40px 0 0 10px;}
 .technologie2{font-size: 1rem;margin: 0 0 0 20px;}.tech01, .tech02, .tech03{height: 58px;margin-left: 40px;}
 .desc {width: 100%;height: 75%;}.fourLine > .moyens{width:100%;font-size: 2rem;margin: 10px 0;} 
 .moyen1, .moyen2, .moyen3, .moyen4{font-size: 0.75rem;padding: 15px;margin: 0;}
 /* partie contact */.boxContact > .titleContact {font-size: 3.5rem;margin-top: 50px;}.fa-leaf {margin: 26px 0px 0px 0px;font-size: 2.5rem;}
-.boxContact {height: 10vh;}.contactName {width: 100%;}.contactName > .name, .surname {width: 90%; margin-left: 15px;}
-.contactName {width: 100%;display: block;margin-top: -83px; }.paraContact {width: 100%;font-size: 1rem;}
-.rue, .mail, .phon {font-size: 0.875rem;width: 41%;margin: 0 0 0 20px;}.addresse, .email, .phone {font-size: 1rem;}
-.boxMap, #mapContact{height: 80vh;margin: 0px 20px 0 20px;}.bi-geo-alt, .bi-phone, .bi-envelope{width: 35px;height: 35px;}
-iframe {height: 450px;}.formulaire {margin-top: -38px;}.envoye {width: 50%;margin-top: 50px; }}
+.boxContact {align-items: flex-end;}.contactName {width: 100%;display: block; margin-top: -35px;}.contactName > .name, .surname {width: 90%; margin-left: 15px;}
+.paraContact {width: 100%;font-size: 1rem;margin-top: 30px;}.rue, .mail, .phon {font-size: 0.875rem;width: 41%;margin: 0 0 0 20px;}
+.addresse, .email, .phone {font-size: 1rem;}.boxMap, #mapContact{height: 65vh;margin: 25px 20px 0 20px;}
+.bi-geo-alt, .bi-phone, .bi-envelope{width: 35px;height: 35px;}iframe {height: 450px;}.formulaire {margin-top: -38px;}.envoye {width: 50%;margin-top: 50px; }}
 @media screen and (max-width: 375px) {
-  #mobileNavArea > ul > li > a{font-size: 2.75rem;}
+/* partie Navigation*/#mobileNavArea > ul > li > a{font-size: 2.75rem;}
 /* partie HEADER */#logoLeaf > .logoChris {width: 75px;height: 50px;margin-left: 15px;}
-#burger {margin-right: 20px; margin-top: -20px;font-size: 1.536rem;}
-.prenom{margin-left: 30px;font-size:6.5rem;} h1{font-size: 3rem;}.moi{font-size: 1.5rem;margin-top: 60px;}
-#boxScroll > .scroll {font-size:0.875rem;}.hello{margin-left: 30px;}
+#burger {margin-right: 20px; margin-top: -20px;font-size: 1.536rem;}.prenom{margin-left: 30px;font-size:6.5rem;} h1{font-size: 3rem;}
+.moi{font-size: 1.5rem;margin-top: 60px;}#boxScroll > .scroll {font-size:0.875rem;}.hello{margin-left: 30px;}
 .boxReseau {min-height: 10vh;display: flex; align-items: center; margin-top: 25px;justify-content: center;}
 /* partie A PROPOS*/.presentation > .nomPrenom > span {font-size: 1.5rem;padding-right:10px}.presentation > .nomPrenom {font-size: 1.5rem;}
-#boxPresentation{width:100%}.photoChris > img {width: 220px;}.boxPhoto > .boxLogo > h2 {letter-spacing: 0px;font-size: 2rem;}
-.presentation > .dev { font-size: 1.5rem; margin-top: 20px;width: 100%; margin-right: 20px;}
-.resumer{margin-left: 0px;}.resumer > p {width: 100%;font-size: 0.75rem;}
+#boxPresentation{width:100%}.photoChris > img {width: 220px;}.boxPhoto > .boxLogo > h2 {letter-spacing: 0px;font-size: 4rem;}
+.presentation > .dev { font-size: 1.5rem; margin-top: 20px;width: 100%; margin-right: 20px;}.boxPhoto{width: 50%;justify-content: space-between;}
+.resumer{margin-left: 0px;}.resumer > p {width: 100%;font-size: 0.75rem;}.photoChris > img {width: 200px;height: 200px;}
 /* PARTIE COMPETENCES */#competencesDev {height: 50vh;}.develop{font-size: 1rem;margin-left: 20px;margin-top: -44px;}.comptet{font-size: 2rem;margin: 0;}
 #logoLeaf > .logoChris {margin: 0 0 0 10px;}.boxLeafDeve > .fa-leaf {margin: -44px 0px 3px -4px;font-size: 1.2rem;}
 .imgGreen > img {display: none;}.contenaireLang {width: 80%;}.barLangages {height: 30px;}.division {height: 20%;}
