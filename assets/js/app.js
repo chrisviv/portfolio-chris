@@ -108,10 +108,32 @@ document.getElementsByClassName('cross')[0].addEventListener('click' , function(
 document.getElementsByClassName('boxslideshow')[0].addEventListener('click', function() {
     document.getElementById('boxModalDesc').classList.remove('none')
 });
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+// gsap.registerPlugin(ScrollTrigger);
 
+// const titleHeader = document.querySelector("h1");
+// const moi = document.querySelector(".moi");
+// const prenom = document.querySelector(".prenom");
+// // const icon = document.querySelector("#mouse-icon");
+// // const box = document.querySelector(".panel-text");
+// // const img = document.querySelector(".panel-image");
+// // const btn = document.querySelector(".btn");
 
-
-
+// // mouse icon animation
+// const iconTl = gsap.timeline({ repeat: -1, paused: true });
+// iconTl
+//   .to(
+//     ".scroll",
+//     {
+//       y: 20,
+//       autoAlpha: 0,
+//       transformOrigin: "50% 100%",
+//       duration: 0.7
+//     },
+//     "icon"
+//   )
+//   .to("#boxScroll", { y: 8, duration: 0.7 }, "icon")
+//   .to("#boxScroll", { y: 0, duration: 0.7 }, "icon+=0.7");
 
 
 
@@ -163,7 +185,7 @@ document.getElementsByClassName('boxslideshow')[0].addEventListener('click', fun
 
 // function showSlides(n) {
 //   var i;
-//   var slides = document.getElementsByClassName("slideshw");
+//   var slides = document.getElementsByClassName("slideshow");
 //   var dots = document.getElementsByClassName("slide-btn");
 //   if (n > slides.length) {slideIndex = 1}
 //     if (n < 1) {slideIndex = slides.length}
@@ -178,16 +200,16 @@ document.getElementsByClassName('boxslideshow')[0].addEventListener('click', fun
 // } 
 
 
- /* animation du H2 section 1 */
-//  var coucou =  document.getElementById('titleH2')
+//  /* animation du H2 section 1 */
+//  var apparition =  document.getElementById('aPropos')
 
 //  window.onscroll = function() {scrollH2()};
 
 //  function scrollH2(){
 //      if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 600) {
-//          coucou.classList.add("apparitionH2")
+//          apparition.classList.add("apparitionH2")
 //     }else {
-//          coucou.classList.remove("apparitionH2")
+//          apparition.classList.remove("apparitionH2")
 //  }}
 
 
