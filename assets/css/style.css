@@ -21,8 +21,8 @@ body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: 
 .none {display: none !important;}
 #mobileNavArea{overflow: hidden; width: 100%; height: 0; background: #4A8442;display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;}
 .openNav{height: 100vh !important;} ul {text-align:center; margin-top: 85px;}
-#mobileNavArea > ul > li {list-style-type: none;margin: 10px 0px;}
-#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound';font-size: 3.75rem;text-align: center;}
+#mobileNavArea > ul > li {list-style-type: none;margin: 15px 0px;}
+#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound';font-size: 3.75rem;}
 #burger{color: white;margin-right: 50px;margin-right: 30px;margin-top: 5px;font-size: 2.536rem;}
 #closeNav{color: white;margin-right: 30px;}.navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
 /* #burger > .fa-solid{font-size: 2.536rem;} */
@@ -35,7 +35,7 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 .moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
 h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .prenom{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
-/* partie boxReseau */.boxReseau{width: 100%;min-height: 10vh; display: flex;align-items: center;justify-content: flex-end;margin-right: 40px;margin-top: 25px;}
+/* partie boxReseau */.boxReseau{width: 100%;display: flex;}
 .fa-brands{font-size:1.875rem;color:white;text-decoration: none; margin-left: 20px;}
 .fa-linkedin:hover{color: #6cc431;}.fa-facebook-square:hover{color: #6cc431;}.fa-github-square:hover{color: #6cc431;}
 /*******************************************************************************************************/
@@ -44,12 +44,12 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
 #boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
-.reseau{width: 100%;height: 20vh;display: flex;justify-content: end;align-items: end;padding-right: 30px;}
+.reseau{width: 100%;height: 23vh;display: flex;justify-content: flex-end;align-items: flex-end;padding: 30px;}
 /********************section  A Propos ************************/
 #aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxPhoto{width: 30%;height: 100vh;display: flex;align-items: center;flex-direction: row; background: #4A8442;justify-content:center;}
 /* BoxLogo et A propos */.boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
-.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 6rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : 13px;margin-right: -10px;}
+.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : 13px;margin-right: -10px;}
 /* photoChris*/.photoChris {width:100%; height:50vh; display: flex;align-items: flex-start;}
 .photoChris > img{width: 350px;height: 350px;border-radius: 50%;object-fit: cover;border: 5px solid white}
 /* Logo Chris */.boxphoto > .boxLogo >.fa-solid{font-size: 1rem;}
@@ -75,7 +75,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /*****************************************************************************************************************************************************************************/
 /* partie langages compétence developpement web */#contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
-.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:45px 0px 0px 60px}
+.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:0px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
@@ -110,10 +110,9 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* End of container stylings *//* Provides padding to main heading */
 .main-heading {padding: 2rem 0 2rem 0;}.content {position: relative;}
 /* Carousel content stylings *//* Places the carousel content on center of the carousel */
-.carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;}
+/* .carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;} */
 /* To center the content horizontally  and vertically */
-.carousel-heading {width: 100%;color: black;font-size: 5rem;text-align: center;font-family: 'Rubik';
-  font-weight: 900;letter-spacing: 20px;text-align: center;}
+.carousel-heading {width: 100%;color: black;font-size: 5rem;text-align: center;font-family: 'Rubik';font-weight: 900;letter-spacing: 20px;text-align: center;}
 /* End of carousel content stylings *//* Slideshow stylings */.slideshow {height: 100%; overflow: hidden;}
   /* To hide slides in x-direction *//* Wrapper which wraps all the  slideshow images stylings */
 .boxslideshow{ display: flex; width: 700%;position: relative;animation: slideshow 20s 3s infinite;}
@@ -204,7 +203,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .envoye{width: 90%;background:white;border: 0;padding: 10px 24px;color: black;width: 35%;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);transition: 0.4s;border-radius: 4px;}
 .envoye:hover {background: #759D59;color: white;}  
 /* /////////////////////////Section Footer */
-#boxFooter{width: 100%;min-height: 5vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
+#boxFooter{width: 100%;height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
 .footerLigne1 > a >img {width:120px;height: 80px;margin-bottom: -15px;margin-left: 20px;}
 .footerLigne2 > p{ font-size: 0.875rem;font-family:'NovaRound';color: white;font-weight:500;}
 .footerLigne3{display: flex;padding: 20px;}span{font-size: 0.875rem;}
@@ -215,7 +214,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 @media  screen and (max-width:1024px) {
 /* PARIE NAV *//* #burger {margin-right: 30px;margin-top: 20px;} */
 /* PARTIE A PROPOS */.photoChris{width: 100%; display: flex;justify-content: center;height: 65%;}.photoChris > img{width: 310px;height: 310px;}
-.boxLogo{justify-content: end;}.boxPhoto > .boxLogo > h2 {display: flex; justify-content: center;width: 30vw;}#boxPresentation{margin-left: 80px;}
+.boxLogo{justify-content: end;}.boxPhoto > .boxLogo > h2 {display: flex; justify-content: center;width: 30vw;font-size: 4rem;}#boxPresentation{margin-left: 80px;}
 /* BOXPRESENTATION */.presentation{justify-content: center;}.presentation > .nomPrenom, .dev {margin-left: 10px;}
 .presentation > .dev {width: 77%; font-size: 3.5rem;}.resumer > p{width: 75%;}
 /* PARTIE COMPETENCESDEV */.imgGreen > img {width: 100%;}.fa-leaf {margin: 60px 0px 0px 3px;}
@@ -223,12 +222,13 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 /* PARTIR COMPETENCESDEG */#competencesDeg > .boxCompetencesDeg > h3 {font-size: 3rem;}
 #competencesDeg> .boxCompetencesDeg {width: 35%;}.boxDig{align-items: flex-start;}
 /* PARTIE PORTFOLIO */.titlePort{font-size: 9rem;margin-top: 6px;}.carousel-heading {font-size: 4.5rem;}.slide-img {width: 944px;height:482px;object-fit: cover;}
+.boxSlide-btn{margin-top: -25px;}
 /* PARTIE MODALE */.desc {width: auto;height: 80%}.projetDesc, .collaboration, .date {font-size: 1rem;}
 /* partie contact */.boxContact > .titleContact {font-size: 4.5rem;margin-bottom: 5px;}#mapContact {margin: 50px 30px 0px 0px;}.boxMap{margin: 50px 30px 0 30px;}
- .formulaire {width: 100%;}.paraContact {width: 100%;font-size: 1.2rem;} .rue, .mail, .phon { font-size: 1rem;}.addresse, .email, .phone { margin: 0;font-size: 1rem;}}
+ .formulaire {width: 100%;}.paraContact {width: 95%;font-size: 1.2rem;} .rue, .mail, .phon { font-size: 1rem;}.addresse, .email, .phone { margin: 0;font-size: 1rem;}}
 @media screen and (max-width: 768px) {
 /* PARTIE A propos */.photoChris{width: 100%;}.photoChris > img {width:250px;height: 250px; display: flex; justify-content: center;align-content: center;}
-.boxPhoto > .boxLogo > h2 {letter-spacing: 35px; font-size: 5rem; }.prenom{font-size: 11rem;}
+.boxPhoto > .boxLogo > h2 {letter-spacing: 35px; font-size: 4rem; }.prenom{font-size: 11rem;}
 .presentation{justify-content: center; width:90%;height: 40vh;margin-left: 15px;display: flex;align-items: center;}.photoChris{height: 60vh;display: flex;}
 .presentation > .nomPrenom, .dev {margin-bottom: -20px;margin-left: -126px}#boxPresentation{margin: 0;}
 .presentation > .dev {font-size:3rem;margin-top: 20px;width: 85%;}.resumer{height: 50vh;align-items: end;width: 90%;}
@@ -267,19 +267,18 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #contact { width: 100%;height: 100vh;background: white;display: flex; flex-direction: column; align-items: center; justify-content: center;}
 #mapContact{width: 100%;height: 40vh;}.contactName{margin-top: 0;}.formulaire > form {height: 40vh;}.contactName > .name, .surname {margin-left: 27px;}
 .contactName > .surname { margin-left: 25px;}
-/* partie footer */#boxFooter { min-height: 8vh;}.footerLigne1 > a >img {width: 100px; height: 65px;}}
-
+/* partie footer */#boxFooter { height: 8vh;}.footerLigne1 > a >img {width: 100px; height: 65px;}}
 @media screen and (max-width: 375px) {
-/* partie Navigation*/#mobileNavArea > ul > li > a{font-size: 2.75rem;}
+/* partie Navigation*/#mobileNavArea > ul > li > a{font-size: 1.8rem;}
 /* partie HEADER */#logoLeaf > .logoChris {width: 75px;height: 50px;margin-left: 15px;}
-#burger {margin-right: 20px; margin-top: -20px;font-size: 1.536rem;}.prenom{margin-left: 30px;font-size:6.5rem;} h1{font-size: 3rem;}
-.moi{font-size: 1.5rem;margin-top: 60px;}#boxScroll > .scroll {font-size:0.875rem;}.hello{margin-left: 30px;}
+#burger {margin-right: 20px; margin-top: -20px;font-size: 1.536rem;}.prenom{margin-left: 25px;font-size:6rem;} h1{font-size: 3rem;}
+.moi{font-size: 1.5rem;margin-top: 60px;}#boxScroll > .scroll {font-size:0.875rem;}.hello{margin-left: 5px;}
 .boxReseau {min-height: 10vh;display: flex; align-items: center; margin-top: 25px;justify-content: center;}
-/* partie A PROPOS*/.presentation > .nomPrenom > span {font-size: 1.5rem;padding-right:10px}.presentation > .nomPrenom {font-size: 1.5rem;}
-#boxPresentation{width:100%}.photoChris > img {width: 220px;}.boxPhoto > .boxLogo > h2 {letter-spacing: 0px;font-size: 4rem;}
-.presentation > .dev { font-size: 1.5rem; margin-top: 20px;width: 100%; margin-right: 20px;}.boxPhoto{width: 50%;justify-content: space-between;}
-.resumer{margin-left: 0px;}.resumer > p {width: 100%;font-size: 0.75rem;}.photoChris > img {width: 200px;height: 200px;}
-/* PARTIE COMPETENCES */#competencesDev {height: 50vh;}.develop{font-size: 1rem;margin-left: 20px;margin-top: -44px;}.comptet{font-size: 2rem;margin: 0;}
+/* partie A PROPOS*/.presentation > .nomPrenom > span {font-size: 1.5rem;padding-right:10px}.presentation > .nomPrenom {font-size: 1.3rem;margin-right: -25px;}
+#boxPresentation{width:100%}.photoChris > img {width: 220px;}.boxPhoto > .boxLogo > h2 {letter-spacing: 5px;font-size: 3.5rem;}
+.presentation > .dev { font-size: 1.5rem; margin-top: 20px;width: 100%; margin-right: 20px;}.boxPhoto{width:30%;justify-content:center;}
+.resumer{margin-left: 0px;align-content: center;padding: 10px;}.resumer > p {width: 100%;font-size: 0.75rem;}.photoChris > img {width: 120px;height: 120px;}
+/* PARTIE COMPETENCES */#competencesDev {height: 100vh;}.develop{font-size: 1rem;margin-left: 20px;margin-top: -44px;}.comptet{font-size: 2rem;margin-bottom: 10px;}
 #logoLeaf > .logoChris {margin: 0 0 0 10px;}.boxLeafDeve > .fa-leaf {margin: -44px 0px 3px -4px;font-size: 1.2rem;}
 .imgGreen > img {display: none;}.contenaireLang {width: 80%;}.barLangages {height: 30px;}.division {height: 20%;}
 #contenaireDev {margin-top: -50px;}.langagesDev{margin: 30px 0px 0px 50px;}
@@ -289,23 +288,28 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #competencesDeg > .boxCompetencesDeg > img {width: 100px;height: 100px;margin: -7px 0 0 auto;}
 .type > h2 {font-size: 1.2rem; margin-left: 25px;}.type > .fa-leaf {margin-top: 53px;font-size: 1.3rem;}
 .boxDig {width: 100%;height: 100vh;display: flex; flex-direction: column;}.langagesDig {margin: 40px 0px 0px 25px;}
-/* PARTIE PROJETS */#listeProjets{width: 100%;height: 0vh;}#titleProjets{height: 40vh;}
+/* PARTIE PROJETS */#titleProjets{height: 100vh;}
 .titlePort{font-size: 4rem;margin: 0;}#titleProjets > .fa-leaf {font-size: 2rem;margin: 42px 0 0 -5px;}.main-heading {padding: 0;} 
 /* PARTIE carousel */.carousel-heading {font-size: 2.5rem;}.slide-img {width: 90vw;height: 22vh;margin-bottom: 30px;}
+.carousel-content{text-align: center;display: flex;}.secondLine{height: 35vh;}
 .slide-btn{width: 1rem;height: 1rem;display: flex;justify-content: center;align-items: center;margin-left: 10px;}.boxSlide-btn{margin-top: 20px;}
 /* PARTIE MODAL */.firstLine{width: 100%;}.titleModal{font-size: 2rem;}.desc{height: 100%;}.bi{font-size: 1.5rem;}
 .boxDesc {width: 100%;height: 30vh;display: flex;}.desc{margin: 0;width: 60%;height: 100%;}
 .boxdetail{width: 100%;display: block;}.contenairSecond {width: 100%; display: flex;}
-.contenairSecond{flex-direction: column-reverse;}.projetDesc, .collaboration, .date {font-size: 0.75rem;margin-left:10px}
-#boxTech{width: 100%;display: flex;flex-direction: column;}.thirdLine{width: 100%;margin: 10px 20px 10px 0;}
-.thirdLine > .tech{font-size: 1.5rem;}.technologie1{font-size: 1rem;}
+.contenairSecond{flex-direction: column-reverse;}.projetDesc, .collaboration, .date {font-size: 0.65rem;}
+#boxTech{width: 100%;display: flex;flex-direction: column;padding: 10px;}.thirdLine{width: 95%;margin-top: 40px;}
+.thirdLine > .tech{font-size: 1.5rem;}.technologie1{font-size: 1rem;margin-left: 20px;margin-bottom: 10px;}
 .boxImgTech1 {width: 100%;height: 35px;display: flex;align-items: center;}
-.technologie2{font-size: 0.75rem;}.boxImgTech2 {width: 100%;height: 10vh;}.tech01, .tech02, .tech03{ height: 43px;margin-left: 20px;}
-.moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;}
-.fourLine {width: 100%;margin: 10px 20px 10px 0;}.fourLine > .moyens{font-size: 1.5rem;margin: 0;}
-/* PARTIR CONTACT */
-.boxContact >.fa-leaf {font-size: 2rem;}.paraContact {width: 90%;font-size: 0.75rem;}#contenairContact{width: 100%; display: flex; flex-direction: column;}
-.boxMap{width: 100%;margin: 0 0;}.mail{width: 64%;}
+.technologie2{font-size: 1rem;margin-top: 20px;margin-left: 20px;}.boxImgTech2 {width: 100%;height: 15vh;margin-top: -30px;}
+.tech01, .tech02, .tech03{ height: 40px;}.tech04{height: 110px;margin-left: 20px; margin-bottom: 20px;}.tech05{height: 150px;margin-bottom: -10px;}
+  .moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;}
+.fourLine {width: 100%;margin-top: -10px;}.fourLine > .moyens{font-size: 1.5rem;margin: 0;}
+/* PARTIR CONTACT */.boxContact >.fa-leaf {font-size: 2rem;}.boxContact > .titleContact {font-size: 2.5rem;}.boxContact{height: 20vh;}
+.paraContact {width: 90%;font-size: 0.75rem;}#contenairContact{width: 100%; display: flex; flex-direction: column;}
+.boxMap{width: 100%;margin: 0 0; height: 35vh;}.mail{width: 64%;}iframe {height: 75px;}
+.boxMap, #mapContact {margin: 15px 20px 18px 20px;}.envoye {margin-top: 25px;}input {margin-top: 18px;}
+.contactName > .name, .surname {padding: 7px 5px;}.contactName {margin-top: 9px;}
+
 
 
 } 
