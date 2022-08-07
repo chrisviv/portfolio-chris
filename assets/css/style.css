@@ -1,114 +1,86 @@
 /******** liste des font-family *********/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* font-family: 'Rubik', sans-serif; */
-@font-face {font-family: "Numans";src: url("../fonts/Numans-Regular.ttf");font-display: swap;}
+/*font-family*/@font-face {font-family: "Numans";src: url("../fonts/Numans-Regular.ttf");font-display: swap;}
 @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
-/*//////////////////////// Général  /* Default stylings */
-*{box-sizing: border-box;}html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
+/* Général  /* Default stylings */*{box-sizing: border-box;}html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
-/*//////////////////////// cursor */
-.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
+/* cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
 .cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 9999;}
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 99999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
-/*////////////////// Navigation */
-#nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
+/*Navigation */#nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
 #nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 0px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
-/*/////////////// partie boxLogo*/
-#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
-#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 20px;margin-left: 15px;}
-.none {display: none !important;}
+/* partie boxLogo */#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
+#logoLeaf>.logoChris {width:120px;height: 80px;margin-top: 20px;margin-left: 15px;}.none {display: none !important;}
 #mobileNavArea{overflow: hidden; width: 100%; height: 0; background: #4A8442;display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;}
 .openNav{height: 100vh !important;} ul {text-align:center; margin-top: 85px;}
 #mobileNavArea > ul > li {list-style-type: none;margin: 15px 0px;}
 #mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound';font-size: 3.75rem;}
 #burger{color: white;margin-right: 50px;margin-right: 30px;margin-top: 5px;font-size: 2.536rem;}
 #closeNav{color: white;margin-right: 30px;}.navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
-/* #burger > .fa-solid{font-size: 2.536rem;} */
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px;}.fa-arrow-rotate-right{color: white;}
-/*************************************************************************************************/
-/*************Partie Header************* */
-header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+/*Partie Header */header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 /* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
-.hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}
-.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
-h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
-.prenom{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
-/* partie boxReseau */.boxReseau{width: 100%;display: flex;}
-.fa-brands{font-size:1.875rem;color:white;text-decoration: none; margin-left: 20px;}
+.hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
+h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
+/* partie boxReseau */.boxReseau{width: 100%;display: flex;}.fa-brands{font-size:1.875rem;color:white;text-decoration: none; margin-left: 20px;}
 .fa-linkedin:hover{color: #6cc431;}.fa-facebook-square:hover{color: #6cc431;}.fa-github-square:hover{color: #6cc431;}
-/*******************************************************************************************************/
-#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
+/*partie Scroll */#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
-#boxScroll> div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
+#boxScroll > div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
-.reseau{width: 100%;height: 23vh;display: flex;justify-content: flex-end;align-items: flex-end;padding: 30px;}
-/********************section  A Propos ************************/
-#aPropos{width: 100%; min-height: 100vh; display: flex;}
+.reseau{width: 100%;height: 10vh;display: flex;justify-content: center;padding: 30px;}
+/*section  A Propos */#aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxPhoto{width: 30%;height: 100vh;display: flex;align-items: center;flex-direction: row; background: #4A8442;justify-content:center;}
 /* BoxLogo et A propos */.boxPhoto >.boxLogo > img {margin-top: -100px;margin-left: 15px;}
-.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : 13px;margin-right: -10px;}
-/* photoChris*/.photoChris {width:100%; height:50vh; display: flex;align-items: flex-start;}
-.photoChris > img{width: 350px;height: 350px;border-radius: 50%;object-fit: cover;border: 5px solid white}
-/* Logo Chris */.boxphoto > .boxLogo >.fa-solid{font-size: 1rem;}
-.boxphoto > .boxLogo >.fa-leaf{color: #6CC431;transform: rotate(45deg); margin-top : 20px ;}
+.boxPhoto >.boxLogo > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;margin-right: -10px;}
+/* photoChris*/.photoChris {width:100%; height:50vh; display: flex;align-items: flex-start;position: relative;}
+.photoChris > img{width: 350px;height: 350px;border-radius: 50%;object-fit: cover;border: 5px solid white; position: absolute;left: 50px;}
+/* Logo Chris */.boxphoto > .boxLogo >.fa-solid{font-size: 1rem;}.boxphoto > .boxLogo >.fa-leaf{color: #6CC431;transform: rotate(45deg); margin-top : 20px ;}
 .boxphoto > .boxLogo >.fa-arrow-rotate-right{color: #ffff;}
 /* partie boxPrensentation */#boxPresentation{width:70%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */.presentation{width: 100%;height: 100vh;display: flex;justify-content:end;flex-direction: column;}
-.presentation > .nomPrenom, .dev {margin-left: 85px;margin-top: -50px;}
-.presentation > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
+.presentation > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}.presentation > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
 .presentation > .nomPrenom > span{color:black;font-size: 3.125rem;}
-/* .presentation > .nomPrenom > span:hover{color: black;}  */
-.presentation > .dev{width:100%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;}
-/************************************************************************************************************************************************************************/
+.presentation > .dev{width:100%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;z-index: 1;}
 /* partie résumer */.resumer{height: 100vh;display: flex;justify-content: center; align-items: end;flex-direction: column;margin-right: 50px;}
 .resumer > p {width: 50%;display: flex;justify-content: center;align-items: center;font-family: "Numans";font-size: 1rem;margin-left: 20px; margin-top:20px;}  
-/**************** SECTION COMPETENCES DEV*********************/
-/* Partie Compétence */#competencesDev{ width: 100%; height: 100vh;background: #095933;}
+/* SECTION COMPETENCES DEV*//* Partie Compétence */#competencesDev{ width: 100%; height: 100vh;background: #095933;}
 .boxLangages{width: 100%;height: 70vh;display: flex;justify-content: center;}
 .division{display: flex;flex-direction: column;text-align:center ;}
 .comptet{width:100%;height: 15vh; font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:white;margin-top: 30px;}
 .boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}.boxLeafDeve >.fa-leaf{margin:-26px 0px 0px -14px;font-size: 2.5rem;}
 .develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
-/*****************************************************************************************************************************************************************************/
 /* partie langages compétence developpement web */#contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
-.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:0px 0px 0px 60px}
+.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:50px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
 /* partie des compétences */.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease-out;} 
-/****Animation*****************/@keyframes moveLamp {0%{width:75%;margin-right: 500px;}50%{margin-top: 250px;}100%{ margin-bottom: 150px;}}
-/**************** SECTIONpx COMPETENCES DESIGNE/DIGITAL/AUTRES*********************/
-#competencesDeg> .boxCompetencesDeg{ width:47%;height:100vh;display: flex; flex-direction: column;}
+/****Animation****/@keyframes moveLamp {0%{width:75%;margin-right: 500px;}50%{margin-top: 250px;}100%{ margin-bottom: 150px;}}
+/* SECTION COMPETENCES DESIGNE/DIGITAL*/#competencesDeg> .boxCompetencesDeg{ width:47%;height:100vh;display: flex; flex-direction: column;}
 #competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans";font-size:3.5rem;margin-left: 25px;}
 #competencesDeg >.boxCompetencesDeg> img{width: 400px;height: 400px;margin-left: 30px;transform: rotate(15deg);}
-/******************************************************************************************************************************************************************/
-/* partie langages de compétence */
-#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
+/* partie langages de compétence */#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
 /* partie langages de compétence developpement */.boxDig{width: 100%;height:100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
 .type> h2{ font-family: 'NovaRound';font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
 .type>.fa-leaf{margin-top:52px;font-size: 1.563rem;margin-left: 2px;}
-/******************************************************************************************************************************************************************/
-.langagesDig{ width:80%;height:30px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:48px 0px 0px 60px} 
+.langagesDig{ width:80%;height:30px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:40px 0px 0px 36px} 
 .progres{width: 100%; font-family: 'NovaRound';font-size: 1.4rem;color: black;}
 .langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
-/************************************************************************************************************************************************************************/
-/*********************************** SECTION PORTFORLIO ********************************/
-/* titre porfolio */#portFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column; align-items: center;}
+/* SECTION PORTFORLIO *//* titre porfolio */#portFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column; align-items: center;}
 #titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
 .titlePort{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;margin-top: 15px;}
 #titleProjets>.fa-leaf{font-size: 6.125rem;margin-top: -14px;margin-left: -23px;}
-/************************************************************************************************************************************************************************/
 /* partie des projets */#listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
  /* Container stylings: -> centers the whole content of the page -> defines width and height for container */
-.container {display: flex; flex-direction: column;align-items: center; margin: auto;width: 80vw;height: 100vh;}
-/* End of container stylings *//* Provides padding to main heading */
-.main-heading {padding: 2rem 0 2rem 0;}.content {position: relative;}
+.container {width: 100vw;height: 100vh;}/* End of container stylings *//* Provides padding to main heading */
+/* .main-heading {padding: 2rem 0 2rem 0;} */.content {position: relative;}
 /* Carousel content stylings *//* Places the carousel content on center of the carousel */
 /* .carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;} */
 /* To center the content horizontally  and vertically */
@@ -139,8 +111,8 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 95% {right: 0%;} 
 100%{ right: 0%;}} 
 /* End of slideshow stylings *//* Carousel control buttons stylings */
-.slide-btn {width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;margin-top: -100px;
-  width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 50px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;}
+/* .slide-btn {width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;margin-top: -100px;
+  width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 50px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;} */
   /* Stylings for positioning the buttons at the bottom of the carousel */
  /* As we provide position as absolute,the buttons places one over the other.So, we have to place them individuallyat their correct positions. */
 .slide-btn-1 {left: 45%;}.slide-btn-2 {left: 50%;}.slide-btn-3 {left: 55%;}.slide-btn-4 {left: 60%;}
@@ -152,8 +124,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .slide-btn-5:focus~.boxslideshow {animation: none;left: -400%;}.slide-btn-6:focus~.boxslideshow {animation: none;left: -500%;}
 .slide-btn-7:focus~.boxslideshow {animation: none;left: -600%;}
 /* When we focus on the button, the background color changes */.slide-btn:focus {background-color: #6CC431;}/* End of carousel control buttons stylings */
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/********************************** Section partie modal pour description des languages trouvés id = boxModalDesc****************************************/
+/*Section partie modal pour description des languages trouvés id = boxModalDesc*/
 #boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background: white;z-index: 80;}
 .modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;box-sizing: border-box;overflow-y:hidden;background:white}
 /* partie firstLine name of project*/.firstLine{width: 100%;height: 10vh;display: flex;justify-content: space-between;align-items: center;}
@@ -178,9 +149,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .fourLine > .moyens{font-family: 'NovaRound';font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color: #4A8442;display: flex;justify-content: center;margin-top: 20px;}
 .moyen1, .moyen2, .moyen3, .moyen4 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;color: black;z-index: 99;}
 /* .foorLine > label{font-family: 'Numans'; padding-left: 10px;font-size: 1rem;margin-right: 10px;} */
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////Section Contact////////////////////////////////////////////////////////////////*/
-#contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}
+/*Section Contact*/#contact{ width: 100%; height: 100vh;background:white;display: flex;flex-direction: column;}
 .boxContact{width: 100%; height: 20vh;display: flex;justify-content: center; align-items: end;}
 .boxContact > .titleContact{font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:black;margin-bottom: -8px;}
 .fa-leaf{margin: 124px 0px 0px 5px; font-size:3rem}.paraContact{ width: 100%;font-size: 1.2rem; margin-left: 30px;margin-top: 18px;}
@@ -202,15 +171,13 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .sujet{width: 90%;height: 45px;border:0.5px solid #759D59;}.courriel{width: 90%;height: 45px;border:0.5px solid #759D59;}
 .envoye{width: 90%;background:white;border: 0;padding: 10px 24px;color: black;width: 35%;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);transition: 0.4s;border-radius: 4px;}
 .envoye:hover {background: #759D59;color: white;}  
-/* /////////////////////////Section Footer */
-#boxFooter{width: 100%;height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
+/*Section Footer */#boxFooter{width: 100%;height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
 .footerLigne1 > a >img {width:120px;height: 80px;margin-bottom: -15px;margin-left: 20px;}
 .footerLigne2 > p{ font-size: 0.875rem;font-family:'NovaRound';color: white;font-weight:500;}
 .footerLigne3{display: flex;padding: 20px;}span{font-size: 0.875rem;}
 .lienPortFolio{width: 100%;display: flex;font-size: 1rem;font-family: 'NovaRound';color:white;padding: 10px;}
-.fa-link {color: white;font-size: 1.2rem;padding-left: 30px;margin-top: 8px;text-decoration: none;}
-.fa-link:hover{ color:#6cc431;}
-/*///////////////////////////////////////////////////////////MEDIA QUERY/////////////////////////////////////////////////////////////////////////*/
+.fa-link {color: white;font-size: 1.2rem;padding-left: 30px;margin-top: 8px;text-decoration: none;}.fa-link:hover{ color:#6cc431;}
+/*////////////MEDIA QUERY/////////////*/
 @media  screen and (max-width:1024px) {
 /* PARIE NAV *//* #burger {margin-right: 30px;margin-top: 20px;} */
 /* PARTIE A PROPOS */.photoChris{width: 100%; display: flex;justify-content: center;height: 65%;}.photoChris > img{width: 310px;height: 310px;}
@@ -249,7 +216,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .addresse, .email, .phone {font-size: 1rem;}.boxMap, #mapContact{height: 65vh;margin: 25px 20px 0 20px;}
 .bi-geo-alt, .bi-phone, .bi-envelope{width: 35px;height: 35px;}iframe {height: 450px;}.formulaire {margin-top: -38px;}.envoye {width: 50%;margin-top: 50px; }}
 @media screen and (max-width: 576px){
-/* partie header */.prenom {font-size: 9rem;margin-left: 65px;}.hello{margin-left: 40px;padding: 25px;}.moi{font-size: 2rem;}.reseau{height: 30vh;}
+/* partie header */.prenom {font-size: 9rem;margin-left: 65px;}.hello{margin-left: 40px;padding: 25px;}.moi{font-size: 2rem;}
 /* partie navigation */#mobileNavArea > ul > li > a {font-size: 3rem;}.navReseau {height: 50vh;align-items: flex-end;}
 /* partie A PROPOS */.photoChris > img {width: 190px;height: 190px;}.presentation > .dev {font-size: 2.3rem;}.presentation > .nomPrenom{font-size: 1.5rem;}
 .resumer > p {font-size: 0.875rem;}
@@ -287,7 +254,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 #competencesDeg > .boxCompetencesDeg > h3 {font-size: 1.2rem;}
 #competencesDeg > .boxCompetencesDeg > img {width: 100px;height: 100px;margin: -7px 0 0 auto;}
 .type > h2 {font-size: 1.2rem; margin-left: 25px;}.type > .fa-leaf {margin-top: 53px;font-size: 1.3rem;}
-.boxDig {width: 100%;height: 100vh;display: flex; flex-direction: column;}.langagesDig {margin: 40px 0px 0px 25px;}
+.boxDig {width: 100%;height: 100vh;display: flex; flex-direction: column;}.langagesDig {margin: 35px 0px 0px 35px;}
 /* PARTIE PROJETS */#titleProjets{height: 100vh;}
 .titlePort{font-size: 4rem;margin: 0;}#titleProjets > .fa-leaf {font-size: 2rem;margin: 42px 0 0 -5px;}.main-heading {padding: 0;} 
 /* PARTIE carousel */.carousel-heading {font-size: 2.5rem;}.slide-img {width: 90vw;height: 22vh;margin-bottom: 30px;}
@@ -309,11 +276,11 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}
 .boxMap{width: 100%;margin: 0 0; height: 35vh;}.mail{width: 64%;}iframe {height: 75px;}
 .boxMap, #mapContact {margin: 15px 20px 18px 20px;}.envoye {margin-top: 25px;}input {margin-top: 18px;}
 .contactName > .name, .surname {padding: 7px 5px;}.contactName {margin-top: 9px;}
+/* PARTIE FOOTER */.footerLigne1 > a > img {width: 75px;height: 55px;}
 
 
 
-} 
-
+}
 
 
 
