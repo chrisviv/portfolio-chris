@@ -6,17 +6,14 @@
 *{box-sizing: border-box;}
 html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
-/* cursor */
-.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
+/* cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
 .cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 9999;}
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 99999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
-/*Navigation */
-#nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
+/*Navigation */#nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
 #nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 0px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
-/* partie boxLogo */
-#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
+/* partie boxLogo */#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
 #logoLeaf>.logoChris {width:90px;height: 60px;margin-top: 20px;margin-left: 15px;}.none {display: none !important;}
 #mobileNavArea{width: 100%; height: 0; background: #4A8442;display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;position:fixed;
   z-index: 5;}
@@ -29,29 +26,23 @@ ul {text-align:center; margin-top: 85px;}
 .navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px;}
 .fa-arrow-rotate-right{color: white;}
-/*Partie Header */
-header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-/* partie boxIdentité */
-#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
+/*Partie Header */header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+/* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
 .hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
 h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
-/* partie boxReseau */
-.boxReseau{width: 100%;display: flex;}
+/* partie boxReseau */.boxReseau{width: 100%;display: flex;}
 .fa-brands{font-size:25px;color:white;text-decoration: none; margin-left: 20px;}
 .fa-linkedin:hover{color: #6cc431;}
 .fa-facebook-square:hover{color: #6cc431;}.fa-github-square:hover{color: #6cc431;}
-/*partie Scroll */
-#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
+/*partie Scroll */#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
 #boxScroll > div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
 #boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
 .reseau{width: 100%;height: 10vh;display: flex;justify-content: end;padding: 30px;}
-/*section  A Propos */
-#aPropos{width: 100%; min-height: 100vh; display: flex;}
+/*section  A Propos */#aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxApropos{width: 25%;height: 100vh;display: flex;align-items: center;background: #4A8442;justify-content:center;}
-/* BoxLogo et A propos */
-.boxApropos >.propos > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;}
+/* BoxLogo et A propos */.boxApropos >.propos > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;}
 /* Logo Chris */
 /* .boxphoto > .boxLogo >.fa-solid{font-size: 1rem;}
 .boxphoto > .boxLogo >.fa-leaf{color: #6CC431;transform: rotate(45deg); margin-top : 20px ;}
@@ -59,7 +50,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 /* partie boxPrensentation */#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */.presentation{width: 100%;height: 50vh;}
 /* photoChris*/.presentation > .photoChris{ display: flex;justify-content: end;margin: 30px 50px 0 0 ;}
-.presentation>.photoChris > img{width: 250px;height: 20px;border-radius: 50%;object-fit: cover;border: 5px solid white;}
+.presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 5px solid white;}
 .identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;z-index: 1;}
 /* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
@@ -76,13 +67,13 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
 /* partie langages compétence developpement web */#contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
-.langagesDev{ width:85%;height:30px; background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:50px 0px 0px 60px}
+.langagesDev{ width:85%;background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:50px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
 /* partie des compétences */
-.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease-out;} 
-/****Animation****/@keyframes moveLamp {0%{width:75%;margin-right: 500px;}50%{margin-top: 250px;}100%{ margin-bottom: 150px;}}
+.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease;} 
+/****Animation****/@keyframes moveLamp {0% {width:60%;margin-right: 500px;}50%{margin-top: 250px;}100%{margin-right: 0px;}}
 /* SECTION COMPETENCES DESIGNE/DIGITAL*/
 #competencesDeg> .boxCompetencesDeg{ width:47%;height:100vh;display: flex; flex-direction: column;}
 #competencesDeg> .boxCompetencesDeg >h3{width:70%;font-family: "Numans";font-size:3rem;margin-left: 25px;}
@@ -222,3 +213,30 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 .lienPortFolio{width: 100%;display: flex;font-size: 1rem;font-family: 'NovaRound';color:white;padding: 10px;}
 .fa-link {color: white;font-size: 1.2rem;padding-left: 30px;margin-top: 8px;text-decoration: none;}.fa-link:hover{ color:#6cc431;}
 /*////////////MEDIA QUERY/////////////*/  
+@media screen and (max-width:1024px){
+/* PARTIE NAVIGATION */#mobileNavArea > ul > li > a {font-size: 2rem;}
+/* PARTIE A PROPOS */
+.identite > .dev {font-size: 5rem;}
+/* PARTIE COMPETENCES1 */
+.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%}
+/* PARTIE CAROUSEL */.carousel-heading {font-size: 4rem;}
+/* PARTIE CONTACT */.titleContact{font-size: 4rem;}.paraContact {font-size: 1rem; margin-top: 35px;}
+.addresse, .email, .phone {font-size: 1rem;margin-left: -20PX;}.rue, .mail, .phon {font-size: 0.875rem;}.rue{width: 63%;}
+.boxAddress, .boxEmail, .boxPhone {margin-left: -15px;}}
+@media screen and (max-width:768px){
+/* PARTIE HEADER */
+.prenom {font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 2rem; margin-top: 69px;margin-left: 10px;}
+#boxScroll > .scroll {font-size: 0.75rem;}
+
+
+
+
+
+
+}
+
+
+
+
+
+
