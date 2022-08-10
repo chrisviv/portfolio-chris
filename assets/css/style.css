@@ -7,7 +7,7 @@
 html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
 /* cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
-.cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 9999;}
+.cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 999;}
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 99999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
     @keyframes Anim2 {0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);opacity:0;}} 
@@ -67,12 +67,11 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
 /* partie langages compétence developpement web */#contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
-.langagesDev{ width:85%;background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:50px 0px 0px 60px}
+.langagesDev{ width:85%;background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:40px 0px 0px 60px}
 .langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
 .barLangages{height:35px;background: #6CC431;border-radius: 30px;}
 .html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
-/* partie des compétences */
-.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease;} 
+/* partie des compétences */.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease;} 
 /****Animation****/@keyframes moveLamp {0% {width:60%;margin-right: 500px;}50%{margin-top: 250px;}100%{margin-right: 0px;}}
 /* SECTION COMPETENCES DESIGNE/DIGITAL*/
 #competencesDeg> .boxCompetencesDeg{ width:47%;height:100vh;display: flex; flex-direction: column;}
@@ -233,19 +232,27 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 }.boxLeafDeve > .fa-leaf {margin: -34px 0px -14px -14px; font-size: 1.5rem;}.imgGreen{width: 25%;height: 80vh;} 
 /* PARTIE COMPERTENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 100%;font-size: 1.5rem; margin-left: 96px;}
 #competencesDeg > .boxCompetencesDeg {width: 20%; height: 100vh; display: flex;flex-direction: row;}
-#competencesDeg > .boxCompetencesDeg > img {width: 150px;height: 150px;margin-top: 20px;margin-left: 85px;}.type > h2 {font-size: 1.3rem;margin: 0;}
+#competencesDeg > .boxCompetencesDeg > img {width: 150px;height: 150px;margin-top: 20px;margin-left: 100px;}.type > h2 {font-size: 1.3rem;margin: 0;}
 .boxDig {width: 100%;height: 0vh;  margin-top: 53px;}
-/* PARTIE PORTFOLIO */.titlePort{font-size: 5rem;}#titleProjets > .fa-leaf {font-size: 3rem;margin-left: -10px;}
-/* PARTIE PROJET */.slide-img { width: 462PX; height: 233PX;}.carousel-heading {font-size: 2.5rem;}
-/* PARTIE CONTACT */.boxContact > .titleContact {font-size: 3rem;}.boxContact > .contactLeaf {font-size: 2.5rem;}
+/* PARTIE PORTFOLIO */.titlePort{font-size: 5rem;}#titleProjets > .fa-leaf {font-size: 3rem;margin-left: -10px;}#titleProjets {height: 35vh;}
+/* PARTIE PROJET */.slide-img { width: 462PX; height: 233PX;}.carousel-heading {font-size: 2.5rem;}.content {height: 50vh;}
+/* PARTIE MODAL */.titleModal {font-size: 2.5rem;}.projetDesc, .collaboration, .date {font-size: 0.75rem;line-height: 20px;}.desc {width: auto;height: 80%;}
+.thirdLine, .fourLine{width: 50vw;margin: 0 30px 0 0;}.thirdLine > .tech, .fourLine > .moyens {font-size: 2rem;}
+.tech01, .tech02, .tech03, .tech04, .tech06 {height: 65px;}
+.moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;line-height: 20px;}.technologie1, .technologie2{font-size: 1rem;}
+  /* PARTIE CONTACT */.boxContact > .titleContact {font-size: 3rem;}.boxContact > .contactLeaf {font-size: 2rem;}
 .paraContact {width: 90%;}#contenairContact {width: 100%; height: 50vh; flex-direction: column;}
 iframe {width: 100%; height: 200px; margin: 0; height: 10vh;}
-
 .boxMap { width: 90%;height: 40vh; flex-direction: column; margin: 20px; justify-content: center;}
 #mapContact {width: 100%; height: 65vh; display: flex; margin: -10px 30px 0 30px;}
-  
 .sujet, .courriel {height: 35px;}
- 
-/* PARTIE FOOTER */#boxFooter { height: 5vh;}
+.bi-geo-alt, .bi-phone, .bi-envelope {width: 35px;height: 35px;}.addresse, .email, .phone {font-size: 0.875rem;margin: 0;}
+
+
+
+
+
+
+ /* PARTIE FOOTER */#boxFooter { height: 5vh;}
 
 }

@@ -14,7 +14,7 @@
      this.classList.add('none');
      closeNav.classList.remove('none');
  })
-  closeNav.addEventListener('click', function(){
+closeNav.addEventListener('click', function(){
  
      mobileNavArea.classList.remove('openNav');
  
@@ -26,6 +26,7 @@
      burger.classList.remove('none');
      
  })
+ 
  ///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
