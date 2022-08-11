@@ -50,7 +50,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 /* partie boxPrensentation */#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */.presentation{width: 100%;height: 50vh;}
 /* photoChris*/.presentation > .photoChris{ display: flex;justify-content: end;margin: 30px 50px 0 0 ;}
-.presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 2px solid #6CC431;}
+.presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 2px solid #6CC431;margin-right: 40px;}
 .identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;z-index: 1;}
 /* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
@@ -111,7 +111,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 /* We give it width as 400% because we are making a 4 image carousel. If you want to make for example,5 images carousel, then give width as 500%. */
 /* Change the animation settings *//* Define width and height for images */
 .slide {width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
-.slide-img {width: 950px;height: 485px;object-fit: cover;}
+.slide-img {width: 739px;height: 384px;object-fit: cover;}
 /* @keyframes are used to provide amations We make these settings for 4 image carousel. Make modification accourding to your needs. */
 @keyframes slideshow {
 0% {left: 0;}  
@@ -157,7 +157,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .boxdetail{width: 50%;height: 30vh;display: flex;flex-direction: column;justify-content: center;}
 .projetDesc, .collaboration, .date {font-family: 'Numans';font-size: 1rem;margin-left: 30px;display: flex;flex-direction: column;}
 .boxDesc{width: 50%; height: 30vh;display: flex;padding: 10px;justify-content: center;align-items: center;}
-.desc{width:auto; height:100%;object-fit: cover;margin-right: 30px;margin-bottom: 50px;}
+.desc{width:auto; height:75%;object-fit: cover;margin-right: 30px;margin-bottom: 50px;}
 /*  partie thirdLine : technologie 1 et 2 */
 #boxTech{width: 100%; height: 50%;display: flex;}
 /* partie thirdLine */
@@ -214,17 +214,16 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 /*////////////MEDIA QUERY/////////////*/  
 @media screen and (max-width:1024px){
 /* PARTIE NAVIGATION */#mobileNavArea > ul > li > a {font-size: 2rem;}
-/* PARTIE A PROPOS */
-.identite > .dev {font-size: 5rem;}
-/* PARTIE COMPETENCES1 */
-.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%}
+/* PARTIR HEADER */#titleProjets > .fa-leaf { font-size: 5rem; margin-top: -40px; margin-left: 1px;}.titlePort{font-size: 9rem;}
+/* PARTIE A PROPOS */.identite > .dev {font-size: 5rem;}
+/* PARTIE COMPETENCES1 */.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%}
 /* PARTIE CAROUSEL */.carousel-heading {font-size: 4rem;}
 /* PARTIE CONTACT */.titleContact{font-size: 4rem;}.paraContact {font-size: 1rem; margin-top: 35px;}
 .addresse, .email, .phone {font-size: 1rem;margin-left: -20PX;}.rue, .mail, .phon {font-size: 0.875rem;}.rue{width: 63%;}
 .boxAddress, .boxEmail, .boxPhone {margin-left: -15px;}}
 @media screen and (max-width:768px){
-/* PARTIE HEADER */.prenom {font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 2rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
-/* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 3rem;}.identite{margin-top: 25px;}
+/* PARTIE HEADER */.prenom {font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 1.8rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
+/* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 3rem;} .identite{margin-top: 25px;}
 .presentation > .photoChris > img {width: 180PX; height: 180PX;}.identite > .nomPrenom, .dev {margin-top: -40px;}
 .identite > .nomPrenom {font-size: 2rem;}.identite > .dev {font-size: 2.5rem;}.resumer > p {width: 90%;font-size: 0.875rem;}
 /* PARTIE COMPRENTECES1 */.comptet{font-size: 3rem;margin: 24px 0 0 10px;}.develop{font-size: 1.5rem;
@@ -232,24 +231,32 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 /* PARTIE COMPERTENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 100%;font-size: 1.5rem; margin-left: 96px;}
 #competencesDeg > .boxCompetencesDeg {width: 20%; height: 100vh; display: flex;flex-direction: row;}.type > h2 {font-size: 1.3rem;margin: 0;}
 #competencesDeg > .boxCompetencesDeg > img {width: 150px;height: 150px;margin-top: 20px;margin-left: 100px;}.boxDig {width: 100%;height: 0vh;  margin-top: 53px;}
-/* PARTIE PORTFOLIO */.titlePort{font-size: 5rem;}#titleProjets > .fa-leaf {font-size: 3rem;margin-left: -10px;}#titleProjets {height: 50vh;}#listeProjets {height: 50vh;}
-/* PARTIE PROJET */.slide-img { width: 462PX; height: 233PX;}.carousel-heading {font-size: 2.5rem;}.content {height: 50vh;}.slideshow {height: 50%; margin-top: 60px;}
-/* PARTIE MODAL */.titleModal {font-size: 2.5rem;}.projetDesc, .collaboration, .date {font-size: 0.75rem;line-height: 20px;}.desc {width: auto;height: 60%;}
-.thirdLine, .fourLine{width: 50vw;margin: 0 20px 0 20px;}.thirdLine > .tech, .fourLine > .moyens {font-size: 2rem;}
-.tech01, .tech02, .tech03, .tech04, .tech06 {height: 65px;}.moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;line-height: 20px;}.technologie1, .technologie2{font-size: 1rem;}
-  /* PARTIE CONTACT */#contact{min-height: 90vh;}.boxContact > .titleContact {font-size: 3rem;}.boxContact > .contactLeaf {font-size: 2rem;}
+/* PARTIE PORTFOLIO */.titlePort{font-size: 5rem;}#titleProjets > .fa-leaf {font-size: 3rem;margin-left: -1px;margin-top: -10px;}#titleProjets {height: 50vh;}#listeProjets {height: 50vh;}
+/* PARTIE PROJET */.slide-img { width: 408PX; height: 208PX;}.carousel-heading {font-size: 2.5rem;}.content {height: 50vh;}.slideshow {height: 50%; margin-top: 60px;}
+/* PARTIE MODAL */
+.titleModal {font-size: 2.5rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 15px;}.desc {width: auto;height: 40%;margin: 0;}
+.thirdLine > .tech, .fourLine > .moyens {font-size: 2rem;}#boxTech {flex-direction: column;}.firstLine {height: 10vh;}
+.contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
+.tech01, .tech02, .tech03, .tech04, .tech06 {height: 65px;}
+.moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;line-height: 20px;}
+.technologie1, .technologie2{font-size: 1rem;} #boxTech {flex-direction: column;}
+/* PARTIE CONTACT */#contact{min-height: 90vh;}.boxContact > .titleContact {font-size: 3rem;}.boxContact > .contactLeaf {font-size: 2rem;}
 #contenairContact {height: 50vh;align-items: center;}.paraContact {width: 90%;}#contenairContact {width: 100%; height: 50vh; flex-direction: column;}
 iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {margin-left: 10px;}.boxContact{height: 0vh;}
 .boxMap { width: 80%;height: 50vh; flex-direction: column; margin: 20px; justify-content: center;}.boxAddress, .boxEmail, .boxPhone {height: 5vh;margin: 0;}
-#mapContact {width: 80%; height: 50vh; display: flex; margin: -10px 30px 0 30px;}.sujet, .courriel {height: 35px;}.formulaire > form {height: 43vh;}
+#mapContact {width: 80%; height: 50vh; display: flex; margin: -10px 30px 0 30px;}.sujet, .courriel {height: 35px;}.formulaire > form {height: 42vh;}
 .bi-geo-alt, .bi-phone, .bi-envelope {width: 35px;height: 35px;}.addresse, .email, .phone {font-size: 0.875rem; margin: 0;}
-/* PARTIE FOOTER */#boxFooter{ height: 6vh;}}
+/* PARTIE FOOTER */#boxFooter{ height: 8vh;}}
 @media screen and (max-width:425px){
 /* PARTIE HEADER */.prenom {font-size: 6rem;}h1 {font-size: 3rem;}
 /* PARTIE A PROPOS */.identite > .dev { font-size: 2rem;}.identite > .nomPrenom {font-size: 1.8rem;}.presentation > .photoChris > img {width: 150PX;height: 150PX;}
-.presentation > .photoChris {justify-content: center; margin: 50px 0px 0 0;}.resumer {justify-content: flex-start;}
+.presentation > .photoChris {justify-content: cend; margin: 50px 15px 0 0;}.resumer {justify-content: flex-start;}
 /* PARTIE COMPETENCES1 */.comptet {font-size: 2.5rem;margin: 50px 0 0 0px;}.imgGreen {width: 50%;}
 /* PARTIE PORTFOLIO */.titlePort {font-size: 4rem;}#titleProjets > .fa-leaf {font-size: 2.5rem; margin-left: -6px;}.slide-img {width: 397PX;height: 203PX;}
+/* PARTIE MODAL */.titleModal {font-size: 2rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 10px;}
+.thirdLine > .tech, .fourLine > .moyens {font-size: 1.5rem;}#boxTech {flex-direction: column;}.firstLine {height: 10vh;}
+.contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
+.moyen1, .moyen2, .moyen3, .moyen4 { font-size: 0.65rem; line-height: 35px;}
 /* PARTIE CONTACT */.boxContact > .titleContact {font-size: 2.5rem;}.boxContact > .titleContact {font-size: 2.5rem;}.addresse, .email, .phone {font-size: 0.75rem;}
-.formulaire > form { height: 42vh;}
+.formulaire > form { height: 40vh;}.desc {width: auto;height: 35%;margin: 10px;}
 /* PARTIE FOOTER */.footerLigne2 > p {font-size: 0.75rem;}.footerLigne1 > a >img {width: 75px;height: 55px; margin-left: 10px;}.fa-brands {font-size: 20px;}}
