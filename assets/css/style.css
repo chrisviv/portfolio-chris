@@ -27,7 +27,12 @@ ul {text-align:center; margin-top: 85px;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px;}
 .fa-arrow-rotate-right{color: white;}
 /*Partie Header */header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-/* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;}
+/* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;animation : animation 1s ease-out;}
+@keyframes animation {
+  from{opacity: 0;
+    transform: translateY(-100px);}
+    to{opacity: 1; 
+        transform: translateY(0px);}}
 .hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
 h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
 /* partie boxReseau */.boxReseau{width: 100%;display: flex;}
@@ -156,7 +161,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .secondLine{width:100%;height: 30vh;display: flex;flex-direction: column;}
 .boxdetail{width: 50%;height: 30vh;display: flex;flex-direction: column;justify-content: center;}
 .projetDesc, .collaboration, .date {font-family: 'Numans';font-size: 1rem;margin-left: 30px;display: flex;flex-direction: column;}
-.boxDesc{width: 50%; height: 30vh;display: flex;padding: 10px;justify-content: center;align-items: center;}
+.boxDesc{width: 50%; height: 20vh;display: flex;padding: 10px;justify-content: center;align-items: center;}
 .desc{width:auto; height:75%;object-fit: cover;margin-right: 30px;margin-bottom: 50px;}
 /*  partie thirdLine : technologie 1 et 2 */
 #boxTech{width: 100%; height: 50%;display: flex;}
@@ -215,10 +220,10 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 @media screen and (max-width:1024px){
 /* PARTIE NAVIGATION */#mobileNavArea > ul > li > a {font-size: 2rem;}
 /* PARTIR HEADER */#titleProjets > .fa-leaf { font-size: 5rem; margin-top: -40px; margin-left: 1px;}.titlePort{font-size: 9rem;}
-/* PARTIE A PROPOS */.identite > .dev {font-size: 5rem;}
+/* PARTIE A PROPOS */.identite > .dev {font-size: 4rem;}
 /* PARTIE COMPETENCES1 */.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%}
 /* PARTIE CAROUSEL */.carousel-heading {font-size: 4rem;}
-/* PARTIE CONTACT */.titleContact{font-size: 4rem;}.paraContact {font-size: 1rem; margin-top: 35px;}
+/* PARTIE CONTACT */.titleContact{font-size: 4rem;}.paraContact {font-size: 1rem; margin-top: 35px;width: 90%;}
 .addresse, .email, .phone {font-size: 1rem;margin-left: -20PX;}.rue, .mail, .phon {font-size: 0.875rem;}.rue{width: 63%;}
 .boxAddress, .boxEmail, .boxPhone {margin-left: -15px;}}
 @media screen and (max-width:768px){
@@ -233,8 +238,7 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 #competencesDeg > .boxCompetencesDeg > img {width: 150px;height: 150px;margin-top: 20px;margin-left: 100px;}.boxDig {width: 100%;height: 0vh;  margin-top: 53px;}
 /* PARTIE PORTFOLIO */.titlePort{font-size: 5rem;}#titleProjets > .fa-leaf {font-size: 3rem;margin-left: -1px;margin-top: -10px;}#titleProjets {height: 50vh;}#listeProjets {height: 50vh;}
 /* PARTIE PROJET */.slide-img { width: 408PX; height: 208PX;}.carousel-heading {font-size: 2.5rem;}.content {height: 50vh;}.slideshow {height: 50%; margin-top: 60px;}
-/* PARTIE MODAL */
-.titleModal {font-size: 2.5rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 15px;}.desc {width: auto;height: 40%;margin: 0;}
+/* PARTIE MODAL */.titleModal {font-size: 2.5rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 15px;}.desc {width: auto;height: 85%;margin: 0;}
 .thirdLine > .tech, .fourLine > .moyens {font-size: 2rem;}#boxTech {flex-direction: column;}.firstLine {height: 10vh;}
 .contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
 .tech01, .tech02, .tech03, .tech04, .tech06 {height: 65px;}
@@ -258,5 +262,19 @@ iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {
 .contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
 .moyen1, .moyen2, .moyen3, .moyen4 { font-size: 0.65rem; line-height: 35px;}
 /* PARTIE CONTACT */.boxContact > .titleContact {font-size: 2.5rem;}.boxContact > .titleContact {font-size: 2.5rem;}.addresse, .email, .phone {font-size: 0.75rem;}
-.formulaire > form { height: 40vh;}.desc {width: auto;height: 35%;margin: 10px;}
+.formulaire > form { height: 40vh;}.desc {width: auto;height: 50%;margin: 10px;}
 /* PARTIE FOOTER */.footerLigne2 > p {font-size: 0.75rem;}.footerLigne1 > a >img {width: 75px;height: 55px; margin-left: 10px;}.fa-brands {font-size: 20px;}}
+@media screen and (max-width:375px){
+/* PARTIE HEADER */.prenom {font-size: 5.5rem;}.moi {Font-size: 1.6rem; margin-top: 50px;}.identite > .dev {font-size: 1.8rem;}
+/* PARTIE A PROPOS */.presentation > .photoChris > img {width: 120px;height: 120px;margin-top: 20px; margin-bottom: 20px;}
+/* PARTIE COMPETENCES1 */.comptet {font-size: 1.8rem;}.langagesDev > .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php, .fa-laravel, .fa-wordpress-simple {margin-left: -23px;}
+/* PARTIE COMPETENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 5%; font-size: 1.3rem;}#competencesDeg > .boxCompetencesDeg {width: 10%;flex-direction: column;}
+.type > h2 {margin-bottom: -34px;}
+/* PARTIE PROJET */.slide-img {width: 324px;height: 165px;}
+/* PARTIE CONTACT */.boxContact > .titleContact {font-size: 2rem;margin-bottom: -25px;}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -28px};
+.rue, .mail, .phon {font-size: 0.75rem;}
+/* PARTIR FOOTER */.footerLigne2 > p {font-size: 0.6rem;}
+
+
+
+}
