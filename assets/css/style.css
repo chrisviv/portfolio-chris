@@ -53,7 +53,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 /* photoChris*/.presentation > .photoChris{ display: flex;justify-content: end;margin: 30px 50px 0 0 ;}
 .presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 2px solid #6CC431;margin-right: 40px;}
 .identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;z-index: 1;}
-/* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;}
+/* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;margin-top: -15px;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
 .identite > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
 .identite > .nomPrenom > span{color:black;font-size: 3.125rem;}
@@ -95,8 +95,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .titlePort{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;margin-top: 15px;}
 #titleProjets>.fa-leaf{font-size: 6.125rem;margin-top: -14px;margin-left: -23px;}
 /* partie des projets */#listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
- /* Container stylings: -> centers the whole content of the page -> defines width and height for container */
-/* .container {width: 100vw;height: 100vh;} */
+/* Container stylings: -> centers the whole content of the page -> defines width and height for container *//* .container {width: 100vw;height: 100vh;} */
 /* End of container stylings *//* Provides padding to main heading *//* .main-heading {padding: 2rem 0 2rem 0;} */
 .content {position: relative;}
 /* Carousel content stylings *//* Places the carousel content on center of the carousel */
@@ -223,7 +222,7 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 .boxAddress, .boxEmail, .boxPhone {margin-left: -15px;}}
 @media screen and (max-width:768px){
 /* PARTIE HEADER */.prenom {font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 1.8rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
-/* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 2rem;} .identite{margin-top: 25px;}
+/* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 2rem;} .identite{margin-top: -25px;}
 .presentation > .photoChris > img {width: 180PX; height: 180PX;margin-bottom: 20px;}.identite > .nomPrenom, .dev {margin-top: -40px;}
 .identite > .nomPrenom {font-size: 2rem;}.identite > .dev {font-size: 2.5rem;}.resumer > p {width: 90%;font-size: 0.75rem;}
 /* PARTIE COMPRENTECES1 */.comptet{font-size: 3rem;margin: 24px 0 0 10px;}.develop{font-size: 1.5rem;

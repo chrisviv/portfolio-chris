@@ -4,7 +4,7 @@
         {
           "name": "Allojyvé",
           "description": "Projet d'intégration et de création d'un site de film", 
-          "collaboration":"Réaliser en collaboration en équipe de 3 personnes",
+          "collaboration":"Réaliser en collaboration avec une équipe de 3 personnes",
           "date":"Date de réalisation: du 30/03/2022 au 21/04/2022",
           "picture": "assets/img/modalDesc/allojyve.jpg",
           "technologie1":"Développement Web",
@@ -18,12 +18,12 @@
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ASC"
+          "moyens4":"Utilisation du serveur de l'ACS"
         },
         {
           "name": "TechNews",
           "description": "Projet d'intégration avec wordpress",
-          "collaboration":"Réaliser en collaboration en équipe de 7 personnes",
+          "collaboration":"Réaliser en collaboration avec une équipe de 7 personnes",
           "date":"Date de réalisation: du 25/04/2022 au 06/05/2022",
           "picture": "assets/img/modalDesc/technews.jpg",
           "technologie1":"Développement Web",
@@ -37,7 +37,7 @@
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ASC"
+          "moyens4":"Utilisation du serveur de l'ACS"
         },
         {
           "name": "Créatives",
@@ -56,7 +56,7 @@
           "moyens1":"Photopeo pour visualisation de la maquette",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC à partir d'une maquette",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ASC"
+          "moyens4":"Utilisation du serveur de l'ACS"
         },
         {
           "name": "Maquette_Cornod",
@@ -94,7 +94,7 @@
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ASC"
+          "moyens4":"Utilisation du serveur de l'ACS"
         },
         {
           "name": "PopCode",
@@ -112,7 +112,7 @@
           "language6" : "assets/img/logo/github.png",
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-          "moyens3":"Utilisation du serveur de l'ASC",
+          "moyens3":"Utilisation du serveur de l'ACS",
           "moyens4":" "
         },
         {
@@ -131,7 +131,7 @@
           "language6" :"assets/img/logo/github.png",
           "moyens1":"Intégration avec Visual Studio Code",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
-          "moyens3":"Utilisation du serveur de l'ASC",
+          "moyens3":"Utilisation du serveur de l'ACS",
           "moyens4":" "
          
         }
