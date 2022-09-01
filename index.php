@@ -1,3 +1,33 @@
+<?php
+if(isset($_POST['mailform'])) {
+   if(!empty($_POST['user_name']) AND !empty($_POST['user_surname']) AND !empty($_POST['sujet']) AND !empty($_POST['email'])AND !empty($_POST['message'])) {
+      $header="MIME-Version: 1.0\r\n";
+      $header.='From:"nom_d\'expediteur"<votre@mail.com>'."\n";
+      $header.='Content-Type:text/html; charset="uft-8"'."\n";
+      $header.='Content-Transfer-Encoding: 8bit';
+      $message='
+      <html>
+         <body>
+            <div align="center">
+           
+               <u>Nom de l\'expéditeur :</u>'.$_POST['user_name'].'<br />
+               <u>Nom de l\'expéditeur :</u>'.$_POST['user_surname'].'<br />
+               <u>Nom de l\'expéditeur :</u>'.$_POST['sujet'].'<br />
+               <u>Nom de l\'expéditeur :</u>'.$_POST['email'].'<br />
+               <br />
+               '.nl2br($_POST['message']).'
+          
+            </div>
+         </body>
+      </html>
+      ';
+      mail("c.vivancos09@outlook.fr", "Sujet du message", $message, $header);
+      $msg="Votre message a bien été envoyé !";
+   } else {
+      $msg="Tous les champs doivent être complétés !";
+   }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -270,8 +300,7 @@
             </div>
         </div>
     </section>
-
-        </div>
+        
     </section>
     <section id="contact">
        <div class="boxContact">
@@ -307,12 +336,13 @@
                                   <form method="post" action="traitement.php">
                         <div class="contactName">
                             <input type="text" class="name" name="user_name" placeholder="Nom"  required>
-                            <input type="text" class="surname" name="user_name" placeholder="Prénom"  required>
+                            <input type="text" class="surname" name="user_surname" placeholder="Prénom"  required>
                         </div>
                         <input type="text" class="sujet" name="sujet" placeholder="Sujet">
                         <input type="email" class="courriel" name="email" placeholder="Email">
                         <input type="message" class="msg" nplaceholder="Entrez Votre message..">
-                        <input type="submit" value="Envoyer !" class="envoye" name="mailform" placeholder="Envoyer">
+                        <input type="submit" value="Envoyer !" class="envoye" name="message" placeholder="Envoyer">
+                        <?php if(isset($msg)){echo "<p>".$msg."</p>";}?>
                     </form>
                 <div class="traitSend"></div>
                 </div>
