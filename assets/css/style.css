@@ -47,12 +47,12 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.prenom{font-weight: 700;
 .reseau{width: 100%;height: 10vh;display: flex;justify-content: end;padding: 30px;}
 /*section  A Propos */#aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxApropos{width: 25%;height: 100vh;display: flex;align-items: center;background: #4A8442;justify-content:center;}
-/* BoxLogo et A propos */.boxApropos >.propos > h2{font-family: "Rubik";font-size: 5rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;}
+/* BoxLogo et A propos */.boxApropos >.propos > h2{font-family: "Rubik";font-size: 4.8rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;}
 /* partie boxPrensentation */#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */.presentation{width: 100%;height: 50vh;}
 /* photoChris*/.presentation > .photoChris{ display: flex;justify-content: end;margin: 30px 50px 0 0 ;}
-.presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 2px solid #6CC431;margin-right: 40px;}
-.identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5.3rem;margin-left: 10px;z-index: 1;}
+.presentation>.photoChris > img{width: 250px;height: 250px;border-radius: 50%;object-fit: cover;border: 2px solid #6CC431;margin-right: 40px;margin-bottom: 35px;}
+.identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5rem;margin-left: 10px;z-index: 1;}
 /* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;margin-top: -15px;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
 .identite > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
@@ -214,6 +214,7 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 @media screen and (max-width:1024px){
 /* PARTIE NAVIGATION */#mobileNavArea > ul > li > a {font-size: 2rem;}
 /* PARTIR HEADER */#titleProjets > .fa-leaf { font-size: 5rem; margin-top: -40px; margin-left: 1px;}.titlePort{font-size: 9rem;}
+.presentation > .photoChris > img {width: 210px; height: 210px;}  
 /* PARTIE A PROPOS */.identite > .dev {font-size: 4rem;}
 /* PARTIE COMPETENCES1 */.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%}
 /* PARTIE CAROUSEL */.carousel-heading {font-size: 4rem;}
@@ -224,7 +225,7 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 /* PARTIE HEADER */.prenom {font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 1.8rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
 /* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 2rem;} .identite{margin-top: -25px;}
 .presentation > .photoChris > img {width: 180PX; height: 180PX;margin-bottom: 20px;}.identite > .nomPrenom, .dev {margin-top: -40px;}
-.identite > .nomPrenom {font-size: 2rem;}.identite > .dev {font-size: 2.5rem;}.resumer > p {width: 90%;font-size: 0.75rem;}
+.identite > .nomPrenom {font-size: 2rem;margin-top:5px;}.identite > .dev {font-size: 2.5rem;}.resumer > p {width: 90%;font-size: 0.75rem;}
 /* PARTIE COMPRENTECES1 */.comptet{font-size: 3rem;margin: 24px 0 0 10px;}.develop{font-size: 1.5rem;
 }.boxLeafDeve > .fa-leaf {margin: -34px 0px -14px -14px; font-size: 1.5rem;}.imgGreen{width: 25%;height: 80vh;} 
 /* PARTIE COMPERTENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 100%;font-size: 1.5rem; margin-left: 96px;}.type >h2{margin:0 0 -35px 0;font-size: 1.3rem;}
@@ -239,41 +240,43 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 .tech01, .tech02, .tech03, .tech04, .tech06 {height: 65px;}
 .moyen1, .moyen2, .moyen3, .moyen4 {font-size: 0.75rem;line-height: 20px;}
 .technologie1, .technologie2{font-size: 1rem;} #boxTech {flex-direction: column;}
-/* PARTIE CONTACT */#contact{min-height: 90vh;}.boxContact > .titleContact {font-size: 3rem;margin-bottom: -45px;}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -44px;margin-left: 1px;}
+/* PARTIE CONTACT */#contact{min-height: 90vh;}.boxContact > .titleContact {font-size: 3rem}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -7px;margin-left: 2px;}
 #contenairContact {height: 50vh;align-items: center;}.paraContact {width: 90%;}#contenairContact {width: 100%; height: 50vh; flex-direction: column;}
 iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {margin-left: 10px;}.boxContact{height: 0vh;}
 .boxMap { width: 80%;height: 50vh; flex-direction: column; margin: 20px; justify-content: center;}.boxAddress, .boxEmail, .boxPhone {height: 5vh;margin: 0;}
 #mapContact {width: 80%; height: 50vh; display: flex; margin: -15px 30px 0 30px;}.sujet, .courriel {height: 35px;}.formulaire > form {height: 38vh;}
 .bi-geo-alt, .bi-phone, .bi-envelope {width: 35px;height: 35px;}.addresse, .email, .phone {font-size: 0.875rem; margin: 0;}
 /* PARTIE FOOTER */#boxFooter{ height: 9vh;}}
-@media screen and (max-width: 510px){.resumer > p {width: 100%;font-size: 0.75rem;margin-right: -20px;line-height: 20px;}
-.boxMap {margin-top: 50px;}#mapContact {margin: 20px 30px 0 30px;}}
+@media screen and (max-width: 510px){
+.resumer > p {width: 100%;font-size: 0.75rem;margin-right: -20px;line-height: 20px;}
+.boxMap {margin-top: 50px;}#mapContact {margin: 20px 30px 0 30px;}.resumer > p{ margin-top: -25px;}}
 @media screen and (max-width:425px){
-/* PARTIE HEADER */.prenom {font-size: 6rem;}h1 {font-size: 3rem;}
-/* PARTIE A PROPOS */.identite > .dev { font-size: 2rem;}.identite > .nomPrenom {font-size: 1.8rem;}.presentation > .photoChris > img {width: 150PX;height: 150PX;}
-.presentation > .photoChris {justify-content: cend; margin: 50px 15px 0 0;}.resumer {justify-content: flex-start;}
+/* PARTIE HEADER */.prenom {font-size: 6rem;}h1 {font-size: 3rem;}.resumer > p{ margin-top: -45px;margin-bottom: 60px;}
+/* PARTIE A PROPOS */.identite > .dev { font-size: 1.8rem;}.identite > .nomPrenom {font-size: 1.8rem;}.presentation > .photoChris > img {width: 150PX;height: 150PX;}
+.presentation > .photoChris {justify-content: center; margin: 50px 15px 0 0;}.resumer {justify-content: flex-start;}
 /* PARTIE COMPETENCES1 */.comptet {font-size: 2.5rem;margin: 50px 0 0 0px;}.imgGreen {width: 50%;}
 /* PARTIE COMPETENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 36%;font-size: 1rem;}
-/* PARTIE PORTFOLIO */.titlePort {font-size: 4rem;}#titleProjets > .fa-leaf {font-size: 2.5rem; margin-left: -6px;}.slide-img {width: 397PX;height: 203PX;}
+/* PARTIE PORTFOLIO */.titlePort {font-size: 4rem;}#titleProjets > .fa-leaf {font-size: 2.5rem; margin-left: -6px;}.slide-img {width: 352px;height: 170px;}
 /* PARTIE MODAL */.titleModal {font-size: 2rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 10px;}
 .thirdLine > .tech, .fourLine > .moyens {font-size: 1.5rem;}#boxTech {flex-direction: column;}.firstLine {height: 10vh;}
 .contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
-.moyen1, .moyen2, .moyen3, .moyen4 { font-size: 0.65rem; line-height: 35px;}input {margin-top: 15px;}
+.moyen1, .moyen2, .moyen3, .moyen4 { font-size: 0.65rem; line-height: 35px;}.moyen1{margin-top: -15px;}input {margin-top: 15px;}.boxImgTech2{margin-top: -30px;}
 /* PARTIE CONTACT */.boxContact > .titleContact {font-size: 2.5rem;}.boxContact > .titleContact {font-size: 2.5rem;}.addresse, .email, .phone {font-size: 0.75rem;}
 .formulaire > form { height: 40vh;}.desc {width: auto;height: 50%;margin: 10px;}.boxMap{margin:2px}
 /* PARTIE FOOTER */.footerLigne2 > p {font-size: 0.75rem;}.footerLigne1 > a >img {width: 75px;height: 55px; margin-left: 10px;}.fa-brands {font-size: 20px;}}
 @media screen and (max-width:375px){
 /* PARTIR NAV */#burger {margin-top: -33px;font-size: 2rem;}#logoLeaf > .logoChris {width: 80px;height: 55px;margin-top: -24px;}#closeNav {margin-top: -30px;}
 /* PARTIE HEADER */.prenom {font-size: 5.5rem;}.moi {Font-size: 1.4rem; margin-top: 50px;}.identite > .dev {font-size: 1.8rem;}
-/* PARTIE A PROPOS */.presentation > .photoChris > img {width: 120px;height: 120px;margin-top: 20px; margin-bottom: 20px;}
+/* PARTIE A PROPOS */.presentation > .photoChris > img {width: 120px;height: 120px;margin-top: 20px; margin-bottom: 20px;}.resumer > p{margin-top: -90px;margin-bottom: 105px;}
 /* PARTIE COMPETENCES1 */.comptet {font-size: 1.8rem;}.langagesDev > .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php, .fa-laravel, .fa-wordpress-simple {margin-left: -23px;}
 /* PARTIE COMPETENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 5%; font-size: 1rem;}#competencesDeg > .boxCompetencesDeg {width: 10%;flex-direction: column;}
 .type > h2 {margin-bottom: -34px;font-size: 1rem;}#competencesDeg > .boxCompetencesDeg > img {width: 120px;height: 120px;margin-top: -81px; margin-left: 180px;}
 .langagesDig {margin: 32px 0px 0px 36px;}.type > .fa-leaf {margin-top: 43px;font-size: 1.2rem;} input {margin-top: 15px;}
 /* PARTIE PROJET */.slide-img {width: 244px;height: 123px;}.titlePort {font-size: 3.5rem;}
-/* PARTIE MODALE */.tech01, .tech02, .tech03, .tech04,.tech05, .tech06 {height: 30px;width: 30px;}.titleModal { font-size: 1.8rem;}
+/* PARTIE MODALE */.tech01, .tech02, .tech03, .tech04,.tech05, .tech06 {height: 50px}.titleModal { font-size: 1.8rem;}.moyen1{margin-top: -15px;line-height: 27px;}.tech06{margin-bottom: 14px;width: 65px;}
 /* PARTIE CONTACT */.boxContact > .titleContact {font-size: 2rem;margin-bottom: -35px;}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -38px};
 .rue, .mail, .phon {font-size: 0.6rem;}.addresse, .email, .phone {font-size: 0.6rem;}.paraContact {width: 85%;font-size: 0.75rem;}
 .boxMap, #mapContact {width: 95%;margin: 0;}.envoye{margin-top: 10px;}.contactName > .name, .surname {padding: 5px 6px;}
 /* PARTIR FOOTER */.footerLigne2 > p {font-size: 0.6rem;}.footerLigne2 > p {font-size: 0.45rem;}input {margin-top: 15px;}
 .footerLigne1 > a > img {  width: 60px;  height: 45px;}.boxMap, #mapContact {margin-top: 42px;margin-bottom: -35px;}}
+@media screen and (max-width:360px){.resumer > p{margin-top: -114px; font-size: 0.7rem;margin-bottom: 127px; }}
