@@ -60,7 +60,7 @@
         },
         {
           "name": "Maquette_Cornod",
-          "description": "Projet d'une rélisatinon d'une wireframe et d'une maquette d'un site au choix sur le théme du tourisme (Ville, Lieu, Monument).", 
+          "description": "Projet d'une rélisatinon d'une wireframe et d'une maquette d'un site au choix sur le théme du tourisme.", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 25/0/2022 au 06/0/2022",
           "picture": "assets/img/modalDesc/cornod.jpg",
@@ -98,7 +98,7 @@
         },
         {
           "name": "PopCode",
-          "description": "Projet de création d'une application web ludique qui consiste de trouver des langages informatiques de programmation ", 
+          "description": "Projet de création d'une application web ludique qui consiste de trouver des langages informatiques", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 23/06/2022 au 22/07/2022",
           "picture": "assets/img/modalDesc/popcode.jpg",
@@ -133,8 +133,27 @@
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
           "moyens3":"Utilisation du serveur de l'ACS",
           "moyens4":" "
-         
+        },
+        {
+          "name": "conciergerie",
+          "description": "Réalisation d'une application de conciergerie", 
+          "collaboration":"Réalisation en projet individuel",
+          "date":"Date de réalisation: du 23/06/2022 au 12/08/2022",
+          "picture": "assets/img/modalDesc/portfolio.jpg",
+          "technologie1":"Développement Web", 
+          "language1" : "assets/img/logo/html.png",
+          "language2" : "assets/img/logo/css.png",
+          "language3" : "assets/img/logo/php.png",
+          "technologie2":"Autres technologies", 
+          "language4" : "",
+          "language5" : "",
+          "language6" :"assets/img/logo/github.png",
+          "moyens1":"Intégration avec Visual Studio Code",
+          "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
+          "moyens3":"Utilisation du serveur de l'ACS",
+          "moyens4":" "
         }
+
               
       ]
     }
