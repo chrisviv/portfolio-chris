@@ -2,7 +2,7 @@
 var burger = document.getElementById('burger');
 var closeNav = document.getElementById('closeNav');
 var mobileNavArea = document.getElementById('mobileNavArea');
-let boxslideshow = document.querySelector('.boxslideshow');
+let boxslideshow = document.querySelector('.containerSlide');
 let navbar = document.querySelectorAll('li');
 
 function closing(){
@@ -42,7 +42,7 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500);
 });
-//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////projet Json-Modal-carousel/////////////////////////////////
 function modalContent(target) {
     fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
         for (let i = 0; i < responce.listeProjets.projets.length; i++) {
@@ -120,3 +120,4 @@ for (let i = 0; i < navbar.length; i++) {
     })
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+ 

@@ -37,15 +37,15 @@ if(isset($_POST['message'])) {
     <meta name="description" content="Je me présente Chris un amoureux de la nature et passionné du numérique ! Mes objectifs de développeur web sont de créer des sites éco-responsable pour tous... ">
     <title>Portfolio-Chris-vivanvcos</title>
     <link rel="icon" href="assets/img/Logo1.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- lien pour CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
     <div class="cursor"></div>
     <nav id="nav">
         <div id="logoLeaf">
-            <img class="logoChris" src="./assets/img/Logo1.png" alt="logo chris">
+            <a href="#contact"><img src="./assets/img/Logo1.png" alt="logo en forme de d'une C avec l'extrémitée en fléche et une feuille verte à l 'autre extrémité de C"></a>
         </div>
         <i class="fa-solid fa-bars fa-2x" id="burger"></i>
         <i class="fa-solid fa-xmark none fa-2x" id="closeNav"></i>
@@ -195,7 +195,7 @@ if(isset($_POST['message'])) {
             </div>
         </div>
     </section>
-    <section id="portFolio">
+    <section id="boxPortFolio">
         <div id="titleProjets">
             <h2 class="titlePort">PortFolio</h2>
             <i class="fa-solid fa-leaf"></i>
@@ -204,8 +204,6 @@ if(isset($_POST['message'])) {
         <section id="listeProjets">
             <div class="container">
                 <h1 class="main-heading"></h1>
-                    <div class="content">
-                  
                     <div class="carousel-content">
                         <h1 class="carousel-heading">
                             Projets
@@ -215,34 +213,34 @@ if(isset($_POST['message'])) {
                     <div class="slideshow">
                         <div class="boxslideshow">
                             <div class="slide">
-                                <img id="allojyve" class="slide-img" src= "./assets/img/carousel/allojyveScreen.jpg">
+                                <img id="allojyve" class="slide-img" src= "./assets/img/carousel/allojyveScreen.webp">
                             </div>
                             <div class="slide">
-                                <img id="techNews" class="slide-img" src= "./assets/img/carousel/techNewsScreen.jpeg">
+                                <img id="techNews" class="slide-img" src= "./assets/img/carousel/techNewsScreen.webp">
                             </div>
                             <div class="slide">
-                                <img id="creatives" class="slide-img" src= "./assets/img/carousel/creativesScreen.jpg">
+                                <img id="creatives" class="slide-img" src= "./assets/img/carousel/creativesScreen.webp">
                             </div>
                             <div class="slide">
-                                <img id="Maquette_Cornod" class="slide-img" src= "./assets/img/carousel/maquetteScreen.jpeg">
+                                <img id="Maquette_Cornod" class="slide-img" src= "./assets/img/carousel/maquetteScreen.webp">
                             </div> 
                             <div class="slide">
                                 <img id="capgemen" class="slide-img" src= "./assets/img/carousel/capgementScreen.jpg">
                             </div>
                             <div class="slide">
-                                <img id="popCode" class="slide-img" src= "./assets/img/carousel/popcodeScreen.jpg">
+                                <img id="popCode" class="slide-img" src= "./assets/img/carousel/popcodeScreen.webp">
                             </div>
                             <div class="slide">
-                                <img id="portfolio" class="slide-img" src= "./assets/img/carousel/portfolioScreen.jpg">
+                                <img id="portfolio" class="slide-img" src= "./assets/img/carousel/portfolioScreen.webp">
                             </div>
                             <div class="slide">
-                                <img id="conciergerie" class="slide-img" src= "./assets/img/carousel/portfolioScreen.jpg">
+                                <img id="conciergerie" class="slide-img" src= "./assets/img/carousel/conciergerieScreen.webp">
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- carousel control buttons -->
-                <!-- <div class="boxSlide-btn">
+                 <!-- <div class="boxSlide-btn">
                     <button class="slide-btn slide-btn-1"></button>
                     <button class="slide-btn slide-btn-2"></button>
                     <button class="slide-btn slide-btn-3"></button>
@@ -250,8 +248,8 @@ if(isset($_POST['message'])) {
                     <button class="slide-btn slide-btn-5"></button>
                     <button class="slide-btn slide-btn-6"></button>
                     <button class="slide-btn slide-btn-7"></button>
-                </div>
-            </div> -->
+                </div> -->
+            </div> 
     </section>
    
     <section id="boxModalDesc" class='none'>
@@ -304,30 +302,30 @@ if(isset($_POST['message'])) {
     </section>
     <section id="contact">
        <div class="boxContact">
-            <h2 class="titleContact">Contact</h2>
+            <h1>Contact</h1>
             <i class="fa-solid fa-leaf contactLeaf"></i>
         </div>
         <div id="contenairContact">
             <div class="boxMap">
                     <div class="boxAddress">
-                     <img class="location" src="./assets/img/icons/location-dot-solid.svg" alt="icon de positionnement pour représenter l 'adressse">
+                        <i class="fa-solid fa-location-dot"></i>
                         <h4 class="addresse">Adresse:</h4>
                         <p class="rue">239, rue de la république Hameau Thoregna 39240 Cornod</p>
                     </div>
                     <div class="boxEmail">
-                        <img class="envelope"src="./assets/img/icons/envelope-regular.svg" alt="icon d'enveloppe pour représenter l'email">
+                        <i class="fa-solid fa-envelope"></i>
                         <h4 class="email">Email:</h4>
                         <a href="chris.vivancos@codeur.online" class="mail">chris.vivancos@codeur.online</a>
                     </div>
                     <div class="boxPhone">
-                        <img class="mobile"src="./assets/img/icons/mobile-solid.svg" alt="icon de mobile pour représenter le tel">
+                        <i class="fa-solid fa-mobile"></i>
                         <h4 class="phone">Téléphone:</h4>
                         <a href="" class="phon">+33 6 19 91 7548</a>
                     </div>
                 
-                <iframe
+                <!-- <iframe
                     src="https://maps.google.com/maps?q=239%20rue%20de%20la%20republique%2039240%20cornod&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
-                 </iframe>
+                 </iframe> -->
             </div>
 
            <div id="mapContact">

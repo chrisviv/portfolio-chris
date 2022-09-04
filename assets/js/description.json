@@ -4,7 +4,7 @@
         {
           "name": "Allojyvé",
           "description": "Projet d'intégration et de création d'un site de film", 
-          "collaboration":"Réaliser en collaboration avec une équipe de 3 personnes",
+          "collaboration":"Réalisé en collaboration avec une équipe de 3 personnes",
           "date":"Date de réalisation: du 30/03/2022 au 21/04/2022",
           "picture": "assets/img/modalDesc/allojyve.jpg",
           "technologie1":"Développement Web",
@@ -23,7 +23,7 @@
         {
           "name": "TechNews",
           "description": "Projet d'intégration avec wordpress",
-          "collaboration":"Réaliser en collaboration avec une équipe de 7 personnes",
+          "collaboration":"Réalisé en collaboration avec une équipe de 7 personnes",
           "date":"Date de réalisation: du 25/04/2022 au 06/05/2022",
           "picture": "assets/img/modalDesc/technews.jpg",
           "technologie1":"Développement Web",
@@ -42,7 +42,7 @@
         {
           "name": "Créatives",
           "description": "Projet d'intégation de la maquette intitlué 'Créatives' sans Framework", 
-          "collaboration":"Réaliser en collaboration en équipe de 2 personnes",
+          "collaboration":"Réalisé en collaboration en équipe de 2 personnes",
           "date":"Date de réalisation: du 17/05/2022 au 23/05/2022",
           "picture": "assets/img/modalDesc/creatives.jpg",
           "technologie1":"Développement Web",
@@ -157,5 +157,4 @@
               
       ]
     }
-   
   }
