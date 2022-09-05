@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 if(isset($_POST['message'])) {
    if(!empty($_POST['user_name']) AND !empty($_POST['user_surname']) AND !empty($_POST['sujet']) AND !empty($_POST['email'])AND !empty($_POST['message'])) {
       $header="MIME-Version: 1.0\r\n";
@@ -27,7 +27,7 @@ if(isset($_POST['message'])) {
       $msg="Tous les champs doivent être complétés !";
    }
 }
-?> -->
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -37,7 +37,6 @@ if(isset($_POST['message'])) {
     <meta name="description" content="Je me présente Chris un amoureux de la nature et passionné du numérique ! Mes objectifs de développeur web sont de créer des sites éco-responsable pour tous... ">
     <title>Portfolio-Chris-vivanvcos</title>
     <link rel="icon" href="assets/img/Logo1.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- lien pour CSS -->
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
@@ -47,9 +46,9 @@ if(isset($_POST['message'])) {
         <div id="logoLeaf">
             <a href="#contact"><img src="./assets/img/Logo1.png" alt="logo en forme de d'une C avec l'extrémitée en fléche et une feuille verte à l 'autre extrémité de C"></a>
         </div>
-        <i class="fa-solid fa-bars fa-2x" id="burger"></i>
-        <i class="fa-solid fa-xmark none fa-2x" id="closeNav"></i>
-    </nav>
+        <img src="./assets/img/icons/menu-alt3.svg" alt="icon menu burger de la navigation" id="burger">
+        <img src="./assets/img/icons/close-fill.svg" alt="icon de fermeture de la modale" id="closeNav">
+        </nav>
         <div id="mobileNavArea" class="none">
         <ul>
             <li><a href="#aPropos">A PROPOS</a></li>
@@ -58,9 +57,9 @@ if(isset($_POST['message'])) {
             <li><a href="#contact">CONTACT</a></li>
         </ul>
         <div class="navReseau">
-            <a href="https://www.linkedin.com/in/chris-vivancos/" class="fa-brands fa-linkedin"></a>
-            <a href="https://www.facebook.com/chris.vivancos" class="fa-brands fa-facebook-square"></a>
-            <a href="https://github.com/chrisviv" class="fa-brands fa-github-square"></a>
+            <a href="https://www.linkedin.com/in/chris-vivancos/"><img src="./assets/img/icons/linkedin.svg" alt="icon du lien linkedIn" class="linkedIn"></a>
+            <a href="https://www.facebook.com/chris.vivancos"> <img src="./assets/img/icons/facebook.svg" alt="inco du lien de facebook" class="facebook"></a>
+            <a href="https://github.com/chrisviv"><img src="./assets/img/icons/square-github.svg" alt="icon du lien de gitHub" class='gitHub'></a>
         </div>
     </div> 
     <header id="header">
@@ -69,19 +68,18 @@ if(isset($_POST['message'])) {
                 <h1 >HELLO,</h1>
                 <p class="moi">moi c'est</p>
             </div>
-            <h2>CHRIS</h2>
+            <h2 class="chris">CHRIS</h2>
             <div id="boxScroll">
                 <p class="scroll">Scroll Moi</p>
                 <div class="roundH">
-                <a href="#aPropos"><i class="fa-solid fa-chevron-down"></i></a>
-                </div>
+                <a href="#aPropos"><img src="./assets/img/icons/chevron-down.svg" alt="icon de chevron vers le bas pour indiquer le scroll" class="fa-chevron-down"></a>
+            </div>
+               
             </div>
             <div class="boxReseau">
-                <div class="reseau">
-                    <a href="https://www.linkedin.com/in/chris-vivancos/" class="fa-brands fa-linkedin"></a>
-                    <a href="https://www.facebook.com/chris.vivancos" class="fa-brands fa-facebook-square"></a>
-                    <a href="https://github.com/chrisviv" class="fa-brands fa-github-square"></a>
-                </div>
+                <a href="https://www.linkedin.com/in/chris-vivancos/"><img src="./assets/img/icons/linkedin.svg" alt="icon du lien linkedIn" class="linkedIn"></a>
+                <a href="https://www.facebook.com/chris.vivancos"> <img src="./assets/img/icons/facebook.svg" alt="inco du lien de facebook" class="facebook"></a>
+                <a href="https://github.com/chrisviv"><img src="./assets/img/icons/square-github.svg" alt="icon du lien de gitHub" class='gitHub'></a>
             </div>
         </div>
     </header>
@@ -114,35 +112,36 @@ if(isset($_POST['message'])) {
             <h2 class="comptet">Compétences</h2>
             <div class="boxLeafDeve">
                  <h3 class="develop">Développement Web</h3> 
-                <i class="fa-solid fa-leaf"></i> 
+                 <img src="./assets/img/icons/leaf.svg" alt="icon d'une feuille d'arbre symbole de l'éco-responsable pour moi" class="leaf">
+                
             </div>
         </div>
         <div class="boxLangages">
             <div id="contenaireDev">
                 <div class="contenaireLang">
                     <div class="langagesDev">
-                        <div class="barLangages html"></div>
-                        <i class="fa-brands fa-html5"></i>
+                        <div class="barLangages balise"></div>
+                        <img src="./assets/img/icons/html5-shield.svg" alt="icon du langage de programmation de balise le html5" class="icons  html5">
                     </div>
                     <div class="langagesDev">
                         <div class="barLangages css"></div>
-                        <i class="fa-brands fa-css3-alt"></i> 
+                        <img src="./assets/img/icons/css3.svg" alt="icon du langage de programmation de balise le css3" class="icons css3">
                     </div>
                     <div class="langagesDev">
                         <div class="barLangages js"></div> 
-                        <i class="fa-brands fa-js-square"></i>
+                        <img src="./assets/img/icons/js.svg" alt="icon du langage de programmation le Javascript coté navigation"class='icons  javascript'>
                     </div>
                     <div class="langagesDev">
                         <div class="barLangages php"></div> 
-                        <i class="fa-brands fa-php"></i>
+                        <img src="./assets/img/icons/php.svg" alt="icon du langage de programmation le php coté serveur" class="icons php8">
                     </div>
                     <div class="langagesDev">
                         <div class="barLangages laravel"></div> 
-                        <i class="fa-brands fa-laravel"></i>
+                        <img src="./assets/img/icons/laravel.svg" alt="icon d'un framework pour le langage de programmation php"class='icons larav'>
                     </div>
                     <div class="langagesDev">
                         <div class="barLangages wordpress"></div> 
-                        <i class="fa-brands fa-wordpress-simple"></i>
+                        <img src="./assets/img/icons/wordpress.svg" alt="icon d'un CMS "class='icons wordpres'>
                     </div>
                 </div>
                 <div class="imgGreen">
@@ -159,46 +158,48 @@ if(isset($_POST['message'])) {
         <div class="boxDig">
             <div class="type">
                 <h2>Design</h2>
-                <i class="fa-solid fa-leaf"></i>
+                <img src="./assets/img/icons/leaf.svg" alt="icon de feuille d'arbre pour le symboliser le Eco-Responsable">
             </div>
             <div class="langagesDig">
                 <div class="barLangages figma"></div>
-                <i class="fa-brands fa-figma"></i> 
+                <img src="./assets/img/icons/figma-fill.svg" alt="icon de figma">
             </div>
             <div class="type">
                 <h2>Digital et Mobile</h2>
-                <i class="fa-solid fa-leaf"></i>
+                <img src="./assets/img/icons/leaf.svg" alt="icon de feuille d'arbre pour le symboliser le Eco-Responsable">
             </div>
             <div class="langagesDig">
                 <div class="barLangages integration"></div>
+                <img src="./assets/img/icons/code-slash.svg" alt="icon représentent un symbole du code informatique">
                 <i class="fa-solid fa-code"></i>
             </div>
             <div class="langagesDig">
                 <div class="barLangages mobile"></div> 
-                <i class="fa-solid fa-mobile-button"></i>
+                <img src="./assets/img/icons/mobile.svg" alt="icon d'un mobile">
            </div>
             <div class="type">
                 <h2>Autres</h2>
-                <i class="fa-solid fa-leaf"></i>
+                <img src="./assets/img/icons/leaf.svg" alt="icon de feuille d'arbre pour le symboliser le Eco-Responsable">
             </div>
             <div class="langagesDig">
                 <div class="barLangages git"></div> 
-                <i class="fa-brands fa-git-square"></i>
+                <img src="./assets/img/icons/git.svg" alt="icon de git">
             </div>
             <div class="langagesDig">
                 <div class="barLangages sass"></div> 
-                <i class="fa-brands fa-sass"></i>
+                <img src="./assets/img/icons/sass-alt.svg" alt="icon de sass" id="iconSaas">
             </div>
+           
             <div class="langagesDig">
-                <div class="barLangages leaf"></div> 
-                <i class="fa-brands fa-envira"></i>
+                <div class="barLangages leaf">Eco-Responable</div>
+                <img src="./assets/img/icons/leafWhite.svg" alt="icon d'une feuille d'arbre pour repésenter l'éco-responsable" id="leafGreen" >
             </div>
         </div>
     </section>
     <section id="boxPortFolio">
         <div id="titleProjets">
-            <h2 class="titlePort">PortFolio</h2>
-            <i class="fa-solid fa-leaf"></i>
+            <h2>PortFolio</h2>
+            <img src="./assets/img/icons/leaf.svg" alt="icon de feuille d'arbre pour le symboliser le Eco-Responsable">
         </div>
 
         <section id="listeProjets">
@@ -228,7 +229,7 @@ if(isset($_POST['message'])) {
                                 <img id="capgemen" class="slide-img" src= "./assets/img/carousel/capgementScreen.jpg">
                             </div>
                             <div class="slide">
-                                <img id="popCode" class="slide-img" src= "./assets/img/carousel/popcodeScreen.webp">
+                                <img id="popCode" class="slide-img" src= "./assets/img/carousel/popCodeScreen.webp">
                             </div>
                             <div class="slide">
                                 <img id="portfolio" class="slide-img" src= "./assets/img/carousel/portfolioScreen.webp">
@@ -239,16 +240,6 @@ if(isset($_POST['message'])) {
                         </div>
                     </div>
                 </div>
-                <!-- carousel control buttons -->
-                 <!-- <div class="boxSlide-btn">
-                    <button class="slide-btn slide-btn-1"></button>
-                    <button class="slide-btn slide-btn-2"></button>
-                    <button class="slide-btn slide-btn-3"></button>
-                    <button class="slide-btn slide-btn-4"></button>
-                    <button class="slide-btn slide-btn-5"></button>
-                    <button class="slide-btn slide-btn-6"></button>
-                    <button class="slide-btn slide-btn-7"></button>
-                </div> -->
             </div> 
     </section>
    
@@ -256,7 +247,7 @@ if(isset($_POST['message'])) {
         <div class="modalDesc">
             <div class="firstLine">
                 <h2 class="titleModal"></h2>
-                <i class="fa-solid fa-xmark fa-2xl cross"></i>
+                <img class= 'cross' src="./assets/img/icons/close-fillGreen.svg" alt="icon de fermeture de la modale">
             </div>
             <div class="secondLine">
                 <div class="contenairSecond">
@@ -303,35 +294,32 @@ if(isset($_POST['message'])) {
     <section id="contact">
        <div class="boxContact">
             <h1>Contact</h1>
-            <i class="fa-solid fa-leaf contactLeaf"></i>
+            <img src="./assets/img/icons/leaf.svg" alt="icon de feuille d'arbre pour le symboliser le Eco-Responsable">
         </div>
         <div id="contenairContact">
             <div class="boxMap">
                     <div class="boxAddress">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <img src="./assets/img/icons/position-o.svg" alt="icon de positionnement/adresse">
                         <h4 class="addresse">Adresse:</h4>
                         <p class="rue">239, rue de la république Hameau Thoregna 39240 Cornod</p>
                     </div>
                     <div class="boxEmail">
-                        <i class="fa-solid fa-envelope"></i>
+                       <img src="./assets/img/icons/envelopeGreen.svg" alt="icon d'une enveloppe pour représenter l'envoye d'email">
                         <h4 class="email">Email:</h4>
                         <a href="chris.vivancos@codeur.online" class="mail">chris.vivancos@codeur.online</a>
                     </div>
                     <div class="boxPhone">
-                        <i class="fa-solid fa-mobile"></i>
+                    <a href="tel:+33 6 19 91 75 48 "></a>
+                        <img src="./assets/img/icons/mobileGreen.svg" alt="icon d'un Téléphone">
                         <h4 class="phone">Téléphone:</h4>
-                        <a href="" class="phon">+33 6 19 91 7548</a>
+                        <a href="" class="phon">+33 6 19 91 75 48</a>
                     </div>
-                
-                <!-- <iframe
-                    src="https://maps.google.com/maps?q=239%20rue%20de%20la%20republique%2039240%20cornod&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
-                 </iframe> -->
+                    <iframe src="https://maps.google.com/maps?q=239%20rue%20de%20la%20republique%2039240%20cornod&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" alt="carte map de google"></iframe>
             </div>
-
            <div id="mapContact">
                 <div class="formulaire">
                     <p class="paraContact">Contactes moi !</p>
-                                  <form method="post" action="">
+                    <form method="post" action="">
                         <div class="contactName">
                             <input type="text" class="name" name="user_name" placeholder="Nom"  required>
                             <input type="text" class="surname" name="user_surname" placeholder="Prénom"  required>
@@ -340,7 +328,7 @@ if(isset($_POST['message'])) {
                         <input type="email" class="courriel" name="email" placeholder="Email">
                         <input type="message" class="msg" nplaceholder="Entrez Votre message..">
                         <input type="submit" value="Envoyer !" class="envoye" name="message" placeholder="Envoyer">
-                        <!-- <?php if(isset($msg)){echo "<p>".$msg."</p>";}?> -->
+                        <?php if(isset($msg)){echo "<p>".$msg."</p>";}?>
                     </form>
                 <div class="traitSend"></div>
                 </div>
@@ -356,13 +344,13 @@ if(isset($_POST['message'])) {
         </div>
         <div class="footerLigne3">
             <div class='linkedin'>
-                <a href="https://www.linkedin.com/in/chris-vivancos/" class="fa-brands fa-linkedin"></a>
+                <a href="https://www.linkedin.com/in/chris-vivancos/"><img src="./assets/img/icons/linkedin.svg" alt="icon du lien linkedIn" class="linkedInFooter"></a>
             </div>
             <div class="gitHub">
-                <a href="https://github.com/chrisviv" class="fa-brands fa-github-square"></a>
+                <a href="https://github.com/chrisviv"><img src="./assets/img/icons/square-github.svg" alt="icon du lien de gitHub" class='gitHubFooter'></a>
             </div>
             <div class="facebook">
-                <a href="https://www.facebook.com/chris.vivancos" class="fa-brands fa-facebook-square"></a>
+                <a href="https://www.facebook.com/chris.vivancos"> <img src="./assets/img/icons/facebook.svg" alt="inco du lien de facebook" class="facebookFooter"></a>
             </div>
         </div>
     </footer>

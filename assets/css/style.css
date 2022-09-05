@@ -1,13 +1,15 @@
 /******** liste des font-family *********/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 /*font-family*/
-@font-face {font-family: "Numans";src: url("../fonts/Numans-Regular.ttf");font-display: swap;}
-@font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
+/* @font-face {font-family: "Numans";src: url("../fonts/Numans-Regular.ttf");font-display: swap;} */
+/* @font-face {font-family: "NovaRound";src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;} */
 /* Général  /* Default stylings */
 *{box-sizing: border-box;}
 html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
-/* cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events: none;z-index: 9999999;}
+/* cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events:none;z-index: 9999999;}
 .cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 999;}
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 99999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
@@ -21,12 +23,17 @@ body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: 
 .openNav{height: 100vh !important;} 
 ul {text-align:center; margin-top: 85px;}
 #mobileNavArea > ul > li {list-style-type: none;margin: 15px 0px;}
-#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound';font-size: 3rem;}
-#burger{color: white;margin-right: 50px;margin-right: 30px;margin-top: 5px;font-size: 2.3rem;}
-#closeNav{color: white;margin-right: 30px;}
+#mobileNavArea > ul > li > a {text-decoration: none;color: white; font-weight:900;font-family: 'NovaRound',cursive; font-size: 3rem;}
+#burger{margin-right: 30px;margin-top: 5px;width: 40px;height: 40px;}
+#closeNav{color: white;margin-right: 25px;width: 60px;height: 60px;}
 .navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
+.linkedIn{width: 25px;margin-right: 10px;}
+.facebook{width: 27px;transform: rotate(180deg);margin-right: 10px;}
+.gitHub{width: 25px;transform: rotate(180deg);}
+.linkedIn:hover{color: #6cc431;}
+.facebook:hover{color: #6cc431;}
+.gitHub:hover{color: #6cc431;}
 .fa-leaf{color: #6CC431;transform: rotate(45deg);margin-top : 20px;}
-.fa-arrow-rotate-right{color: white;}
 /*Partie Header */header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 /* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;animation : animation 1s ease-out;}
 @keyframes animation {
@@ -35,16 +42,14 @@ ul {text-align:center; margin-top: 85px;}
     to{opacity: 1; 
         transform: translateY(0px);}}
 .hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
-h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
-/* partie boxReseau */.boxReseau{width: 100%;display: flex;}
-.fa-brands{font-size:25px;color:white;text-decoration: none; margin-left: 20px;}
-.fa-linkedin:hover{color: #6cc431;}
-.fa-facebook-square:hover{color: #6cc431;}.fa-github-square:hover{color: #6cc431;}
+h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.chris{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
+/* partie boxReseau */.boxReseau{width: 100%;display: flex;justify-content: right;margin-left:-20px;}
+/* .fa-brands{font-size:25px;color:white;text-decoration: none; margin-left: 20px;} A VOIR SI TJS BON */
 /*partie Scroll */#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffff;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
-#boxScroll > div > a > .fa-chevron-down { color: #ffffff;font-size: 1.875rem; transform:rotate(360deg);}
-#boxScroll > div > a > i:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
+#boxScroll > div > a > .fa-chevron-down { width: 40px;height: 40px;}
+#boxScroll > div > a > .fa-chevron-down:hover {color: #6cc431; transform: rotate(-180deg);transition: 0.3s;}
 .reseau{width: 100%;height: 10vh;display: flex;justify-content: end;padding: 30px;}
 /*section  A Propos */#aPropos{width: 100%; min-height: 100vh; display: flex;}
 .boxApropos{width: 25%;height: 100vh;display: flex;align-items: center;background: #4A8442;justify-content:center;}
@@ -56,7 +61,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 .identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5rem;margin-left: 10px;z-index: 1;}
 /* partie identite */.identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;margin-top: -15px;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
-.identite > .nomPrenom {font-family: "NovaRound";font-size: 2.5rem;}
+.identite > .nomPrenom {font-family: 'Nova Round', cursive;font-size: 2.5rem;}
 .identite > .nomPrenom > span{color:black;font-size: 3.125rem;}
 /* partie résumer */.resumer{height: 50vh;display: flex;justify-content: center; align-items: end;flex-direction: column;margin-right: 50px;}
 .resumer > p {width: 70%;font-family: "Numans";font-size: 0.875rem;margin-left: 20px; margin-top:20px; line-height: 25px;letter-spacing: 1px;}  
@@ -65,15 +70,18 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 .boxLangages{width: 100%;height: 70vh;display: flex;justify-content: center;}
 .division{display: flex;flex-direction: column;text-align:center ;}
 .comptet{width:100%;height: 15vh; font-family: "Rubik",sans-serif;font-weight: 500; font-size:5rem;color:white;margin-top: 30px;}
-.boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}.boxLeafDeve >.fa-leaf{margin:-26px 0px 0px -14px;font-size: 2.5rem;}
-.develop{font-family: 'NovaRound';font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
+.boxLeafDeve{flex-direction: row;display: flex;width: 100vw;}
+.boxLeafDeve >.leaf{width: 35px;transform: rotate(151deg);margin-top: -40px;}
+.develop{font-family: 'Nova Round', cursive;font-size: 2.5rem;color:white;margin-left: 35px;margin-top: -40px;}
 .animation{width: 100%;height: auto;}
 /* partie langages compétence developpement web */#contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
 .langagesDev{ width:85%;background:#e2dfcd;border-radius:30px;display: flex;align-items:center; margin:40px 0px 0px 60px}
-.langagesDev>.fa-html5,.fa-css3-alt,.fa-js-square,.fa-php,.fa-laravel,.fa-wordpress-simple{color:white; margin-left: -38px;} 
-.barLangages{height:35px;background: #6CC431;border-radius: 30px;}
-.html{width: 85%;}.css{width: 75%;}.js{width:28%}.php{width: 10%;}.laravel{width: 0%;}.wordpress{width: 15%;}
+.barLangages{height:35px;background: #6CC431;border-radius: 30px;font-size: 1.3rem;font-family:'NovaRound',cursive;font-weight: 500;text-align: center;color: white;}
+.icons{width: 20px;transform: rotate(180deg);margin-left: -30px;}
+.html5,.css3,.javascript,.larav,.worpres{width: 20px;transform: rotate(180deg);margin-left: -30px;}
+.php8{width: 30px;transform: rotate(180deg);margin-left: -40px;}
+.balise{width: 88%;}.css{width: 75%;}.js{width:28%}.php{width: 30%;}.laravel{width: 8%;}.wordpress{width: 25%;}
 /* partie des compétences */.imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease;} 
 /****Animation****/@keyframes moveLamp {0% {width:60%;margin-right: 500px;}50%{margin-top: 250px;}100%{margin-right: 0px;}}
 /* SECTION COMPETENCES DESIGNE/DIGITAL*/
@@ -85,33 +93,29 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 /* partie langages de compétence developpement */
 .boxDig{width: 100%;height:100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
-.type> h2{ font-family: 'NovaRound';font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
-.type>.fa-leaf{margin-top:52px;font-size: 1.563rem;margin-left: 2px;}
+.type> h2{ font-family: 'NovaRound',cursive;font-size: 1.8rem;color: black;margin-left: 47px;margin-top: 57px;}
+.type> img{margin-top:55px;width:25px;margin-left: 3px;transform: rotate(131deg);}
 .langagesDig{ width:80%;height:30px; background:#e2dfcd; border-radius:30px;display: flex;justify-content: flex-start;align-items:center; color:black; margin:40px 0px 0px 36px} 
-.progres{width: 100%; font-family: 'NovaRound';font-size: 1.4rem;color: black;}
-.langagesDig>.fa-figma, .fa-mobile-button, .fa-sass, .fa-code, .fa-git-square, .fa-envira{color:#095933; margin-left: -38px;font-size: 1.6rem;}
+.progres{width: 100%; font-family: 'NovaRound',cursive;font-size: 1.4rem;color: black;}
+.langagesDig> img{color:#095933; margin-left: -38px;width: 20px;transform: rotate(180deg);} 
+#iconSaas{width: 30px;} #leafGreen{width: 25px;transform: rotate(276deg);}
 .figma{width: 70%;}.mobile{width: 80%;}.sass{width:20%}.integration{width: 90%;}.leaf{width: 85%;}.git{width:50%}
 /* SECTION PORTFORLIO *//* titre porfolio */
 #boxPortFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column; align-items: center;}
 #titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
-.titlePort{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;margin-top: 15px;}
-#titleProjets>.fa-leaf{font-size: 6.125rem;margin-top: -14px;margin-left: -23px;}
+#titleProjets > h2{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;}
+#titleProjets> img{width: 135px;transform: rotate(145deg);margin-top: 154px;margin-left: -5px;}
 /* partie des projets */
 #listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
-/* Container stylings: -> centers the whole content of the page -> defines width and height for container *//*
- .container {width: 100vw;height: 100vh;}/* End of container stylings *//* Provides padding to main heading */
- .main-heading {padding: 2rem 0 2rem 0;} 
-/* .content {position: relative;} */
-/* Carousel content stylings *//* Places the carousel content on center of the carousel */
-/* .carousel-content {position: absolute;top: -30%;left: 50%;transform: translate(-50%, -50%);text-align: center;z-index: 50;} */
-/* To center the content horizontally  and vertically */
+/* Container stylings: -> centers the whole content of the page -> defines width and height for container/ End of container stylings *//* Provides padding to main heading */
+.main-heading {padding: 2rem 0 2rem 0;} 
+/* Carousel content stylings *//* Places the carousel content on center of the carousel *//* To center the content horizontally  and vertically */
 .carousel-heading {width: 100%;color: black;font-size: 5rem;text-align: center;font-family: 'Rubik';font-weight: 900;letter-spacing: 20px;text-align: center;}
 /* End of carousel content stylings *//* Slideshow stylings */
 .slideshow {height: 100%; overflow: hidden;}
   /* To hide slides in x-direction *//* Wrapper which wraps all the  slideshow images stylings */
 .boxslideshow{ display: flex; width: 800%;position: relative;animation: slideshow 20s 5s infinite;}/* Change the animation settings */
 /* We give it width as 400% because we are making a 4 image carousel. If you want to make for example,5 images carousel, then give width as 500%. */
-
 .slide {width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
 .slide-img {width: 739px;height: 384px;object-fit: cover;}/* Define width and height for images */
 /* @keyframes are used to provide amations We make these settings for 4 image carousel. Make modification accourding to your needs. */
@@ -136,26 +140,6 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 90% {right: -800%}
 95% {right: -900%;} 
 100%{ right: 0%;}} 
-/* End of slideshow stylings *//* Carousel control buttons stylings */
-/* .slide-btn {width: 100%; background-color:#AEE68A; border-radius: 50%;border: .2rem solid  #6CC431;margin-top: -100px;
-  width: 1.2rem;height: 1.2rem;outline: none;cursor: pointer;margin-top: 50px;margin-left: -125px; position: absolute;transform: translateX(-50%);z-index: 70;} */
-/* Stylings for positioning the buttons at the bottom of the carousel */
-/* As we provide position as absolute,the buttons places one over the other.So, we have to place them individuallyat their correct positions. */
-/* .slide-btn-1 {left: 15%;}.slide-btn-2 {left: 25%;}.slide-btn-3 {left: 35%;}.slide-btn-4 {left: 45%;}
-.slide-btn-5 {left: 55%;}.slide-btn-6 {left: 65%;}.slide-btn-7 {left: 75%;}.slide-btn-8 {left: 80%;} */ 
-/* .boxSlide-btn{height: 15vh; width: 100%;display: flex;justify-content: center;}  */
-/* When we focus on the particular button,the animation stops to that particular image to which the button is associated. */
-/* .slide-btn-1:focus~.boxslideshow {animation: none;left: 0;}
-.slide-btn-2:focus~.boxslideshow {animation: none;left: -50%;}
-.slide-btn-3:focus~.boxslideshow {animation: none;left: -150%;}
-.slide-btn-4:focus~.boxslideshow {animation: none;left: -200%;}
-.slide-btn-5:focus~.boxslideshow {animation: none;left: -250%;}
-.slide-btn-6:focus~.boxslideshow {animation: none;left: -300%;}
-.slide-btn-7:focus~.boxslideshow {animation: none;left: -350%;}
-.slide-btn-8:focus~.boxslideshow {animation: none;left: -400%;} */
-/* When we focus on the button, the background color changes */
-/* .slide-btn:focus {background-color: #6CC431;} */
-/* End of carousel control buttons stylings */
 /*/////////////////////////Section partie modal pour description des languages trouvés id = boxModalDesc*/
 #boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background: white;z-index: 80;}
 .modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;box-sizing: border-box;overflow-y:hidden;background:white}
@@ -163,7 +147,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 .firstLine{width: 100%;height: 10vh;display: flex;justify-content: space-between;align-items: center;}
 .contenairSecond{width: 100%;height:30vh;display: flex;justify-content: center;align-items: center;}
 .titleModal{width: 100%;font-size: 3.5rem;font-family: 'rubik';font-weight: 500;margin-left:30px;color:#4A8442;}
-.cross{font-size:2rem;width: 100%;display: flex;justify-content:flex-end;margin-right:30px;color: #4A8442;}
+.firstLine > .cross{width: 80px;margin-right:30px;}
 /* partie secondLine projtDesc */
 .secondLine{width:100%;height: 30vh;display: flex;flex-direction: column;}
 .boxdetail{width: 50%;height: 30vh;display: flex;flex-direction: column;justify-content: center;}
@@ -174,7 +158,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 #boxTech{width: 100%; height: 50%;display: flex;}
 /* partie thirdLine */
 .thirdLine{width: 50%;height: 58vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background:white;margin-left: 30px;}
-.thirdLine > .tech {font-family: 'NovaRound';font-size: 2.5rem;font-weight: 500;letter-spacing: 2px;display: flex;justify-content: center;color: #4A8442;}
+.thirdLine > .tech {font-family: 'NovaRound',cursive;font-size: 2.5rem;font-weight: 500;letter-spacing: 2px;display: flex;justify-content: center;color: #4A8442;}
 /* partie technologie1 */
 .technologie1 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;color:black;margin-top: -10px;}
 .boxImgTech1{ width: 100%; height: 15vh;display: flex;align-items: center;}
@@ -182,32 +166,29 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}h2{font-weight: 700; font
 .tech04{height: 70px;margin-bottom: 35px;margin-left: 20px;}
 .tech05{height: 130px;margin-bottom: 5px;}
 .tech06{width: 80px;height: 60px;margin-bottom: 37px;}
-/* .cssTech05{height: 130px;} */
 /*  partie technologie2*/
 .boxImgTech2{ width: 100%; height: 15vh;display: flex;justify-content: center;align-items: center;height: 20vh;}.technologie2 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;color:black;}
 /*partie fourLine : Moyens utilisés */
 .fourLine, .thirdLine{width: 50%;height: 55vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background: white;margin-left: 30px;margin-right: 30px;}.boxImgTech1{display: flex;justify-content: center;align-items: center;height: 20vh;}
-.fourLine > .moyens{font-family: 'NovaRound';font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color: #4A8442;display: flex;justify-content: center;margin-top: 20px;}
-/* .boxMoyens{display: flex;flex-direction: column;} */
+.fourLine > .moyens{font-family: 'NovaRound',cursive;font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color: #4A8442;display: flex;justify-content: center;margin-top: 20px;}
 .moyen1, .moyen2, .moyen3, .moyen4 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;color: black;z-index: 99;}
-/* .moyen2{line-height: 10px;}
-.moyen4{line-height: 10px;} */
 /*//////////////Section Contact*/
 #contact{ width: 100%; min-height: 100vh;background:white;display: flex;flex-direction: column;}
 .boxContact{width: 100%; height: 20vh;display: flex;justify-content: center; align-items: end;}
 .boxContact > h1{font-family: "Rubik",sans-serif;font-weight: 500; font-size:4.5rem;color:black;margin-bottom: -8px;}
-.boxContact > .contactLeaf {font-size: 3rem; margin-bottom: -14px;margin-left: 4px;}
-.paraContact{ width: 100%;font-size: 1.4rem; margin-left: 30px;margin-top: 18px;font-family: 'NovaRound';}
+.boxContact > img{width:40px;margin-bottom: -10px;margin-left: 3px;transform: rotate(138deg);}
+.paraContact{ width: 100%;font-size: 1.4rem; margin-left: 30px;margin-top: 18px;font-family: 'NovaRound',cursive;}
 /*////////*/#contenairContact{width: 100%;height: 50vh; display: flex;}
 .boxMap{width: 50%; height: 65vh;display: flex; flex-direction: column;;background:white;align-items: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); margin: 25px 30px 0 30px;}
-
-.fa-location-dot, .fa-mobile, .fa-envelope{ font-size: 20px; color: #759D59;width: 44px;height: 44px;background: #dff3fc;  border-radius: 50px; transition: all 0.3s ease-in-out;display: flex;justify-content: center; align-items: center;margin-left:20px}
-.addresse, .email, .phone{margin-left: 20px;font-size: 1.2rem;font-family: 'Numans';}
+.boxAddress> img{ font-size: 20px; color: #759D59;width: 44px;height: 44px;border-radius: 50px; transition: all 0.3s ease-in-out;display: flex;justify-content: center; align-items: center;margin-left:20px; transform: rotate(180deg);}
+.boxEMail > img{width: 36px;height: 44px;border-radius: 50px; transition: all 0.3s ease-in-out;display: flex;justify-content: center; align-items: center;margin-left:20px; transform: rotate(180deg);}
+.boxPhone > img{width: 40px;height: 40px;margin-left: 20px;}
+.addresse, .email, .phone{margin-left: 30px;font-size: 1.2rem;font-family: 'Numans';}
 .rue, .mail, .phon{font-size: 1.1rem;margin-left:20px;text-decoration: none;color:#759D59;}
 .boxAddress, .boxEmail, .boxPhone{width: 100%;height: 6vh;margin-top: 20px;display: flex;justify-content: flex-start;align-items: center;}
-.fa-location-dot:hover{background: #6CC431;color: white;}
-.fa-envelope:hover{background: #6CC431;color: white;}
-.fa-mobile:hover{background: #6CC431;color: white;} 
+.boxAddress> img:hover{background: #6CC431;color: white;}
+.boxEMail > img:hover{background: #6CC431;color: white;}
+.boxPhone > img:hover{background: #6CC431;color: white;} 
 /* Partie Map */
 iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 #mapContact{width: 50%; height: 65vh;display: flex;margin: 25px 30px 0 30px;justify-content: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); align-items: center;}
@@ -223,14 +204,18 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 /*Section Footer */
 #boxFooter{width: 100%;height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
 .footerLigne1 > a >img {width:90px;height: 60px;margin-bottom: -15px;margin-left: 20px;}
-.footerLigne2 > p{ font-size: 0.875rem;font-family:'NovaRound';color: white;font-weight:500;}
+.footerLigne2 > p{ font-size: 0.875rem;font-family:'NovaRound',cursive;color: white;font-weight:500;}
 .footerLigne3{display: flex;padding: 20px;} span{font-size: 0.875rem;}
-.lienPortFolio{width: 100%;display: flex;font-size: 1rem;font-family: 'NovaRound';color:white;padding: 10px;}
-.fa-link {color: white;font-size: 1.2rem;padding-left: 30px;margin-top: 8px;text-decoration: none;}.fa-link:hover{ color:#6cc431;}
+.linkedInFooter{width: 25px;margin-right: 10px;}
+.facebookFooter{width: 27px;transform: rotate(0deg);margin-left: -10px;}
+.gitHubFooter{width: 25px;transform: rotate(0deg);}
+.linkedInFooter:hover{color: #6cc431;fill: #6CC431;}
+.facebookFooter:hover{color: #6cc431;}
+.gitHubFooter:hover{color: #6cc431;}
 /*////////////MEDIA QUERY/////////////*/  
 @media screen and (max-width:1024px){
 /* PARTIE NAVIGATION */#mobileNavArea > ul > li > a {font-size: 2rem;}
-/* PARTIR HEADER */#titleProjets > .fa-leaf { font-size: 5rem; margin-top: -40px; margin-left: 1px;}.titlePort{font-size: 9rem;margin-left: 20px;}
+/* PARTIR HEADER */#titleProjets > img { font-size: 5rem; margin-top: -40px; margin-left: 1px;}.titlePort{font-size: 9rem;margin-left: 20px;}
 .presentation > .photoChris > img {width: 210px; height: 210px;}  
 /* PARTIE A PROPOS */.identite > .dev {font-size: 4rem;}
 /* PARTIE COMPETENCES1 */.contenaireLang { width: 75%;align-items:center;}.langagesDev {width: 90%;}.animation {width: 100%;}
@@ -239,7 +224,7 @@ iframe{width: 90%;border: 0;height: 400px; margin: 20px 0px 20px 0px;}
 .addresse, .email, .phone {font-size: 1rem;}.rue, .mail, .phon {font-size: 0.875rem;}.rue{width: 100%;}
 .addresse{margin-left: 45px;}}
 @media screen and (max-width:768px){
-/* PARTIE HEADER */h2{font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 1.8rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
+/* PARTIE HEADER */.chris{font-size: 7rem;}h1 {font-size: 4rem;}.moi {font-size: 1.8rem; margin-top: 69px;margin-left: 10px;}#boxScroll > .scroll {font-size: 0.75rem;}
 /* PARTIE A PROPOS */.boxApropos > .propos > h2 { font-size: 4rem;}.identite > .dev {font-size: 2rem;} .identite{margin-top: -25px;}
 .presentation > .photoChris > img {width: 180PX; height: 180PX;margin-bottom: 20px;}.identite > .nomPrenom, .dev {margin-top: -40px;}
 .identite > .nomPrenom {font-size: 2rem;margin-top:5px;}.identite > .dev {font-size: 2.5rem;}.resumer > p {width: 90%;font-size: 0.75rem;}
@@ -270,12 +255,12 @@ iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {
 .boxMap {margin-top: 50px;}#mapContact {margin: 20px 30px 0 30px;}.resumer > p{ margin-top: -25px;}
 .slide-img{width: 396px;height: 209px;}.desc{height: 78%;}/* partir projet */}
 @media screen and (max-width:425px){
-/* PARTIE HEADER */h2{font-size: 6rem;}h1 {font-size: 3rem;}.resumer > p{ margin-top: -45px;margin-bottom: 60px;}
+/* PARTIE HEADER */.chris{font-size: 6rem;}h1 {font-size: 3rem;}.resumer > p{ margin-top: -45px;margin-bottom: 60px;}
 /* PARTIE A PROPOS */.identite > .dev { font-size: 1.8rem;}.identite > .nomPrenom {font-size: 1.8rem;}.presentation > .photoChris > img {width: 150PX;height: 150PX;}
 .presentation > .photoChris {justify-content: center; margin: 50px 15px 0 0;}.resumer {justify-content: flex-start;}.resumer > p{ margin-top:-56px}
 /* PARTIE COMPETENCES1 */.comptet {font-size: 2.5rem;margin: 50px 0 0 0px;}.imgGreen {width: 50%;}
 /* PARTIE COMPETENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 36%;font-size: 1rem;}
-/* PARTIE PORTFOLIO */.titlePort {font-size: 4rem;}#titleProjets > .fa-leaf {font-size: 2.5rem; margin-left: -6px;}.slide-img {width: 352px;height: 170px;}
+/* PARTIE PORTFOLIO */.titlePort {font-size: 4rem;}#titleProjets > img{font-size: 2.5rem; margin-left: -6px;}.slide-img {width: 352px;height: 170px;}
 /* PARTIE MODAL */.titleModal {font-size: 2rem;}.projetDesc, .collaboration, .date {font-size: 0.6rem; line-height: 10px;}
 .thirdLine > .tech, .fourLine > .moyens {font-size: 1.5rem;}#boxTech {flex-direction: column;}.firstLine {height: 10vh;}
 .contenairSecond {height: 15vh;}.secondLine{height: 15vh;}.thirdLine, .fourLine { width: 90%;margin: 10px 20px 0 20px; height: 35vh;}.boxImgTech1 {justify-content: center;}
@@ -284,13 +269,13 @@ iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {
 .formulaire > form { height: 40vh;}.desc {width: auto;height: 50%;margin: 10px;}.boxMap{margin:2px}#mapContact{height: 47vh;}
 /* PARTIE FOOTER */#boxFooter{height: 8vh;}.footerLigne2 > p {font-size: 0.75rem;}.footerLigne1 > a >img {width: 75px;height: 55px; margin-left: 10px;}.fa-brands {font-size: 20px;}}
 @media screen and (max-width:375px){
-/* PARTIR NAV */#burger {margin-top: -33px;font-size: 2rem;}#logoLeaf > .logoChris {width: 80px;height: 55px;margin-top: -24px;}#closeNav {margin-top: -30px;}
-/* PARTIE HEADER */h2{font-size: 5.5rem;}.moi {Font-size: 1.4rem; margin-top: 50px;}.identite > .dev {font-size: 1.8rem;}
+/* PARTIR NAV */#burger {margin-top: -33px;font-size: 2rem;}#logoLeaf > a {width: 80px;height: 55px;margin-top: -24px;}#closeNav {margin-top: -30px;}
+/* PARTIE HEADER */.chris{font-size: 5.5rem;}.moi {Font-size: 1.4rem; margin-top: 50px;}.identite > .dev {font-size: 1.8rem;}
 /* PARTIE A PROPOS */.presentation > .photoChris > img {width: 120px;height: 120px;margin-top: -40px; margin-bottom: 20px;}.resumer > p{margin-top: -90px;margin-bottom: 105px;font-size: 0.7rem;line-height: 18px;}
 /* PARTIE COMPETENCES1 */.comptet {font-size: 1.8rem;}.langagesDev > .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php, .fa-laravel, .fa-wordpress-simple {margin-left: -23px;}
 /* PARTIE COMPETENCES2 */#competencesDeg > .boxCompetencesDeg > h3 {width: 5%; font-size: 1rem;margin-left: 34px;}#competencesDeg > .boxCompetencesDeg {width: 10%;flex-direction: column;}
 .type > h2 {margin-bottom: -34px;font-size: 1rem;}#competencesDeg > .boxCompetencesDeg > img {width: 120px;height: 120px;margin-top: -81px; margin-left: 180px;}
-.langagesDig {margin: 32px 0px 0px 36px;}.type > .fa-leaf {margin-top: 43px;font-size: 1.2rem;} input {margin-top: 15px;}
+.langagesDig {margin: 32px 0px 0px 36px;}.type > img {margin-top: 43px;font-size: 1.2rem;} input {margin-top: 15px;}
 /* PARTIE PROJET */.slide-img {width: 244px;height: 123px;}.titlePort {font-size: 3.5rem;}
 /* PARTIE MODALE */.projetDesc, .collaboration, .date{line-height: 12px;}.date{width: 100%;}
 .tech01, .tech02, .tech03, .tech04,.tech05, .tech06 {height: 45px;margin-bottom: 0;}.titleModal { font-size: 1.8rem;}
@@ -299,10 +284,10 @@ iframe {width: 100%; margin: 0; height: 20vh;padding: 20px;}.rue, .mail, .phon {
 .technologie2{margin: 10px 0 30px 30px;font-size: 0.75rem;}.technologie1{font-size: 0.75rem;}
 .fourLine > .moyens {height: 20vh;}.boxMoyens{display: flex;flex-direction: column;height: 100%; margin-top: -50px;}
 .moyen1{line-height: 10px;}.moyen2{line-height: 10px;}.moyen3{line-height: 10px;}.moyen4{line-height: 10px;}
-/* PARTIE CONTACT */.boxContact > h1 {font-size: 2rem;margin-bottom: -35px;}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -38px};
+/* PARTIE CONTACT */.boxContact > h1 {font-size: 2rem;margin-bottom: -35px;}.boxContact > .contactLeaf {font-size: 1.5rem;margin-bottom: -38px;}
 .rue, .mail, .phon {font-size: 0.6rem;}.addresse, .email, .phone {font-size: 0.6rem;}.paraContact {width: 85%;font-size: 0.75rem;}
-.boxMap,#mapContact{width: 95%;margin: 0;}#mapContact{height:46vh}.boxMap, #mapContact {margin-top: 42px;margin-bottom: -35px;}
+.boxMap,#mapContact{width: 95%;margin: 0;}#mapContact{height:46vh;}.boxMap, #mapContact {margin-top: 42px;margin-bottom: -35px;}
 .envoye{margin-top: 10px;}.contactName > .name, .surname {padding: 5px 6px;}.formulaire > form {height: 34vh;}
 .footerLigne2 > p {font-size: 0.45rem;}input {margin-top: 15px;}
-.footerLigne1 > a > img {  width: 60px;  height: 45px;}#boxFooter{height: 8vh;}/* PARTIR FOOTER */}
+.footerLigne1 > a > img {width: 60px;height: 45px;} #boxFooter{height: 8vh;}/* PARTIR FOOTER */}
 @media screen and (max-width:360px){.resumer > p{margin-top: -114px; font-size: 0.7rem;margin-bottom: 127px; }}

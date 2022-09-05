@@ -2,7 +2,7 @@
 var burger = document.getElementById('burger');
 var closeNav = document.getElementById('closeNav');
 var mobileNavArea = document.getElementById('mobileNavArea');
-let boxslideshow = document.querySelector('.containerSlide');
+let boxslideshow = document.querySelector('.boxslideshow');
 let navbar = document.querySelectorAll('li');
 
 function closing(){
