@@ -28,12 +28,12 @@ ul {text-align:center; margin-top: 85px;}
 #burger{margin-right: 30px;margin-top: 5px;width: 40px;height: 40px;}
 #closeNav{margin-right: 25px;width: 60px;height: 60px;fill: white;}
 .navReseau{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;}
-.linkedIn{width: 26px; height: 27px; margin-right: 10px;fill:white;}
-.facebook{width: 27px;height: 27px;margin-right: 10px;fill:white;}
-.gitHub{width: 26px;height: 28px;fill:white;}
-.linkedIn:hover{fill:#6CC431;}
-.facebook:hover{fill: #6cc431;}
-.gitHub:hover{fill: #6cc431;}
+.linkedIn{width: 26px; height: 27px; margin-right: 10px;fill:#063E11;}
+.facebook{width: 27px;height: 27px;margin-right: 10px;fill:#063E11;}
+.gitHub{width: 26px;height: 28px;fill:#063E11;}
+.linkedIn:hover{fill:#ffffff;}
+.facebook:hover{fill: #ffffff;}
+.gitHub:hover{fill: #ffffff;}
 .fa-leaf{color: #6CC431;margin-top : 20px;}
 /*Partie Header */header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 /* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;animation : animation 1s ease-out;}
@@ -42,17 +42,17 @@ ul {text-align:center; margin-top: 85px;}
     transform: translateY(-100px);}
     to{opacity: 1; 
         transform: translateY(0px);}}
-.hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: white;}
-h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.chris{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: white;}
+.hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: #063E11;}
+h1{font-size: 5.625rem;font-weight: 400; color: #063E11;}.chris{font-weight: 700; font-size: 12rem;margin-left: 14%;font-family: 'Rubik';color: #063E11;}
 /* partie boxReseau */.boxReseau{width: 100%;display: flex;justify-content: right;margin-left:-20px;}
 /*partie Scroll */#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
-#boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #ffffff;margin-top: -20px;}
-#boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #ffffff; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
-.chevron-down {width: 40px;height: 40px;stroke:white; }
-.chevron-down:hover {stroke: #6cc431; transform: rotate(180deg);transition: 0.3s;}
+#boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #063E11;margin-top: -20px;}
+#boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #063E11; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
+.chevron-down {width: 40px;height: 40px;stroke:#063E11; }
+.chevron-down:hover {stroke: white; transform: rotate(180deg);transition: 0.3s;}
 .reseau{width: 100%;height: 10vh;display: flex;justify-content: end;padding: 30px;}
 /*section  A Propos */#aPropos{width: 100%; min-height: 100vh; display: flex;}
-.boxApropos{width: 25%;height: 100vh;display: flex;align-items: center;background: #4A8442;justify-content:center;}
+.boxApropos{width: 25%;height: 100vh;display: flex;align-items: center;background: #063e11;justify-content:center;}
 /* BoxLogo et A propos */.boxApropos >.propos > h2{font-family: "Rubik";font-size: 4.8rem;color: white;writing-mode: vertical-rl;text-orientation: upright;letter-spacing : -5px;}
 /* partie boxPrensentation */#boxPresentation{width:75%; height: 100vh; display: flex;flex-direction: column;}
 /* Partie présentation */.presentation{width: 100%;height: 50vh;}
@@ -105,7 +105,7 @@ h1{font-size: 5.625rem;font-weight: 400; color: #ffff;}.chris{font-weight: 700; 
 /* SECTION PORTFORLIO *//* titre porfolio */
 #boxPortFolio{width: 100%;min-height: 100vh;display: flex;flex-direction: column; align-items: center;}
 #titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
-#titleProjets > h2{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;}
+#titleProjets > h1{color:white;font-size: 12rem;font-family: 'Rubik';font-weight: 500;}
 #titleProjets> .leaf{width: 135px;transform: rotate(145deg);margin-top: 154px;margin-left: -5px;}
 /* partie des projets */
 #listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
