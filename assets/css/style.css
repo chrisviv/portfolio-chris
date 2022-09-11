@@ -59,7 +59,7 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
     to{opacity: 1; 
         transform: translateY(0px);}}
 .hello{display: flex;height:0 ;margin-left: 15%;font-weight: 300;margin-top:80px}.moi{font-weight: 500;font-size: 47px;margin-top: 86px;margin-left: 20px;color: #063E11;}
-h1{font-size: 5.625rem;font-weight: 400; color: #063E11;}.chris{font-size: 12rem;margin-left: 14%;font-family: 'Rubik-Bold', sans-serif;color: #063E11;}
+.hello >h1{font-size: 5.625rem;font-weight: 400; color: #063E11;}.chris{font-size: 12rem;margin-left: 14%;font-family: 'Rubik-Bold', sans-serif;color: #063E11;}
 /* partie boxReseau */.boxReseau{width: 100%;display: flex;justify-content: right;margin-left:-20px;}
 .linkedIn{width: 26px; height: 27px; margin-right: 15px;fill:#063E11;margin-left: 35px;}
 .facebook{width: 27px;height: 27px;margin-right: 15px;fill:#063E11;}
@@ -67,7 +67,8 @@ h1{font-size: 5.625rem;font-weight: 400; color: #063E11;}.chris{font-size: 12rem
 .linkedIn:hover{fill:#AEE68A;}
 .facebook:hover{fill: #AEE68A}
 .gitHub:hover{fill: #AEE68A}
-/*partie Scroll */#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
+/*///////////////////////partie Scroll */
+#boxScroll{width: 100%; height:20vh;display: flex;align-items: center; flex-direction: column;}
 #boxScroll>.scroll {font-size:1rem; font-family: 'Numans'; color: #063E11;margin-top: -20px;}
 #boxScroll> .roundH {width: 55px; height: 55px;border: 1px solid #063E11; border-radius: 50px;display: flex;align-items: center; justify-content: center;}
 .chevron-down {width: 40px;height: 40px;stroke:#063E11; }
@@ -130,43 +131,32 @@ h1{font-size: 5.625rem;font-weight: 400; color: #063E11;}.chris{font-size: 12rem
 .titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
 .titleProjets > h1{color:#063E11;font-size: 12rem;font-family: 'Rubik-Medium',sans-serif;}
 .titleProjets> .leaf{width: 135px;transform: rotate(145deg);margin-top: 154px;margin-left: -5px;}
-/* partie des projets */
-#listeProjets{width: 100%;height:100vh;display: flex;justify-content: center;}
-/* Container stylings: -> centers the whole content of the page -> defines width and height for container/ End of container stylings *//* Provides padding to main heading */
+/* partie des projets *//* section carousel */
+#boxCarousel{width: 100%;min-height: 100vh;display: flex;align-items:center;flex-direction: column;}
+.container{max-width:800px;height: 100vh; display: flex;flex-direction: column;align-items: center;position: relative; margin: auto;justify-content: center;} 
 .container{width: 100%; height: 100%;display: flex;justify-content: center;
-align-items: center;flex-direction: column;}
-.carousel-content{height: 20vh;width: 100%;display: flex;justify-content: center;}
-/* Carousel content stylings *//* Places the carousel content on center of the carousel *//* To center the content horizontally  and vertically */
-.carousel-heading {width: 100%;color:#063E11;font-size: 5rem;text-align: center;font-family: 'Rubik-',sans-serif;letter-spacing: 15px;}
-/* End of carousel content stylings *//* Slideshow stylings */
-.slideshow {height: 100%; overflow: hidden;}
-  /* To hide slides in x-direction *//* Wrapper which wraps all the  slideshow images stylings */
-.boxslideshow{ display: flex; width: 800%;position: relative;animation: slideshow 20s 5s infinite;}/* Change the animation settings */
-/* We give it width as 400% because we are making a 4 image carousel. If you want to make for example,5 images carousel, then give width as 500%. */
-.slide {width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
-.slide-img {width: 739px;height: 384px;object-fit: cover;margin-top: 80px;}/* Define width and height for images */
-/* @keyframes are used to provide amations We make these settings for 4 image carousel. Make modification accourding to your needs. */
-@keyframes slideshow {
-0% {left: 0;}  
-5% {left: -100%;}
-10% {left: -100%;} 
-15% {left: -200%;}
-20% {left: -200%;}
-25% {left: -200%;}
-30% {left: -300%;} 
-35% {left: -300%;}
-40% {left: -400%;}
-45% {left: -400%;}
-50% {left: -500%;} 
-55% {left: -500%;}
-60% {left: -600%;}
-65% {right: -600%;}
-70% {right: -700%;}
-75% {right: -700%;}
-85% {right: -800%;}
-90% {right: -800%}
-95% {right: -900%;} 
-100%{ right: 0%;}} 
+  align-items: center;flex-direction: column;}
+.container>h1{font-size: 5rem;font-family: 'Rubik-Bold',sans-serif;;text-align: center;color: #063E11;}
+
+.slide { display: none; width: 800px;} 
+
+
+.boxslideshow{ display: flex; width: 800%;position: relative;animation: slideshow 20s 5s infinite;}
+  .slideshow {height: 100%; overflow: hidden;}
+.slide-img{width: 100%;height: 400px;object-fit: cover;object-position: center;}
+.prev,.next {cursor: pointer;position: absolute;top: 50%;width: 60px;height: 60px;display: flex;align-items: center;justify-content:center;border-radius: 50%;color: black;font-size: 50px;background-color: rgba(0,0,0,0);transition: background-color 0.6s ease;}
+.prev {left: -80px;}
+.next {right: -80px;}
+.prev:hover{background-color: rgba(0,0,0,0.5);}
+.next:hover {background-color: rgba(0,0,0,0.5);}
+.slide-text {color: black;font-size: 1.3rem;padding: 15px;width: 100%;text-align: center;}
+.slide-dot{ text-align: center; }
+.dot {cursor: pointer;height: 20px;width: 20px;margin: 50px 5px;background-color: #999999; border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}
+.active, .dot:hover { background-color: #111111; }
+.fade {animation-name: fade;animation-duration: 1s;}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}}
 /*/////////////////////////Section partie modal pour description des languages trouvés id = boxModalDesc*/
 #boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background: white;z-index: 80;}
 .modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;box-sizing: border-box;overflow-y:hidden;background:white}
@@ -217,10 +207,10 @@ align-items: center;flex-direction: column;}
 .iconPositionSvg:hover{fill:#6CC431;stroke:#063E11;border-radius: 50px;}
 .iconEmailSvg:hover{fill:#6cc431;stroke: #063E11;}
 .iconPhoneSvg:hover{fill:#6cc431;stroke: #063E11;} 
-/* Partie Map */
+/* ////////////////Partie Map */
 .iframe{width: 100%;height:76%; margin: 0px 0px 0px 0px;object-fit: cover;}
 #mapContact{width: 50%; height: 65vh;display: flex;margin: 25px 30px 0 30px;justify-content: center;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); align-items: center;}
-/*Partie formulaire*/
+/*/////////////////Partie formulaire*/
 .formulaire{width: 90%;}.formulaire > form{width: 100%;height: 50vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .contactName{width:91%; display: flex;font-family: 'Numans';justify-content: space-between;}input{margin-top: 30px;}
 .contactName > .name, .surname { width: 60%;padding: 10px 15px;border:0.5px solid #063E11;} 
@@ -229,7 +219,7 @@ align-items: center;flex-direction: column;}
 .courriel{width: 90%;height: 45px;border:0.5px solid #063E11;}
 .envoye{width: 90%;background:white;border: 0;padding: 10px 24px;color: black;width: 35%;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);transition: 0.4s;border-radius: 4px;}
 .envoye:hover {background: #063E11;color: white;}  
-/*Section Footer */
+/*S///////////////////////////ection Footer */
 footer{width: 100%;height: 10vh;background:#AEE68A;display: flex;justify-content: space-between;align-items: center;}
 .footerLigne1 > a >img {width:90px;height: 60px;margin-bottom: -15px;margin-left: 20px;}
 .footerLigne2 > p{ font-size: 1rem;font-family:'NovaRound',cursive;color:#063E11;font-weight:500;}

@@ -211,45 +211,60 @@ if(isset($_POST['message'])) {
             <svg class="leaf" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><g transform="rotate(-90 256 256)"><path fill="#6cc431" d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16h-88c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448h1c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96H272z"/></g></svg>
         </div>
     </section>
-    <section id="listeProjets">
+    <section id="boxCarousel">
         <div class="container">
-            <div class="carousel-content">
-                <h1 class="carousel-heading">
-                    Projets
-                </h1>
-            </div>
-
+            <h1>Mes réalisations</h1>
             <div class="slideshow">
                 <div class="boxslideshow">
-                    <div class="slide">
-                        <img id="allojyve" class="slide-img" src= "./assets/img/carousel/allojyveScreen.webp"alt="image du projet d'un site internet pour connaitre les films de cinéma nommé allojyvé"/>
+                    <div class="custom-slider fade">
+                        <img  class="slide-img" id="allojyve" src= "./assets/img/carousel/allojyveScreen.webp" alt="image du projet d'un site internet pour connaitre les films de cinéma nommé allojyvé">
+                        <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                     </div>
-                    <div class="slide">
-                        <img id="techNews" class="slide-img" src= "./assets/img/carousel/techNewsScreen.webp" alt="image du projet d'un site sur des acticles sur les métiers du numérique nommé techNews"/>
+                    <div class="custom-slider fade">
+                        <img class="slide-img"  id="techNews" src= "./assets/img/carousel/techNewsScreen.webp" alt="image du projet d'un site sur des acticles sur les métiers du numérique nommé techNews">
+                        <div class="slide-text">Nullam luctus aliquam ornare. </div>
                     </div>
-                    <div class="slide">
-                        <img id="creatives" class="slide-img" src= "./assets/img/carousel/creativesScreen.webp" alt="image du projet d'un site nommé Créatives"/>
+                    <div class="custom-slider fade">
+                        <img class="slide-img"  id="creatives" src= "./assets/img/carousel/creativesScreen.webp" alt="image du projet d'un site nommé Créatives">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
-                    <div class="slide">
-                        <img id="Maquette_Cornod" class="slide-img" src= "./assets/img/carousel/maquetteScreen.webp" alt="image du projet d'une maquette de Cornod"/>
-                    </div> 
-                    <div class="slide">
-                        <img id="capgemen" class="slide-img" src= "./assets/img/carousel/capgementScreen.webp" alt="image du projet d'un site intnert nommé Capgemen"/>
+                    <div class="custom-slider fade">
+                        <img class="slide-img" id="Maquette_Cornod" src= "./assets/img/carousel/maquetteScreen.webp" alt="image du projet d'une maquette de Cornod">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
-                    <div class="slide">
-                        <img id="popCode" class="slide-img" src= "./assets/img/carousel/popCodeScreen.webp" alt="image du projet d'un jeu intéractif sur le languge de progommation nommmé popCode"/>
+                    <div class="custom-slider fade">
+                        <img  class="slide-img" id="capgemen" src= "./assets/img/carousel/capgementScreen.webp" alt="image du projet d'un site intnert nommé Capgemen">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
-                    <div class="slide">
-                        <img id="portfolio" class="slide-img" src= "./assets/img/carousel/portfolioScreen.webp" alt="image du projet mon portfolio"/>
+                    <div class="custom-slider fade">
+                        <img class="slide-img" id="popCode"  src= "./assets/img/carousel/popCodeScreen.webp" alt="image du projet d'un jeu intéractif sur le languge de progommation nommmé popCode">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
-                    <div class="slide">
-                        <img id="conciergerie" class="slide-img" src= "./assets/img/carousel/conciergerieScreen.webp" alt="image du projet d'une apllication pour une administration d'une conciergerie"/>
+                    <div class="custom-slider fade">
+                        <img class="slide-img" id="portfolio" src= "./assets/img/carousel/portfolioScreen.webp" alt="image du projet mon portfolio">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
+                    </div>
+                    <div class="custom-slider fade">
+                        <img class="slide-img" id="conciergerie" src= "./assets/img/carousel/conciergerieScreen.webp" alt="image du projet d'une apllication pour une administration d'une conciergerie">
+                        <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                     </div>
                 </div>
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slide-dot">
+                <span class="dot" onclick="currentSlide(1)">1</span>
+                <span class="dot" onclick="currentSlide(2)">2</span>
+                <span class="dot" onclick="currentSlide(3)">3</span>
+                <span class="dot" onclick="currentSlide(4)">4</span>
+                <span class="dot" onclick="currentSlide(5)">5</span>
+                <span class="dot" onclick="currentSlide(6)">6</span>
+                <span class="dot" onclick="currentSlide(7)">7</span>
+                <span class="dot" onclick="currentSlide(8)">8</span>
+            </div>
         </div>
     </section>
-    <section id="boxModalDesc" class='none'>
+   <section id="boxModalDesc" class='none'>
         <div class="modalDesc">
             <div class="firstLine">
                 <h2 class="titleModal"></h2>
@@ -354,5 +369,6 @@ if(isset($_POST['message'])) {
         </div>
     </footer>
    <script src="./assets/js/app.js"></script>
+   <script src="./assets/js/carousel.js"></script>
 </body>
 </html>
