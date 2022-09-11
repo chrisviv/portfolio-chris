@@ -84,6 +84,8 @@ function modalContent(target) {
                 document.querySelector('.moyen2').textContent = responce.listeProjets.projets[i].moyens2;
                 document.querySelector('.moyen3').textContent = responce.listeProjets.projets[i].moyens3;
                 document.querySelector('.moyen4').textContent = responce.listeProjets.projets[i].moyens4;
+                document.querySelector('.lien1').textContent = responce.listeProjets.projets[i].lien1;
+                document.querySelector('.lien2').textContent = responce.listeProjets.projets[i].lien2;
                 break;
             }
         }

@@ -18,7 +18,10 @@
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ACS"
+          "moyens4":"Utilisation du serveur de l'ACS",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/projet/allojyve/"
+
         },
         {
           "name": "TechNews",
@@ -37,7 +40,9 @@
           "moyens1":"Réalisation de la maquette: PC/Tablette/Mobile",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ACS"
+          "moyens4":"Utilisation du serveur de l'ACS",
+          "lien1":"",
+          "lien2":""
         },
         {
           "name": "Créatives",
@@ -56,7 +61,9 @@
           "moyens1":"Photopeo pour visualisation de la maquette",
           "moyens2":"Réalisatiion de l'intégration du site avec VSC à partir d'une maquette",
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ACS"
+          "moyens4":"Utilisation du serveur de l'ACS",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/projet/Creatives/"
         },
         {
           "name": "Maquette_Cornod",
@@ -75,7 +82,9 @@
           "moyens1":"Internet: Vidéo sur l'utilisation de Figma",
           "moyens2":"Inspiration sur d'autre site de commune proche",
           "moyens3":"Réalisation d'un audit UX/UI pour identifier les points à améliorer",
-          "moyens4":" "
+          "moyens4":"",
+          "lien1":"",
+          "lien2":""
         },
         {
           "name": "Capgemen",
@@ -94,7 +103,9 @@
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de CDN (Content Delivery Network) de Boostrap" ,
           "moyens3":"Utilisation de Git pour le versionning et GitHub pour le stockage du code",
-          "moyens4":"Utilisation du serveur de l'ACS"
+          "moyens4":"Utilisation du serveur de l'ACS",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/projet/capgemen/"
         },
         {
           "name": "PopCode",
@@ -113,7 +124,9 @@
           "moyens1":"Intégration avec Visual Studio Code à partir d'une maquette",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
           "moyens3":"Utilisation du serveur de l'ACS",
-          "moyens4":" "
+          "moyens4":"",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/projet/popCode/"
         },
         {
           "name": "portfolio",
@@ -132,14 +145,16 @@
           "moyens1":"Intégration avec Visual Studio Code",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
           "moyens3":"Utilisation du serveur de l'ACS",
-          "moyens4":" "
+          "moyens4":"",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/"
         },
         {
           "name": "conciergerie",
           "description": "Réalisation d'une application de conciergerie", 
           "collaboration":"Réalisation en projet individuel",
           "date":"Date de réalisation: du 23/06/2022 au 12/08/2022",
-          "picture": "assets/img/modalDesc/portfolio.jpg",
+          "picture": "assets/img/modalDesc/conciergerie.jpg",
           "technologie1":"Développement Web", 
           "language1" : "assets/img/logo/html.png",
           "language2" : "assets/img/logo/css.png",
@@ -151,7 +166,9 @@
           "moyens1":"Intégration avec Visual Studio Code",
           "moyens2":"Utilisation de Git(versionning) et GitHub pour le stockage du code" ,
           "moyens3":"Utilisation du serveur de l'ACS",
-          "moyens4":" "
+          "moyens4":"",
+          "lien1":"",
+          "lien2":"https://chrisv1521.promo-167.codeur.online/projet/conciergerie/"
         }
 
               

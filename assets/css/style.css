@@ -20,11 +20,12 @@
 @font-face {
   font-family: "NovaRound";
   src: url("../fonts/NovaRound-Regular.ttf");font-display: swap;}
-/* Général  /* Default stylings */
+/* //////////////////Général  /* Default stylings */
 *{box-sizing: border-box;}
 html{width:100vw;min-height: 100vh; scroll-behavior: smooth;overflow-x: hidden;}
 body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: smooth;overflow-x: hidden;}
-/*////////////////////// cursor */.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events:none;z-index: 9999999;}
+/*////////////////////// cursor */
+.cursor {width: 40px;height: 40px;border: 1px dashed #095933;border-radius: 50%;position: absolute;animation: Anim1 1s infinite alternate; pointer-events:none;z-index: 9999999;}
 .cursor::before {content: '';position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);width: 5px; height: 5px;background:#4A8442;border-radius: 50%;z-index: 999;}
 .expand {animation: Anim2 .5s; background: #4A8442; border: 2px solid #4A8442;z-index: 99999;}
     @keyframes Anim1 {from {transform: scale(1) rotate(0deg);}to {transform: scale(0.7) rotate(190deg);}}
@@ -32,11 +33,12 @@ body{margin: 0; padding: 0;box-sizing: border-box; cursor:none;scroll-behavior: 
 /*////////////////////Navigation */
 #nav{width: 100%; display: flex;justify-content: space-between; align-items: center; height: 90px; background:#AEE68A;}
 #nav {width: 100%;height: 90px;display: flex;justify-content: center;align-items: center;z-index: 30;border-bottom: 0px solid rgba(255, 255, 255, 0.37); position: fixed;top: 0;}
-/* partie boxLogo */#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
+/*//////////////////////// partie boxLogo */
+#logoLeaf{width: 100%;height: 10vh; display: flex;justify-content: space-between;align-items: center;}
 #logoLeaf> a > img {width:90px;height: 60px;margin-top: 20px;margin-left: 15px;}.none {display: none !important;}
 #mobileNavArea{width: 100%;background: #063E11;display: flex; justify-content: center; align-items: center; transition: all 0.2s ease 0s;flex-direction: column;position:fixed;
   z-index: 5;}
-.openNav{height: 35vh !important;} 
+.openNav{height: 100vh !important;} 
 ul {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 #mobileNavArea > ul > li {list-style-type: none;margin: 10px 0px;}
 #mobileNavArea > ul > li > a {text-decoration: none;color: white;font-weight:900;font-family: 'NovaRound',cursive; font-size: 2rem;}
@@ -49,7 +51,6 @@ ul {display: flex;flex-direction: column;justify-content: center;align-items: ce
 .linkedInNav:hover{fill:#AEE68A;}
 .facebookNav:hover{fill: #AEE68A}
 .gitHubNav:hover{fill: #AEE68A}
-/* .fa-leaf{color: #6CC431;margin-top : 20px;}  */
 /*//////////////////////////Partie Header */
 header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-content: center;align-items: center;flex-direction: column;}
 /* partie boxIdentité */#boxIdentite{width: 100%;display: flex;flex-direction: column;justify-content:center;height: 75vh;font-family: 'Rubik', sans-serif;color: #ffff;animation : animation 1s ease-out;}
@@ -82,7 +83,7 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 /* Partie présentation */.presentation{width: 100%;height: 50vh;}
 /* photoChris*/.presentation > .photoChris{ display: flex;justify-content: end;margin: 30px 50px 0 0 ;}
 .presentation>.photoChris > img{width: 210px;height: 210px;border-radius: 50%;object-fit: cover;border: 3px solid #063E11;margin-right: 40px;margin-bottom: 35px;}
-/* partie identite */
+/*////////////////////// partie identite */
 .identite{ width: 100%; height: 50VH;display: flex;flex-direction: column;margin-top: -15px;}
 .identite > .dev{width:90%;font-family: 'Rubik', sans-serif;font-size:5rem;margin-left: 10px;z-index: 1;}
 .identite > .nomPrenom, .dev {margin-left: 10px;margin-top: -50px;}
@@ -97,7 +98,7 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 .boxLeafDeve >.leaf{width: 35px;transform: rotate(151deg);margin-top: -40px;}
 .develop{font-family: 'Nova Round', cursive;font-size: 2.5rem;color:#063E11;margin-left: 35px;margin-top: -40px;}
 .animation{width: 100%;}
-/* partie langages compétence developpement web */
+/* //////////////partie langages compétence developpement web */
 .boxLangages{width: 100%;height: 70vh;display: flex;justify-content: center;}
 #contenaireDev{width:100%;height: 70vh; display: flex;}
 .contenaireLang{width: 100%;flex-direction: column;justify-content: center;display: flex;align-items: end;}
@@ -111,12 +112,11 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 .imgGreen{height: 75vh;display: flex; align-items: flex-start;justify-content: flex-end;animation:moveLamp 3s 0.3s 1 ease;} 
 /****Animation****/@keyframes moveLamp {0% {width:60%;margin-right: 500px;}50%{margin-top: 250px;}100%{margin-right: 0px;}}
 /*////////////////////////// SECTION COMPETENCES DESIGNE/DIGITAL*/
-#competencesDeg{ width: 100%;  min-height: 100vh;display: flex;justify-content: center;align-items: center;}
+#competencesDeg{ width: 100%; min-height: 100vh;display: flex;justify-content: center;align-items: center;flex-direction:row;}
 #competencesDeg> .boxCompetencesDeg{ width:47%;height:100vh;display: flex; flex-direction: column;}
 #competencesDeg> .boxCompetencesDeg >h3{width:100%;font-family: "Numans";font-size:2rem;margin-left: 25px;color:#063E11;}
 #competencesDeg >.boxCompetencesDeg> img{width: 483px;height: 517px;margin-left: 30px;transform: rotate(15deg);}
-/* partie langages de compétence */#competencesDeg{ width: 100%; min-height: 100vh; display: flex; justify-content:center;align-items: center;flex-direction:row;}
-/* partie langages de compétence developpement */
+/*//////////// partie langages de compétence developpement */
 .boxDig{width: 100%;height:100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .type{width: 100%;height:10vh;display: flex;justify-content:flex-start;align-items: center;}
 .type> h2{ font-family: 'NovaRound',cursive;font-size: 1.8rem;color:#063E11;margin-left: 47px;margin-top: 57px;}
@@ -131,28 +131,23 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 .titleProjets{width: 100%;height:100vh;display:flex;justify-content:center;align-items: center;background: #AEE68A}
 .titleProjets > h1{color:#063E11;font-size: 12rem;font-family: 'Rubik-Medium',sans-serif;}
 .titleProjets> .leaf{width: 135px;transform: rotate(145deg);margin-top: 154px;margin-left: -5px;}
-/* partie des projets *//* section carousel */
+/*///////////// partie des projets *//* section carousel */
 #boxCarousel{width: 100%;min-height: 100vh;display: flex;align-items:center;flex-direction: column;}
 .container{max-width:800px;height: 100vh; display: flex;flex-direction: column;align-items: center;position: relative; margin: auto;justify-content: center;} 
-.container{width: 100%; height: 100%;display: flex;justify-content: center;
-  align-items: center;flex-direction: column;}
 .container>h1{font-size: 5rem;font-family: 'Rubik-Bold',sans-serif;;text-align: center;color: #063E11;}
-
 .slide { display: none; width: 800px;} 
-
-
 .boxslideshow{ display: flex; width: 800%;position: relative;animation: slideshow 20s 5s infinite;}
-  .slideshow {height: 100%; overflow: hidden;}
-.slide-img{width: 100%;height: 400px;object-fit: cover;object-position: center;}
-.prev,.next {cursor: pointer;position: absolute;top: 50%;width: 60px;height: 60px;display: flex;align-items: center;justify-content:center;border-radius: 50%;color: black;font-size: 50px;background-color: rgba(0,0,0,0);transition: background-color 0.6s ease;}
+.slideshow {height: 100%; overflow: hidden;}
+.slide-img{width: 800px;height: 400px;object-fit: cover;object-position: center;}
+.prev,.next {cursor: pointer;position: absolute;top: 40%;width: 60px;height: 60px;display: flex;align-items: center;justify-content:center;border-radius: 50%;color:#063E11;font-size: 50px;background-color: rgba(0,0,0,0);transition: background-color 0.6s ease;}
 .prev {left: -80px;}
 .next {right: -80px;}
 .prev:hover{background-color: rgba(0,0,0,0.5);}
 .next:hover {background-color: rgba(0,0,0,0.5);}
-.slide-text {color: black;font-size: 1.3rem;padding: 15px;width: 100%;text-align: center;}
-.slide-dot{ text-align: center; }
-.dot {cursor: pointer;height: 20px;width: 20px;margin: 50px 5px;background-color: #999999; border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}
-.active, .dot:hover { background-color: #111111; }
+.slide-text {color: black;font-size: 1.1rem;width: 100%;text-align: center;font-family: "Numans";margin-top: 15px;}
+.slide-dot{ text-align: center;margin-bottom: 100px; }
+.dot {cursor: pointer;height: 30px;width: 30px;margin: 50px 5px;background-color:#AEE68A; border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}
+.active, .dot:hover { background-color:#063E11;color:white;}
 .fade {animation-name: fade;animation-duration: 1s;}
 @keyframes fade {
   from {opacity: 0}
@@ -160,12 +155,12 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 /*/////////////////////////Section partie modal pour description des languages trouvés id = boxModalDesc*/
 #boxModalDesc{width: 100%;height: 100vh; position: fixed; top: 0;left: 0; background: white;z-index: 80;}
 .modalDesc{width: 100vw;height: 100vh; display: flex;flex-direction: column;box-sizing: border-box;overflow-y:hidden;background:white}
-/* partie firstLine name of project*/
+/*///////// partie firstLine name of project*/
 .firstLine{width: 100%;height: 10vh;display: flex;justify-content: space-between;align-items: center;}
 .contenairSecond{width: 100%;height:30vh;display: flex;justify-content: center;align-items: center;}
 .titleModal{width: 100%;font-size: 3.5rem;font-family:'Rubik-Medium';margin-left:30px;color:#063E11;}
 .firstLine > .cross{width: 80px;margin-right:30px;fill: #063E11}
-/* partie secondLine projtDesc */
+/*////////////// partie secondLine projtDesc */
 .secondLine{width:100%;height: 30vh;display: flex;flex-direction: column;}
 .boxdetail{width: 50%;height: 30vh;display: flex;flex-direction: column;justify-content: center;}
 .projetDesc, .collaboration, .date {font-family: 'Numans';font-size: 1rem;margin-left: 30px;display: flex;flex-direction: column;}
@@ -173,22 +168,22 @@ header{width: 100%;min-height: 100vh;background:#AEE68A;display: flex;justify-co
 .desc{width:40%;object-fit: cover;margin-right: 30px;margin-bottom: 50px;}
 /*  partie thirdLine : technologie 1 et 2 */
 #boxTech{width: 100%; height: 50%;display: flex;}
-/* partie thirdLine */
+/*//////////////// partie thirdLine */
 .thirdLine{width: 50%;height: 58vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background:white;margin-left: 30px;}
 .thirdLine > .tech {font-family: 'NovaRound',cursive;font-size: 2.5rem;font-weight: 500;letter-spacing: 2px;display: flex;justify-content: center;color: #063E11;}
-/* partie technologie1 */
+/*/////////////// partie technologie1 */
 .technologie1 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;color:#063E11;margin-top: -10px;}
 .boxImgTech1{ width: 100%; height: 15vh;display: flex;align-items: center;}
 .tech01, .tech02, .tech03{height: 70px;object-fit: cover;margin-left: 30px;display: inline-block;}
 .tech04{height: 70px;margin-bottom: 35px;margin-left: 20px;}
-.tech05{height: 130px;margin-bottom: 5px;}
+.tech05{height: 130px;margin-bottom: 25px;}
 .tech06{width: 80px;height: 60px;margin-bottom: 37px;}
-/*  partie technologie2*/
+/*//////////////// partie technologie2*/
 .boxImgTech2{ width: 100%; height: 15vh;display: flex;justify-content: center;align-items: center;height: 20vh;}.technologie2 {font-family: 'Numans';font-size: 1.2rem;margin-left: 30px;color:#063E11}
 /*partie fourLine : Moyens utilisés */
 .fourLine, .thirdLine{width: 50%;height: 55vh;display: flex;flex-direction: column;box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);background: white;margin-left: 30px;margin-right: 30px;}.boxImgTech1{display: flex;justify-content: center;align-items: center;height: 20vh;}
-.fourLine > .moyens{font-family: 'NovaRound',cursive;font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color:#063E11;display: flex;justify-content: center;margin-top: 20px;}
-.moyen1, .moyen2, .moyen3, .moyen4 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;color: black;z-index: 99;}
+.fourLine > .moyens, .liens{font-family: 'NovaRound',cursive;font-size: 2.5em;margin-left: 25px;font-weight: 500;letter-spacing: 2px;color:#063E11;display: flex;justify-content: center;margin-top: 20px;}
+.moyen1, .moyen2, .moyen3, .moyen4, .lien1, .lien2 {font-family: 'Numans';font-size: 1rem;margin-left: 25px;color: black;z-index: 99;}
 /*//////////////Section Contact*/
 #contact{ width: 100%; min-height: 100vh;background:white;display: flex;flex-direction: column;}
 .boxContact{width: 100%; height: 20vh;display: flex;justify-content: center; align-items: end;}
