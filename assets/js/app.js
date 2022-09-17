@@ -108,16 +108,16 @@ window.onscroll = () => {
     }
 };
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-// var i = 0;
-// var time = 3000;
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
+    
 }
 function currentSlide(n) {
     showSlides(slideIndex = n);
+
 }function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("custom-slider");
@@ -146,4 +146,4 @@ for (let i = 0; i < navbar.length; i++) {
         closeNav.classList.add('none');
     })
 }
-
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////// */
