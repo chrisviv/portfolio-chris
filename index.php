@@ -217,35 +217,35 @@ if(isset($_POST['message'])) {
             <div class="slideshow">
                 <div class="boxslideshow">
                     <div class="custom-slider fade">
-                        <img  class="slide-img" id="allojyve" src= "./assets/img/carousel/allojyveScreen.jpg" alt="image du projet d'un site internet pour connaitre les films de cinéma nommé allojyvé">
+                        <img  class="slide-img" id="allojyve" src= "./assets/img/carousel/allojyveScreen.jpg" loading='lazy' alt="image du projet d'un site internet pour connaitre les films de cinéma nommé allojyvé">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img"  id="techNews" src= "./assets/img/carousel/techNewsScreen.jpg" alt="image du projet d'un site sur des acticles sur les métiers du numérique nommé techNews">
+                        <img class="slide-img"  id="techNews" src= "./assets/img/carousel/techNewsScreen.jpg"  loading='lazy' alt="image du projet d'un site sur des acticles sur les métiers du numérique nommé techNews">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img"  id="creatives" src= "./assets/img/carousel/creativesScreen.jpg" alt="image du projet d'un site nommé Créatives">
+                        <img class="slide-img"  id="creatives" src= "./assets/img/carousel/creativesScreen.jpg"  loading='lazy' alt="image du projet d'un site nommé Créatives">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img" id="Maquette_Cornod" src= "./assets/img/carousel/maquetteScreen.jpg" alt="image du projet d'une maquette de Cornod">
+                        <img class="slide-img" id="Maquette_Cornod" src= "./assets/img/carousel/maquetteScreen.jpg" loading='lazy' alt="image du projet d'une maquette de Cornod">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img  class="slide-img" id="capgemen" src= "./assets/img/carousel/capgemenScreen.jpg" alt="image du projet d'un site intnert nommé Capgemen">
+                        <img  class="slide-img" id="capgemen" src= "./assets/img/carousel/capgemenScreen.jpg"  loading='lazy' alt="image du projet d'un site intnert nommé Capgemen">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img" id="popCode"  src= "./assets/img/carousel/popCodeScreen.jpg" alt="image du projet d'un jeu intéractif sur le languge de progommation nommmé popCode">
+                        <img class="slide-img" id="popCode"  src= "./assets/img/carousel/popCodeScreen.jpg"  loading='lazy' alt="image du projet d'un jeu intéractif sur le languge de progommation nommmé popCode">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img" id="portfolio" src= "./assets/img/carousel/portfolioScreen.jpg" alt="image du projet mon portfolio">
+                        <img class="slide-img" id="portfolio" src= "./assets/img/carousel/portfolioScreen.jpg"  loading='lazy' alt="image du projet mon portfolio">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                     <div class="custom-slider fade">
-                        <img class="slide-img" id="conciergerie" src= "./assets/img/carousel/conciergerieScreen.jpg" alt="image du projet d'une apllication pour une administration d'une conciergerie">
+                        <img class="slide-img" id="conciergerie" src= "./assets/img/carousel/conciergerieScreen.jpg" loading='lazy' alt="image du projet d'une apllication pour une administration d'une conciergerie">
                         <div class="slide-text">Pour en savoir plus clic sur l'image</div>
                     </div>
                 </div>
@@ -278,7 +278,7 @@ if(isset($_POST['message'])) {
                         <p class="date">Date de réalisation du</p>
                     </div>
                     <div class="boxDesc">
-                        <img src="" alt="image du projet de développement web" class="desc">
+                        <img src="" loading='lazy' alt="image du projet de développement web" class="desc">
                     </div>
                 </div>
             </div>
