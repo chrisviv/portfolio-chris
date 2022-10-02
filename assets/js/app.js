@@ -29,7 +29,7 @@ closeNav.addEventListener('click', function () {
     this.classList.add('none');
 
 })
-///////////////////////////////////CURSOR ANIME///////////////////////////////////////////////////
+//CURSOR ANIME//
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', 'top:' + (e.pageY - 20) + "px; left:" + (e.pageX - 20) + "px;")
@@ -41,7 +41,7 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500);
 });
-/////////////////////////////////////projet Json-Modal-carousel/////////////////////////////////
+//projet Json-Modal-carousel///
 function modalContent(target) {
     fetch('assets/js/description.json').then(responce => responce.json().then(responce => {
         for (let i = 0; i < responce.listeProjets.projets.length; i++) {
@@ -94,7 +94,7 @@ function modalContent(target) {
 boxslideshow.addEventListener('click', function (e) {
     modalContent(e.target.id);
 });
-///////////////////////////////////SCROLL: LOGO+BURGER///////////////////////////////////////////////////
+//SCROLL: LOGO+BURGER///
 window.onscroll = () => {
     if (window.scrollY > 200) {
         document.getElementById('nav').style.background = '#0000007e';
@@ -107,7 +107,7 @@ window.onscroll = () => {
         document.getElementById('nav').style.boxShadow = 'inherit';
     }
 };
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+//slide-dots
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -133,7 +133,7 @@ function currentSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-/*//////////////////////////////////////////////////////// close ModalDesc*/ ////////////////////////////////*/
+//close ModalDesc*/ ///
 document.getElementsByClassName('cross')[0].addEventListener('click', function () {
     document.getElementById('boxModalDesc').classList.add('none');
 });
@@ -146,4 +146,3 @@ for (let i = 0; i < navbar.length; i++) {
         closeNav.classList.add('none');
     })
 }
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////// */
