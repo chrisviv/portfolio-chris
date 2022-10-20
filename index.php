@@ -108,7 +108,7 @@ if(isset($_POST['message'])) {
             <div class="resumer">
                 <P>Je me présente Chris, un amoureux de la nature et passionné du numérique.<br> J'ai décidé de faire une reconversion professionnelle dans le but de concilier mes plus grands centres d'intêrets, le numérique et la nature pour les combiner ensemble dans le plus grand respect !<br> Mes objectifs de développeur web et web mobile sont de créer des sites éco-responsables plus légers en data, efficaces et sobres pour tous !
                 </P>
-                <p>Je suis très sensible à tous les attraits porter sur l'économie circulaire. Je suis très à l'écoute sur toutes propositions axer sur des valeurs communes et la bienveillance de notre planéte.  
+                <p>Je suis sensible à tous les thèmes en lien avec l'économie circulaire. Je suis très à l'écoute de toute proposition axée sur des valeurs communes et la bienveillance envers notre planéte.  
                 </p>
             </div>          
        </div>
@@ -346,14 +346,14 @@ if(isset($_POST['message'])) {
             <div id="mapContact">
                 <div class="formulaire">
                     <p class="paraContact">Contactes moi !</p>
-                    <form method="post" action="">
+                    <form method="POST" action="">
                         <div class="contactName">
-                            <input type="text" class="name" name="user_name" placeholder="Nom"  required>
-                            <input type="text" class="surname" name="user_surname" placeholder="Prénom"  required>
+                            <input type="text" class="name" name="user_name" placeholder="Nom"  required value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
+                            <input type="text" class="surname" name="user_surname" placeholder="Prénom" required>
                         </div>
                         <input type="text" class="sujet" name="sujet" placeholder="Sujet">
-                        <input type="email" class="courriel" name="email" placeholder="Email">
-                        <input type="message" class="msg" placeholder="Entrez Votre message..">
+                        <input type="email" class="courriel" name="email" placeholder="Email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+                        <input type="message" class="msg" placeholder="Entrez Votre message.."><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
                         <input type="submit" value="Envoyer !" class="envoye" name="message" placeholder="Envoyer">
                         <?php if(isset($msg)){echo "<p>".$msg."</p>";}?>
                     </form>
